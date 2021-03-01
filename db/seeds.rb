@@ -21,8 +21,19 @@ csv_options = {headers: :first_row}
 CSV.foreach("#{current_dir}/db/nyse.csv", csv_options) do |row|
   product = Product.new(ticker: row['Symbol'], name: row['Name'])
   if product.save
-    print '>'
+    print ">"
   end
 end
 
 puts "NYSE complete. Products count: #{Product.count}"
+
+# Cryopto supported by AlphaVantage
+
+CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
+  product = Product.new(ticker: row['currency code'], name: row['currency name'])
+  if product.save
+    print '>'
+  end
+end
+
+puts "Crypto complete. Products count: #{Product.count}"
