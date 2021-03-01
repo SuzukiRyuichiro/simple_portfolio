@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# NASDAQ
+
+current_dir = Dir.pwd
+
+File.open("#{current_dir}/db/NASDAQ.txt").each do |line|
+  info = line.split(" ", 2)
+  product = Product.new(ticker: info[0].strip, name: info[1].strip)
+  if product.save
+    puts "#{product.name} is saved as #{product.ticker}"
+  end
+end
