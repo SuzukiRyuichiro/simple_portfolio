@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get '/dashboard', to: 'users#dashboard', as: 'dashboard'
-  get '/product/:id', to: 'products#show', as: 'show'
-  get '/purchase/:id/new', to: 'purchases#new', as: 'new'
-  post 'purchase/:id', to: 'purchases#create', as: 'create'
+  get '/products/:id', to: 'products#show', as: 'show'
+  get '/purchases/:id/new', to: 'purchases#new', as: 'new'
+  post '/purchases/:id', to: 'purchases#create', as: 'create'
   patch '/settings', to: 'users#update', as: 'update'
 end
