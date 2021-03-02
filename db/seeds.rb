@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 # Cryopto supported by AlphaVantage
-=======
+
 current_dir = Dir.pwd
 csv_options = { headers: :first_row}
 
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
->>>>>>> master
+
 require 'csv'
 
 CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
