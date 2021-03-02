@@ -1,9 +1,10 @@
+
 current_dir = Dir.pwd
 csv_options = { headers: :first_row}
 
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
 require 'csv'
-
+# Cryopto supported by AlphaVantage
 CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
   product = Product.new(ticker: row['currency code'], name: row['currency name'])
   if product.save
