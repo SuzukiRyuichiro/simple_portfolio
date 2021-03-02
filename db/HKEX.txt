@@ -1,0 +1,1966 @@
+Symbol	Description
+00001.HK	Cheung Kong (Holdings) Ltd
+00002.HK	CLP Holdings Ltd
+00003.HK	Hong Kong and China Gas Co. Ltd
+00004.HK	Wharf (Holdings) Ltd
+00005.HK	HSBC Holdings plc
+00006.HK	Power Asset Holdings
+00007.HK	Hoifu Energy
+00008.HK	PCCW Ltd
+00009.HK	Mandarin Entertainment (Holdings) Ltd
+00010.HK	Hang Lung Group Ltd
+00011.HK	Hang Seng Bank Ltd
+00012.HK	Henderson Land Development Co. Ltd
+00014.HK	Hysan Development Co. Ltd
+00015.HK	Vantage International (Holdings) Ltd
+00016.HK	Sun Hung Kai Properties Ltd
+00017.HK	New World Development Co. Ltd
+00018.HK	Oriental Press Group Ltd
+00019.HK	Swire Pacific Ltd 'A'
+00020.HK	Wheelock and Co. Ltd
+00021.HK	Beauforte Investors Corporation Ltd
+00022.HK	Mexan Ltd
+00023.HK	Bank of East Asia Ltd
+00024.HK	Burwill Holdings Ltd
+00025.HK	Chevalier International Holdings Ltd
+00026.HK	China Motor Bus Co. Ltd
+00027.HK	Galaxy Entertainment Group Ltd
+00028.HK	Tian An China Investments Co. Ltd
+00029.HK	Dynamic Holdings Ltd
+00030.HK	ABC Communications Ltd
+00031.HK	China Aerospace International Holdings Ltd
+00032.HK	Cross-Harbour (Holdings) Ltd
+00033.HK	Elec & Eltek International Holdings Ltd
+00034.HK	Kowloon Development Co. Ltd
+00035.HK	Far East Consortium International Ltd
+00036.HK	Far East Technology International Ltd
+00037.HK	Far East Hotels & Entertainment Ltd
+00038.HK	First Tractor Co Ltd
+00039.HK	Wealthmark International (Holdings) Ltd
+00040.HK	Gold Peak Industries (Holdings) Ltd
+00041.HK	Great Eagle Holdings Ltd
+00042.HK	Northeast Electric Development Co. Ltd
+00043.HK	C. P. Pokphand Co. Ltd
+00044.HK	HAECO
+00045.HK	Hongkong and Shanghai Hotels Ltd
+00046.HK	Computer And Technologies Holdings Ltd
+00047.HK	Hop Hing Holdings Ltd
+00048.HK	C Auto Int Deco
+00050.HK	Hong Kong Ferry (Holdings) Co. Ltd
+00051.HK	Harbour Centre Development Ltd
+00052.HK	Fairwood Holdings Ltd
+00053.HK	Guoco Group Ltd
+00054.HK	Hopewell Holdings Ltd
+00055.HK	Chung Tai Printing Holdings Ltd
+00056.HK	Allied Properties (HK) Ltd
+00057.HK	Chen Hsong Holdings Ltd
+00058.HK	Sunway International Holdings Ltd
+00059.HK	Skyfame Realty (Holdings) Ltd
+00060.HK	Four Seas Food Investment Holdings Ltd
+00061.HK	Venture International Investment Holdings Ltd
+00062.HK	Transport International Holdings Ltd
+00063.HK	Winfoong International Ltd
+00064.HK	Get Nice Holdings Ltd
+00065.HK	Pacific Century Insurance Holdings Ltd
+00066.HK	MTR Corporation Ltd
+00067.HK	Lumena Resources
+00068.HK	Lee Hing Development Ltd
+00069.HK	Shangri-La Asia Ltd
+00070.HK	Massive Resources International Corporation Ltd
+00071.HK	Miramar Hotel & Investment Co. Ltd
+00072.HK	King Pacific International Holdings Ltd
+00073.HK	Alpha General (holdings)
+00075.HK	Y. T. Realty Group Ltd
+00076.HK	South Sea Petroleum Holdings Ltd
+00077.HK	AMS Public Transport Holdings Ltd
+00078.HK	Regal Hotels International Holdings Ltd
+00079.HK	Century Legend (Holdings) Ltd
+00080.HK	Shaw Brothers (Hong Kong) Ltd
+00081.HK	Shell Electric Mfg (Holdings) Co. Ltd
+00082.HK	Yanion International Holdings Ltd
+00083.HK	Sino Land Co. Ltd
+00084.HK	Stelux Holdings International Ltd
+00085.HK	China Electronics Corporation Holdings Co. Ltd
+00086.HK	Sun Hung Kai & Co. Ltd
+00087.HK	Swire Pacific Ltd 'B'
+00088.HK	Tai Cheung Holdings Ltd
+00089.HK	Tai Sang Land Development Ltd
+00090.HK	Gold Wo International Holdings
+00091.HK	New Smart Holdings Ltd
+00092.HK	Champion Technology Holdings Ltd
+00093.HK	Termbray Industries International (Holdings) Ltd
+00094.HK	Greenheart Group Limited
+00095.HK	New Heritage Holdings Ltd
+00096.HK	Wing Lung Bank Ltd
+00097.HK	Henderson Investment Ltd
+00098.HK	Xingfa Aluminium Holdings Ltd
+00099.HK	Wong's International (Holdings) Ltd
+00100.HK	Clear Media Ltd
+00101.HK	Hang Lung Properties Ltd
+00102.HK	Arnhold Holdings Ltd
+00103.HK	Shougang Concord Century Holdings Ltd
+00104.HK	Asia Commercial Holdings Ltd
+00105.HK	Associated International Hotels Ltd
+00106.HK	Shenzhen High-Tech Holdings Ltd
+00107.HK	Sichuan Expressway Co. Ltd
+00108.HK	Buildmore International Ltd
+00109.HK	Wonderful World Holdings Ltd
+00110.HK	Fortune Telecom Holdings Ltd
+00111.HK	Hantec Investment Holdings Ltd
+00112.HK	Chi Cheung Investment Co. Ltd
+00113.HK	Dickson Concepts (International) Ltd
+00114.HK	Herald Holdings Ltd
+00115.HK	Grand Field Group Holdings Ltd
+00116.HK	Chow Sang Sang Holdings International Ltd
+00117.HK	Eyang Holdings Group
+00118.HK	Cosmos Machinery Enterprises Ltd
+00119.HK	Poly (Hong Kong) Investments Ltd
+00120.HK	Cosmopolitan International Holdings Ltd
+00121.HK	Chia Tai Enterprises International Ltd
+00122.HK	Crocodile Garments Ltd
+00123.HK	Yuexiu Property
+00124.HK	Kingway Brewery Holdings Ltd
+00125.HK	Sun Hing Vision Group Holdings Ltd
+00126.HK	Tak Sing Alliance Holdings Ltd
+00127.HK	Chinese Estates Holdings Ltd
+00128.HK	ENM Holdings Ltd
+00129.HK	Asia Standard International Group Ltd
+00130.HK	Moiselle International Holdings Ltd
+00131.HK	Cheuk Nang (Holdings) Ltd
+00132.HK	China Investments Holdings Ltd
+00133.HK	China Merchants China Direct Investments Ltd
+00135.HK	Kunlun Energy
+00136.HK	Mascotte Holdings Ltd
+00137.HK	Jinhui Holdings Co. Ltd
+00138.HK	CCT Telecom Holdings Ltd
+00139.HK	139 Holdings Ltd
+00141.HK	Great China Holdings Ltd
+00142.HK	First Pacific Co. Ltd
+00143.HK	Global Tech (Holdings) Ltd
+00144.HK	China Merchants Holdings (International) Co. Ltd
+00145.HK	Hong Kong Building and Loan Agency Ltd
+00146.HK	Tai Ping Carpets International Ltd
+00147.HK	Graneagle Holdings Ltd
+00148.HK	Kingboard Chemical Holdings Ltd
+00149.HK	China Velocity Group Ltd
+00151.HK	Want Want China Holdings Ltd
+00152.HK	Shenzhen International Holdings Ltd
+00153.HK	QPL International Holdings Ltd Warrants 2007
+00154.HK	Beijing Development (Hong Kong) Ltd
+00155.HK	China Solar Energy Holdings Ltd
+00156.HK	Lippo China Resources Ltd
+00157.HK	Natural Beauty Bio-Technology Ltd
+00158.HK	Melbourne Enterprises Ltd
+00159.HK	Wah Nam International Holdings Ltd
+00160.HK	Hon Kwok Land Investment Co. Ltd
+00161.HK	CATIC Shenzhen Holdings Ltd
+00162.HK	China Golden Development Holdings Ltd
+00163.HK	Emperor International Holdings Ltd
+00164.HK	Premium Land Ltd
+00165.HK	China Everbright Ltd
+00166.HK	New Times Group Holdings Ltd
+00167.HK	IDT International Ltd
+00168.HK	Tsingtao Brewery Co. Ltd
+00169.HK	China Fair Land Holdings Ltd
+00171.HK	Silver Grant International Industries Ltd
+00172.HK	Goldbond Group Holdings Ltd
+00173.HK	K. Wah International Holdings Ltd
+00174.HK	Kee Shing (Holdings) Ltd
+00175.HK	Geely Automobile Holdings Ltd
+00176.HK	United Pacific Industries Ltd
+00177.HK	Jiangsu Expressway Co. Ltd
+00178.HK	Sa Sa International Holdings Ltd
+00179.HK	Johnson Electric Holdings Ltd
+00180.HK	Kader Holdings Co. Ltd
+00181.HK	Fujian Holdings Ltd
+00182.HK	China WindPower Group Ltd
+00183.HK	CITIC International Financial Holdings Ltd
+00184.HK	Keck Seng Investments (Hong Kong) Ltd
+00185.HK	China Credit Holdings Ltd
+00186.HK	Grande Holdings Ltd
+00187.HK	Beiren Printing Machinery Holdings Ltd
+00188.HK	SW Kingsway Capital Holdings Ltd
+00189.HK	Dongyue Group Ltd
+00190.HK	Hong Kong Construction (Holdings) Ltd
+00191.HK	Lai Sun Garment (International) Ltd
+00193.HK	Capital Estate Ltd
+00194.HK	Liu Chong Hing Investment Ltd
+00195.HK	Grand Hotel Holdings A
+00196.HK	Honghua Group Ltd
+00197.HK	Heng Tai Consumables Group Ltd
+00198.HK	SMI Corporation Ltd
+00199.HK	Macau Prime Properties Holdings Ltd
+00200.HK	Melco International Development Ltd
+00201.HK	Magnificent Estates Ltd
+00202.HK	Interchina Holdings Co. Ltd
+00204.HK	China Investment Development
+00205.HK	SEEC Media Group Ltd
+00206.HK	ITC Corporation Ltd - Preference
+00207.HK	Hong Kong Parkview Group Ltd
+00208.HK	Polytec Asset Holdings Ltd
+00209.HK	Winshine Entertainment & Media
+00210.HK	Daphne International
+00211.HK	Styland Holdings
+00212.HK	Nanyang Holdings Ltd
+00213.HK	National Electronics Holdings Ltd
+00214.HK	Asia Orient Holdings Ltd
+00215.HK	Hutchison Telecommunications
+00216.HK	Chinney Investments Ltd
+00217.HK	China Chengtong Development Group Ltd
+00218.HK	Shenyin Wanguo (H.K.) Ltd
+00219.HK	Shun Ho Technology Holdings Ltd
+00220.HK	Uni-President China Holdings Ltd
+00221.HK	LeRoi Holdings Ltd
+00222.HK	Min Xin Holdings Ltd
+00223.HK	Kenfair International (Holdings) Ltd
+00224.HK	Pioneer Global Group Ltd
+00225.HK	Pokfulam Development Co. Ltd
+00226.HK	Lippo Ltd
+00227.HK	First Shanghai Investments Ltd
+00228.HK	Hon Po Group (Lobster King) Ltd
+00229.HK	Raymond Industrial Ltd
+00230.HK	Minmetals Land
+00231.HK	Dynamic Global Holdings Ltd
+00232.HK	AVIC International
+00233.HK	Mingyuan Medicare Development Co. Ltd
+00234.HK	New Century Group Hong Kong Ltd
+00235.HK	China Strategic Holdings Ltd
+00236.HK	San Miguel Brewery Hong Kong Ltd
+00237.HK	Safety Godown Co. Ltd
+00238.HK	Lei Shing Hong Ltd
+00239.HK	Pak Fah Yeow International Ltd
+00240.HK	Build King Holdings Ltd
+00241.HK	CITIC 21CN Co. Ltd
+00242.HK	Shun Tak Holdings Ltd
+00243.HK	QPL International Holdings Ltd
+00244.HK	Sincere Co. Ltd
+00245.HK	Landune International Ltd
+00246.HK	Henderson China Holdings Limtied
+00247.HK	Tsim Sha Tsui Properties Ltd
+00248.HK	HKC International Holdings Ltd
+00250.HK	Sino-i Technology Ltd
+00251.HK	S E A Holdings Ltd
+00252.HK	Southeast Asia Properties & Finance Ltd
+00253.HK	Shun Ho Resources Holdings Ltd
+00254.HK	eCyberChina Holdings Ltd
+00255.HK	Lung Kee (Bermuda) Holdings Ltd
+00256.HK	China Haidian Holdings Ltd
+00257.HK	China Everbright International Ltd
+00258.HK	Tomson Group Ltd
+00259.HK	Yeebo (International Holdings) Ltd
+00260.HK	Sino Gas Group Ltd
+00261.HK	CCT Tech International Ltd
+00262.HK	Deson Development International Holdings Ltd
+00263.HK	Poly Investments Holdings Ltd
+00264.HK	Chanco International Group Ltd
+00265.HK	South China Holdings Ltd
+00266.HK	Tian Teck Land Ltd
+00267.HK	CITIC Pacific Ltd
+00268.HK	Kingdee International Software Group Co. Ltd
+00269.HK	Seapower Resources International Ltd
+00270.HK	Guangdong Investment Ltd
+00271.HK	Dan Form Holdings Co. Ltd
+00272.HK	Shui On Land
+00273.HK	Willie International Holdings Ltd
+00274.HK	Global Green Tech Group Ltd
+00275.HK	Hanny Holdings Ltd
+00276.HK	Mongolia Energy
+00277.HK	Tern Properties Co. Ltd
+00278.HK	Wah Ha Realty Co. Ltd
+00279.HK	Freeman Corporation Ltd
+00280.HK	King Fook Holdings Ltd
+00281.HK	Rivera (Holdings) Ltd
+00282.HK	Next Media Ltd
+00285.HK	BYD Electronic International Company Ltd
+00286.HK	G-Prop (Holdings) Ltd
+00287.HK	Winfair Investment Co. Ltd
+00288.HK	Berjaya Holdings (HK) Ltd
+00289.HK	Wing On Company International Ltd
+00290.HK	China Conservational Power Holdings Ltd
+00291.HK	China Resources Enterprise Ltd
+00292.HK	Asia Standard Hotel Group Ltd
+00293.HK	Cathay Pacific Airways Ltd
+00294.HK	Yangtzekiang Garment Ltd
+00295.HK	Kong Sun Holdings Ltd
+00296.HK	Emperor Entertainment Hotel Ltd
+00297.HK	Sinofert Holdings Ltd
+00298.HK	Chuang's China Investments Ltd
+00299.HK	SinoCom Software Group Limited
+00300.HK	Shenji Group Kunming Machine
+00303.HK	VTech Holdings Ltd
+00305.HK	Magnum International Holdings Ltd
+00306.HK	Kwoon Chung Bus Holdings Ltd
+00307.HK	Tidetime Sun (Group) Ltd
+00308.HK	China Travel International Investment Hong Kong Ltd
+00309.HK	Lo's Enviro-Pro Holdings Ltd
+00310.HK	Prosperity Investment Holdings Ltd
+00311.HK	Luen Thai Holdings Ltd
+00312.HK	Lamex Holdings
+00313.HK	Dickson Group Holdings Ltd
+00315.HK	SmarTone Telecommunications Holdings Ltd
+00316.HK	Orient Overseas (International) Ltd
+00317.HK	Guangzhou Shipyard International Co. Ltd
+00318.HK	Vongroup Ltd
+00320.HK	Computime Group Ltd
+00321.HK	Texwinca Holdings Ltd
+00322.HK	Tingyi (Cayman Islands) Holdings Corp.
+00323.HK	Maanshan Iron & Steel Co. Ltd
+00326.HK	China Star Entertainment Ltd
+00327.HK	Shanxi Central Pharmaceutical Intl Ltd
+00328.HK	Alco Holdings Ltd
+00329.HK	Golden Dragon Group (Holdings) Ltd
+00330.HK	Esprit Holdings Ltd
+00331.HK	China Resources Peoples Telephone
+00332.HK	Ngai Lik Industrial Holdings Ltd
+00333.HK	Top Form International Ltd
+00334.HK	TCL Display
+00335.HK	Upbest Group Ltd
+00336.HK	Huabao International Holdings Ltd
+00337.HK	Cec International Holdings Ltd W0309
+00338.HK	Sinopec Shanghai Petrochemical Co. Ltd
+00339.HK	Earnest Investments Holdings Ltd
+00340.HK	China Mining Resources Group Ltd
+00341.HK	Cafe de Coral Holdings Ltd
+00342.HK	NewOcean Energy Holdings Ltd
+00343.HK	Culturecom Holdings Ltd
+00345.HK	Vitasoy International Holdings Ltd
+00346.HK	Sino Union Petroleum & Chemical International Ltd
+00347.HK	Angang New Steel Co. Ltd
+00348.HK	Lung Cheong International Holdings Ltd
+00351.HK	Asia Energy Logistics
+00352.HK	Fortune Sun (China) Holdings Ltd
+00353.HK	Aurora Global Investment Holdings Ltd
+00354.HK	Chinasoft International Ltd
+00355.HK	Century City International Holdings Ltd
+00356.HK	DT Capital Limited
+00357.HK	Hainan Meilan International Airport Co. Ltd
+00358.HK	Jiangxi Copper Co. Ltd
+00359.HK	China Haisheng Juice Holdings Co. Ltd
+00360.HK	New Focus Auto Tech Holdings Ltd
+00361.HK	Sino Golf Holdings Ltd
+00362.HK	Daqing Petroleum and Chemical Group Ltd
+00363.HK	Shanghai Industrial Holdings Ltd
+00364.HK	Huafeng Textile International Group Ltd
+00365.HK	Sun East Technology (Holdings) Ltd
+00366.HK	Luks Industrial (Group) Ltd
+00367.HK	Chuang's Consortium International Ltd
+00368.HK	Sinotrans Shipping Ltd
+00369.HK	USI Holdings Ltd
+00370.HK	China Best Group Holding Ltd
+00371.HK	Shang Hua Holdings Ltd
+00372.HK	ITC Corporation Ltd
+00373.HK	Allied Group Ltd
+00374.HK	Four Seas Mercantile Holdings Ltd
+00375.HK	YGM Trading Ltd
+00376.HK	Asia TeleMedia Ltd
+00377.HK	New Island Printing Holdings Ltd
+00378.HK	Ciam Group
+00379.HK	PME Group Ltd
+00380.HK	World Trade Bun Kee Ltd
+00381.HK	Kiu Hung International Holdings Ltd
+00382.HK	Welling
+00383.HK	COL Capital Ltd
+00384.HK	China Gas Holdings Ltd
+00385.HK	Chinney Alliance Group Ltd
+00386.HK	Sinopec
+00387.HK	Leeport (Holdings) Ltd
+00388.HK	Hong Kong Exchanges and Clearing Ltd
+00389.HK	Moulin Global Eyecare Holdings Ltd
+00390.HK	China Railway Group Ltd
+00391.HK	Mei Ah Entertainment Group Ltd
+00392.HK	Beijing Enterprises Holdings Ltd
+00393.HK	Glorious Sun Enterprises Ltd
+00395.HK	Asia Zirconium Ltd
+00396.HK	Gold-Face Holdings Ltd
+00397.HK	Town Health Medical Technology Holdings Co. Ltd
+00398.HK	Oriental Watch Holdings Ltd
+00399.HK	Far East Pharmaceutical Technology Co. Ltd
+00400.HK	Cogobuy
+00401.HK	401 Holdings
+00402.HK	Ming Hing Holdings Ltd
+00403.HK	Starlite Holdings Ltd
+00404.HK	Hsin Chong Construction Group Ltd
+00405.HK	GZI Real Estate Investment Trust
+00406.HK	Yau Lee Holdings Ltd
+00408.HK	Yip's Chemical Holdings Ltd
+00410.HK	SOHO China Ltd
+00411.HK	Lam Soon (Hong Kong) Ltd
+00412.HK	China Innovative Finance Group Limited
+00413.HK	South China Industries Ltd
+00416.HK	Bank of Jinzhou
+00417.HK	Tse Sui Luen Jewellery (International) Ltd
+00418.HK	Founder Holdings Ltd
+00419.HK	Jiuhao Health
+00420.HK	Fountain Set (Holdings) Ltd
+00422.HK	Vietnam Manufacturing and Export Processing Ltd
+00423.HK	Hong Kong Economic Times Holdings Ltd
+00425.HK	Minth Group Ltd
+00426.HK	One Media Group Ltd
+00428.HK	Harmony Asset Limited
+00430.HK	Oriental Explorer Holdings Ltd
+00431.HK	Greater China Holdings Ltd
+00432.HK	Pacific Century Premium Developments Ltd
+00433.HK	Sun Man Tai Holdings Co. Ltd
+00434.HK	Boyaa
+00435.HK	Sunlight Real Estate Investment Trust
+00436.HK	
+00438.HK	IRICO Group Electronics Co. Ltd
+00439.HK	Climax International Co. Ltd
+00440.HK	Dah Sing Financial Holdings Ltd
+00442.HK	KTL International
+00444.HK	Sincere Watch (Hong Kong) Ltd
+00445.HK	China Fire Safety Enterprise Group Holdings Ltd
+00449.HK	Chigo Holding Ltd
+00450.HK	Hung Hing Printing Group Ltd
+00451.HK	Same Time Holdings Ltd
+00455.HK	Yunnan Enterprises Holdings Ltd
+00456.HK	New Rank City Development
+00458.HK	Tristate Holdings Ltd
+00459.HK	Midland ICI Ltd
+00460.HK	Sihuan Pharmaceutical Holdings Group Ltd
+00462.HK	Linfair Holdings Ltd
+00464.HK	Kenford Group Holdings Ltd
+00465.HK	Ford Motor Credit Co. 7.2% Notes 2007
+00467.HK	United Energy
+00468.HK	
+00469.HK	General Motors Acceptance Corp 1000n0207
+00471.HK	Global Flex Holdings Ltd
+00472.HK	MACRO-LINK International Holdings Ltd
+00474.HK	Winbox International (Holdings) Ltd
+00475.HK	Noble Jewelry Holdings Ltd
+00476.HK	China Elegance (Holdings) Ltd
+00479.HK	Cil Holdings
+00480.HK	HKR International Ltd
+00482.HK	Sandmartin International Holdings Ltd
+00483.HK	Bauhaus International (Holdings) Ltd
+00484.HK	
+00485.HK	Starlight International Holdings Ltd
+00486.HK	RUSAL
+00487.HK	Macau Success Ltd
+00488.HK	Lai Sun Development Co. Ltd
+00489.HK	Dongfeng Motor Group Co. Ltd
+00491.HK	See Corporation Ltd
+00493.HK	GOME Electrical Appliances Holding Ltd
+00494.HK	Li & Fung Ltd
+00495.HK	Paladin Ltd
+00496.HK	Kasen International Holdings Ltd
+00497.HK	Capital Strategic Investment Ltd
+00498.HK	PYI Corporation Ltd
+00499.HK	HyComm Wireless Ltd
+00500.HK	DVN (Holdings) Ltd
+00503.HK	China Paradise Electronics Retail Ltd
+00505.HK	Xingye Copper International Group Ltd
+00506.HK	China Foods
+00508.HK	Chevalier iTech Holdings Ltd
+00509.HK	Lg China Fund
+00510.HK	Cash Financial Services Ltd
+00511.HK	Television Broadcasts Ltd
+00512.HK	MAXX Bioscience Holdings Ltd
+00513.HK	Continental Holdings Ltd
+00515.HK	TC Interconnect Holdings Ltd
+00517.HK	COSCO International Holdings Ltd
+00518.HK	Tungtex (Holdings) Co. Ltd
+00519.HK	Applied International Holdings Ltd
+00520.HK	
+00521.HK	Shougang Concord Technology Holdings Ltd
+00522.HK	ASM Pacific Technology Ltd
+00524.HK	e-Kong Group Ltd
+00525.HK	Guangshen Railway Co. Ltd
+00526.HK	Magician Industries (Holdings) Ltd
+00527.HK	Galaxy Semi-Conductor Holdings Ltd
+00528.HK	General Motors Acceptance Corp 100 N0207
+00529.HK	SiS International Holdings Ltd
+00530.HK	Fortuna International Holdings Ltd
+00531.HK	Samson Holding Ltd
+00532.HK	Wong's Kong King International (Holdings) Ltd
+00533.HK	Goldlion Holdings Ltd
+00535.HK	Frasers Property (China) Ltd
+00536.HK	Tradelink Electronic Commerce Ltd
+00538.HK	Ajisen (China) Holdings Ltd
+00539.HK	Victory City International Holdings Ltd
+00540.HK	Thai-Asia Fund Ltd
+00542.HK	Morning Star Resources Ltd
+00543.HK	Pacific Online Ltd
+00544.HK	Daido Group Ltd
+00546.HK	Fufeng Group Ltd.  
+00547.HK	Sun Innovation Holdings Ltd
+00548.HK	Shenzhen Expressway Co. Ltd
+00550.HK	Recruit Holdings
+00551.HK	Yue Yuen Industrial (Holdings) Ltd
+00552.HK	China Communications Services
+00553.HK	Nanjing Panda Electronic Co. Ltd
+00554.HK	Hans Energy Co. Ltd
+00555.HK	REXLot Holdings Limited
+00556.HK	Pan Asia Environmental Protection Group Ltd
+00557.HK	City e-Solutions Ltd
+00558.HK	L.K. Technology Holdings Ltd.
+00559.HK	Hua Yi Copper Holdings Ltd
+00560.HK	Chu Kong Shipping Development Co. Ltd
+00563.HK	Neo-China Group (Holdings) Ltd
+00564.HK	Champion Technology Holdings Ltd Warrants 2007
+00565.HK	Art Textile Technology International Co. Ltd
+00566.HK	RBI Holdings Ltd
+00567.HK	Daisho Microline Holdings Ltd
+00568.HK	Shandong Molong Petroleum Machinery Co. Ltd
+00569.HK	Kith Holdings W0406
+00570.HK	Wing Shan International Ltd
+00571.HK	eSun Holdings Ltd
+00572.HK	Spread Prospects Holdings Ltd
+00573.HK	Hanny Holdings W0204
+00574.HK	Pashun Pharma
+00575.HK	Regent Pacific Group Ltd
+00576.HK	Zhejiang Expressway Co. Ltd
+00577.HK	Paul Y. Engineering Group Ltd
+00578.HK	Everbest Century Holdings Ltd
+00579.HK	Beijing Jingneng Clean Energy
+00580.HK	Sun.King Power Electronics Group Ltd
+00581.HK	China Oriental Group Co. Ltd
+00582.HK	Greenfield Chemical Holdings Ltd
+00583.HK	SCMP Group Ltd
+00585.HK	Imagi International Holdings Ltd
+00586.HK	Conch Venture
+00587.HK	Hua Han Bio-Pharmaceutical Holdings Ltd
+00588.HK	Beijing North Star Co. Ltd
+00589.HK	Ports Design Ltd
+00590.HK	Luk Fook Holdings (International) Ltd
+00591.HK	China High Precision Automation Ltd
+00592.HK	Bossini International Holdings Ltd
+00593.HK	Quality HealthCare Asia Ltd
+00595.HK	AV Concept Holdings Ltd
+00596.HK	China Online (bermuda) Ltd W0306
+00598.HK	Sinotrans Ltd
+00599.HK	E. Bon Holdings Ltd
+00600.HK	Honesty Treasure International Holdings Ltd
+00601.HK	Group Sense (International) Ltd
+00602.HK	Kingboard Chemical Holdings Ltd W0312
+00603.HK	Nippon Asia Investments Holdings Ltd
+00604.HK	Shenzhen Investment Ltd
+00605.HK	K.P.I. Co. Ltd
+00606.HK	China Agri-Industries
+00607.HK	Warderly International Holdings Ltd
+00608.HK	High Fashion International Ltd
+00609.HK	Qpl International Holdings Ltd W0401
+00610.HK	Wai Kee Holdings Ltd
+00611.HK	Tack Hsin Holdings Ltd
+00612.HK	China Investment Fund Co. Ltd
+00613.HK	Yugang International Ltd
+00616.HK	Easyknit Enterprises Holdings Ltd
+00617.HK	Paliburg Holdings Ltd
+00618.HK	EC-Founder (Holdings) Co. Ltd
+00619.HK	South China Brokerage Co. Ltd
+00620.HK	UDL Holdings Ltd
+00621.HK	Taung Gold International Ltd
+00622.HK	
+00623.HK	SNP Leefung Holdings Ltd
+00625.HK	Reef CCT Reit
+00626.HK	Public Financial Holdings Ltd
+00627.HK	U-RIGHT International Holdings Ltd
+00628.HK	Teem Foundation Group Ltd
+00629.HK	Yue Da Holdings Ltd
+00630.HK	Jackin International Holdings Ltd
+00631.HK	Wing Shing International Holdings Ltd Warrants 2007
+00632.HK	China Merchants DiChain (Asia) Ltd
+00633.HK	China All Access
+00635.HK	Playmates Holdings Ltd
+00636.HK	Fubon Bank Ltd
+00637.HK	Lee Kee Holdings Ltd
+00638.HK	Kin Yat Holdings Ltd
+00639.HK	Fushan International Energy Group Ltd
+00640.HK	Harmony Asset W0205
+00641.HK	Fong's Industries Co. Ltd
+00643.HK	Carry Wealth Holdings Ltd
+00645.HK	KTP Holdings Ltd
+00646.HK	China Environmental Technology
+00647.HK	Joyce Boutique Holdings Ltd
+00648.HK	Softbank Investment International (Strategic) Ltd
+00650.HK	Shun Cheong Holdings Ltd
+00651.HK	Wonson International Holdings Ltd
+00653.HK	Bonjour Holdings Ltd
+00655.HK	Hongkong Chinese Ltd
+00656.HK	Fosun International
+00657.HK	G-Vision International (Holdings) Ltd
+00658.HK	China High Speed Transmission Equipment Group Ltd
+00659.HK	NWS Holdings Ltd
+00660.HK	Nority International Group Ltd
+00661.HK	China National Resources Development Holdings Ltd
+00662.HK	Asia Financial Holdings Ltd
+00663.HK	Swank International Manufacturing Co. Ltd
+00665.HK	Taifook Securities Group Ltd
+00666.HK	Yu Ming Investments Ltd
+00668.HK	Hong Kong Catering Management Ltd
+00669.HK	Techtronic Industries Co. Ltd
+00670.HK	China Eastern Airlines Corporation Ltd
+00672.HK	Barclays Asian Selection Fund Ltd-aseans
+00673.HK	China HealthCare Holdings Ltd
+00674.HK	United Power Investment Ltd
+00675.HK	K & P International Holdings Ltd
+00676.HK	Pegasus International Holdings Ltd
+00677.HK	Golden Resources Development International Ltd
+00678.HK	Star Cruises Ltd
+00679.HK	Asia Tele-Net And Technology Corporation Ltd
+00680.HK	Nan Hai Corporation Ltd
+00681.HK	Chinese People Gas Holdings Co. Ltd
+00682.HK	Chaoda Modern Agriculture (Holdings) Ltd
+00683.HK	Kerry Properties Ltd
+00684.HK	Allan International Holdings Ltd
+00685.HK	Ming Pao Enterprise Corporation Ltd
+00686.HK	Gay Giano International Group Ltd
+00687.HK	Tysan Holdings Ltd
+00688.HK	China Overseas Land & Investment Ltd
+00689.HK	Great Wall Cybertech Ltd
+00690.HK	Uni-Bio Science Group Ltd
+00691.HK	Shanshui Cement
+00692.HK	Ching Hing (Holdings) Ltd
+00693.HK	Tan Chong International Ltd
+00694.HK	Beijing Capital International Airport Co. Ltd
+00695.HK	Dongwu Cement Ltd
+00696.HK	TravelSky Technology Ltd
+00697.HK	Shougang Concord International Enterprises Co. Ltd
+00698.HK	Tongda Group Holdings Ltd
+00699.HK	Chia Hsin Cement Greater China Holding Corporation
+00700.HK	Tencent Holdings Ltd
+00701.HK	CNT Group Ltd
+00702.HK	Genesis Energy Holdings Ltd
+00703.HK	Innovo Leisure Recreation Holdings Ltd
+00704.HK	Frankie Dominion International Ltd
+00705.HK	Zhongda International Holdings Ltd Warrants 2006
+00706.HK	FinTronics Holdings Co. Ltd
+00707.HK	Co-Prosperity Holdings Ltd
+00708.HK	New Media Group Holdings Ltd
+00709.HK	Giordano International Ltd
+00710.HK	Varitronix International Ltd
+00711.HK	Chun Wo Holdings Ltd
+00712.HK	China Resources Cement Holdings Ltd
+00713.HK	World Houseware (Holdings) Ltd
+00715.HK	Hutchison Harbour Ring Ltd
+00716.HK	Singamas Container Holdings Ltd
+00717.HK	Emperor Capital Group Ltd
+00718.HK	Bestway International Holdings Ltd
+00719.HK	Shandong Xinhua Pharmaceutical Co. Ltd
+00720.HK	Wo Kee Hong (Holdings) Ltd
+00721.HK	Comtec Solar Systems Group Limited
+00722.HK	Delta Networks Inc
+00723.HK	Anex International Holdings Ltd
+00724.HK	Semtech International Holdings Ltd
+00725.HK	Perennial International Ltd
+00726.HK	South East Group Ltd
+00727.HK	VXL Capital Ltd
+00728.HK	China Telecom Corporation Ltd
+00729.HK	Carico Holdings Ltd
+00730.HK	Shougang Concord Grand (Group) Ltd
+00731.HK	Samson Paper Holdings Ltd
+00732.HK	Truly International Holdings Ltd
+00733.HK	Hopefluent Group Holdings Ltd
+00735.HK	China Power New Energy
+00736.HK	Northern International Holdings Ltd
+00737.HK	Hopewell Highway Infrastructure Ltd
+00738.HK	Le Saunda Holdings Ltd
+00743.HK	Asia Cement Holdings
+00745.HK	Wing Hong (Holdings) Ltd
+00746.HK	Lee & Man Holding Ltd
+00747.HK	Shenyang Public Utility Holdings Co. Ltd
+00750.HK	China Singyes Solar Tech
+00751.HK	Skyworth Digital Holdings Ltd
+00752.HK	Pico Far East Holdings Ltd
+00753.HK	Air China Ltd
+00754.HK	Hopson Development Holdings Ltd
+00755.HK	Shanghai Zendai Property Ltd
+00756.HK	Iquorum Cybernet W0404
+00757.HK	Solargiga Energy Holdings Ltd
+00758.HK	Junefield Department Store Group Ltd
+00759.HK	CEC International Holdings Ltd
+00760.HK	Tomorrow International Holdings Ltd
+00761.HK	Peking Apparel International Group Ltd
+00762.HK	China Unicom Ltd
+00763.HK	ZTE Corporation
+00764.HK	Eternity Investment Limited
+00765.HK	Perfectech International Holdings Ltd
+00766.HK	Sino Prosper Holdings Ltd
+00767.HK	Pacific Plywood Holdings Ltd
+00768.HK	UBA Investments Ltd
+00769.HK	China Rare Earth Holdings Ltd
+00770.HK	Shanghai Growth
+00771.HK	Automated Systems Holdings Ltd
+00772.HK	
+00775.HK	CK Life Sciences Int (Holdings) Inc
+00776.HK	JF Household Furnishings
+00777.HK	NetDragon Websoft Inc
+00778.HK	Fortune REIT
+00784.HK	
+00787.HK	
+00789.HK	Artini China Company Ltd
+00794.HK	Come Sure Group
+00798.HK	
+00799.HK	
+00800.HK	A8 Digital Music Holdings Ltd
+00801.HK	Golden Meditech Company Ltd
+00802.HK	RCG
+00803.HK	Prosperity International Holdings Ltd
+00804.HK	Pinestone
+00805.HK	
+00806.HK	Value Partners Group Ltd
+00808.HK	Prosperity Real Estate Investment Trust
+00809.HK	Global Bio-chem Technology Group Co. Ltd
+00810.HK	China Treasure (Greater China) Investments Ltd
+00811.HK	Xinhua Winshare
+00812.HK	Tanrich Financial Holdings Ltd
+00813.HK	Shimao Property Holdings Ltd
+00814.HK	Beijing Jingkelong Co Ltd
+00815.HK	Chi Group
+00816.HK	Huadian Fuxin Energy Corp
+00817.HK	Franshion Properties
+00818.HK	Hi Sun Technology (China) Ltd
+00819.HK	Tianneng Power International Ltd
+00820.HK	HSBC Dragon Fund
+00821.HK	Barclays Asian Selection F Ltd H K Fund
+00822.HK	Barclays Asian Selection F Ltd Indo Fund
+00823.HK	The Link Real Estate Investment Trust
+00825.HK	Barclays Asian Selection F Ltd Phil Fund
+00826.HK	Tiangong International Company
+00827.HK	Barclays Asian Selection F Ltd Se Asia F
+00828.HK	Dynasty Fine Wines Group Ltd
+00829.HK	Shenguan Holdings Group Ltd
+00830.HK	
+00831.HK	
+00832.HK	korea 1990 Trust The-beneficial Cert.
+00833.HK	Alltronics Holdings Ltd
+00834.HK	China Kangda Food Company Limited
+00835.HK	Nubrands Group Holdings Ltd
+00836.HK	China Resources Power Holdings Co. Ltd
+00837.HK	China Pharmaceutical Ent & Inv Corp W0110
+00838.HK	EVA Precision Industrial Holdings Ltd
+00839.HK	
+00840.HK	Xinjiang Tianye Water Saving Irrigation System Company Ltd
+00841.HK	Asia Cassava Resources Holdings Ltd
+00842.HK	
+00844.HK	
+00845.HK	Artfield Group W0403
+00846.HK	Mingfa Group Co Ltd
+00847.HK	
+00848.HK	Prc-6.125% Notes 100 Due 2003
+00850.HK	Wing Shing International Holdings Ltd
+00851.HK	MAE Holdings Ltd
+00852.HK	Good Fellow Group W0112
+00853.HK	Global Tech (holdings) W0408
+00854.HK	Willas Array
+00855.HK	China Water Affairs Group Ltd
+00856.HK	VST Holdings Ltd
+00857.HK	PetroChina Co. Ltd
+00858.HK	Extrawell Pharmaceutical Holdings Ltd
+00859.HK	Henry Group Holdings Ltd
+00860.HK	Ming Fung Jewellery Group Ltd
+00861.HK	Digital China Holdings Ltd
+00862.HK	New World Mobile Holdings Ltd
+00863.HK	
+00864.HK	
+00865.HK	First Mobile Group Holdings Limited
+00866.HK	SUNDAY Communications Ltd
+00867.HK	Thornton Tiger Fund
+00868.HK	Xinyi Glass Holdings Ltd
+00869.HK	Playmates Toys Ltd
+00871.HK	
+00872.HK	Cable & Wireless Plc-us$1000 Bond 2003
+00873.HK	
+00874.HK	Guangzhou Pharmaceutical Co. Ltd
+00875.HK	Corasia Group
+00876.HK	Wing Lee Holdings Ltd
+00877.HK	Asian Development Bank 6.125% Bonds 2004
+00878.HK	Soundwill Holdings Ltd
+00880.HK	SJM Holdings Ltd
+00881.HK	Jf Japan Otc Fund Inc.
+00882.HK	Tianjin Development Holdings Ltd
+00883.HK	CNOOC Ltd
+00884.HK	Cifi Hold
+00885.HK	Forefront International Holdings Ltd
+00886.HK	Silver Base Group Holdings Ltd
+00887.HK	Cable & Wireless Plc-us$10000 Bond 2003
+00888.HK	RoadShow Holdings Ltd
+00889.HK	Datronix Holdings Ltd
+00891.HK	Trinity Ltd
+00893.HK	China Vanadium Titano-Magnetite Mining Co Ltd
+00894.HK	Man Yue International Holdings Ltd
+00895.HK	Dongjiang Environment
+00896.HK	Hanison Construction Holdings Ltd
+00897.HK	Wai Yuen Tong Medicine Holdings Ltd
+00898.HK	Multifield International Holdings Ltd
+00899.HK	Asia Resources Holdings Ltd
+00900.HK	Aeon Credit Service (Asia) Co. Ltd
+00901.HK	Eagleride Inv
+00902.HK	Huaneng Power International Inc
+00903.HK	TPV Technology Ltd
+00904.HK	China Green (Holdings) Ltd
+00905.HK	Apex Capital Ltd
+00906.HK	CPMC Holdings Ltd
+00907.HK	Elegance International Holdings Ltd
+00908.HK	Jiuzhou Development Co. Ltd
+00909.HK	Zhongda International Holdings Ltd
+00910.HK	Good Fellow Group Ltd
+00911.HK	Hangfat Ginseng
+00912.HK	Suga International Holdings Ltd
+00913.HK	Unity Inv Hold
+00914.HK	Anhui Conch Cement Co. Ltd
+00915.HK	Linmark Group Ltd
+00916.HK	China Longyuan Power
+00918.HK	Takson Holdings Ltd
+00919.HK	Modern Beauty Salon Holdings Ltd
+00921.HK	Hisense Kelon
+00922.HK	Vision Tech International Holdings Ltd
+00923.HK	Integrated Waste Solutions
+00925.HK	Peaktop International Holdings Ltd
+00926.HK	Egana Jewellery & Pearls Ltd
+00927.HK	Fujikon Industrial Holdings Ltd
+00928.HK	Tack Fat Group International Ltd
+00929.HK	IPE Group Ltd
+00931.HK	Artel Solutions Group Holdings Ltd
+00932.HK	RM Group
+00933.HK	First Sign International Holdings Ltd
+00934.HK	Sinopec Kantons Holdings Ltd
+00935.HK	
+00936.HK	Eagle Legend Asia Limited
+00938.HK	Man Sang International Ltd
+00939.HK	China Construction Bank Corporation
+00940.HK	
+00941.HK	China Mobile Ltd
+00943.HK	eForce Holdings Ltd
+00945.HK	Manulife Financial Corporation
+00947.HK	Province Of Ontario-7 1/4% N2005-100
+00948.HK	Province Of Ontario-7 1/4% N2005-1000
+00950.HK	
+00951.HK	
+00952.HK	Quam Ltd
+00953.HK	Meike Ltd
+00954.HK	
+00956.HK	Baden-wurttemberg L-finance Nv 1000b2003
+00958.HK	Huaneng Renewables Ltd
+00959.HK	A-Max Holdings Ltd
+00960.HK	Longfor Properties Co Ltd
+00966.HK	China Taiping
+00967.HK	Citc Seoul Access Trust
+00968.HK	Xinyi Solar Holdings
+00969.HK	Hua Lien International (Holding) Co. Ltd
+00970.HK	Jade Dynasty Group Ltd
+00973.HK	Province Of Ontario 61/4% Dm100000 N2004
+00974.HK	SKL
+00975.HK	Hk & Shanghai Banking Corp Hk$1000000n03
+00976.HK	Chiho-Tiande Group Ltd
+00978.HK	Tonic Industries Holdings Ltd
+00979.HK	Green Energy Group Ltd
+00980.HK	Lianhua Supermarket Holdings Co. Ltd
+00981.HK	Semiconductor Manufacturing International Corporation
+00982.HK	iOne Holdings Ltd
+00983.HK	Shui On Construction and Materials Ltd
+00984.HK	AEON Stores (Hong Kong) Co. Ltd
+00985.HK	China Sci-Tech Holdings Ltd
+00986.HK	Nam Hing Holdings Ltd
+00987.HK	J.I.C. Technology Co. Ltd
+00988.HK	Sun's Group Ltd
+00989.HK	Ground Properties Company
+00990.HK	Theme International Holdings Ltd
+00991.HK	Datang International Power Generation Co. Ltd
+00992.HK	Lenovo Group Ltd
+00993.HK	Simsen International Corporation Ltd
+00994.HK	Win Win Way Construction Holdings
+00995.HK	Anhui Expressway Co. Ltd
+00996.HK	CASH Retail Management Group Ltd
+00997.HK	Decca Holdings Ltd
+00998.HK	China CITIC Bank Corp Ltd
+00999.HK	I.T Ltd
+01000.HK	Beijing Media Corporation Ltd
+01001.HK	Van Shung Chong Holdings Ltd
+01002.HK	V.S. International Group Ltd
+01003.HK	GFT Holdings Ltd
+01004.HK	Rising Development Holdings Limited
+01005.HK	Matrix Holdings Ltd
+01006.HK	China Corn Oil
+01007.HK	People's Republic Of China 6 1/2% B2004
+01008.HK	Brilliant CIR
+01009.HK	
+01010.HK	PacMOS Technologies Holdings Ltd
+01011.HK	Regal Hotels International Holdings Ltd Warrants 2007
+01013.HK	Plus Holdings Ltd
+01019.HK	
+01020.HK	
+01021.HK	
+01022.HK	
+01023.HK	
+01026.HK	
+01027.HK	Jicheng Umbrella Holdings Ltd
+01028.HK	
+01029.HK	
+01030.HK	Future Land Holdings
+01031.HK	Golden Resorts Group Ltd
+01033.HK	Sinopec Yizheng Chemical Fibre Co. Ltd
+01035.HK	
+01036.HK	Winsor Properties Holdings Ltd
+01037.HK	Daiwa Associate Holdings Ltd
+01038.HK	Cheung Kong Infrastructure Holdings Ltd
+01039.HK	
+01041.HK	Fulbond Holdings Ltd
+01043.HK	Coslight Technology International Group Ltd
+01044.HK	Hengan International Group Co. Ltd
+01045.HK	APT Satellite Holdings Ltd
+01046.HK	Universe International Holdings Ltd
+01047.HK	Ngai Hing Hong Co. Ltd
+01048.HK	Novo Group Limited
+01049.HK	Celestial Asia Securities Holdings Ltd
+01050.HK	Karrie International Holdings Ltd
+01051.HK	Smart Rich Energy Finance (Holdings) Ltd
+01052.HK	Yuexiu Transport Infrastructure
+01053.HK	Chongqing Iron & Steel Co. Ltd
+01055.HK	China Southern Airlines Co. Ltd
+01057.HK	Zhejiang Shibao Company
+01058.HK	Guangdong Tannery Ltd
+01059.HK	Kantone Holdings Ltd
+01060.HK	Shanghai Allied Cement Ltd
+01061.HK	Hinet Holdings W0302
+01062.HK	New Capital International Investment Ltd
+01063.HK	SunCorp Technologies Ltd
+01064.HK	Zhong Hua International Holdings Ltd
+01065.HK	Tianjin Capital Environmental Protection Co. Ltd
+01066.HK	Weigao Group
+01068.HK	China Yurun Food Group Ltd
+01069.HK	
+01070.HK	TCL Multimedia Technology Holdings Ltd
+01071.HK	Huadian Power International Corporation Ltd
+01072.HK	Dongfang Electrical Machinery Co. Ltd
+01073.HK	China Agrotech Holdings Ltd
+01075.HK	Capinfo
+01076.HK	First Natural Foods Holdings Ltd
+01079.HK	
+01080.HK	Shengli Pipe
+01082.HK	
+01083.HK	Panva Gas Holdings Ltd
+01085.HK	Hengxin Technology Ltd
+01086.HK	Goodbaby International Holding
+01087.HK	
+01088.HK	China Shenhua Energy Co. Ltd
+01089.HK	
+01090.HK	
+01091.HK	CITIC DAMENG
+01093.HK	China Pharmaceutical Group Ltd
+01094.HK	Sunny Global Holdings Ltd
+01096.HK	
+01097.HK	i-CABLE Communications Ltd
+01098.HK	Road King Infrastructure Ltd
+01099.HK	Sinopharm Group Co Ltd
+01100.HK	Mainland Headwear Holdings Ltd
+01101.HK	China Rongsheng Heavy Industries Group Ltd
+01102.HK	
+01103.HK	Shanghai Tonva
+01104.HK	Shanghai Merchants Holdings Ltd
+01105.HK	Sing Tao News Corporation Ltd
+01106.HK	
+01107.HK	
+01108.HK	Luoyang Glass Co Ltd
+01109.HK	China Resources Land Ltd
+01110.HK	China National Aviation Co. Ltd.
+01111.HK	Chong Hing Bank Limited
+01112.HK	
+01113.HK	
+01114.HK	Brilliance China Automotive Holdings Ltd
+01115.HK	Tibet 5100 Water Resources Holdings Ltd
+01116.HK	Mayer Holdings Ltd
+01117.HK	China Modern Dairy Holdings
+01118.HK	Golik Holdings Ltd
+01120.HK	Arts Optical International Holdings Ltd
+01121.HK	BAOFENGMODERN
+01122.HK	Qingling Motors Co. Ltd
+01123.HK	China-Hongkong Photo Products Holdings Ltd
+01124.HK	Coastal Greenland Ltd
+01125.HK	Lai Fung Holdings Ltd
+01126.HK	Dream International Ltd
+01127.HK	
+01128.HK	Wynn Macau Ltd
+01129.HK	Sky Hawk Computer Group Holdings Ltd
+01130.HK	Benefun International Holdings Ltd
+01131.HK	Kwong Hing International Holdings (Bermuda) Ltd
+01132.HK	Golden Harvest Entertainment (Holdings) Ltd
+01133.HK	Harbin Power Equipment Co. Ltd
+01135.HK	Asia Satellite Telecommunications Holdings Ltd
+01137.HK	City Telecom (H.K.) Ltd
+01138.HK	China Shipping Development Co. Ltd
+01139.HK	Victory Group
+01140.HK	Concepta Investments Ltd
+01141.HK	Xin Corporation Ltd
+01142.HK	Rontex International Holdings Ltd
+01143.HK	
+01145.HK	
+01146.HK	
+01148.HK	
+01149.HK	Broad Intelligence Int'l Pharmaceutical Holdings Ltd
+01150.HK	Milan Station Ltd
+01151.HK	
+01152.HK	
+01155.HK	Centron Telecom
+01157.HK	Zoomlion
+01159.HK	Karce International Holdings Co. Ltd
+01160.HK	Grand Investment International Ltd
+01161.HK	Water Oasis Group Ltd
+01164.HK	Vital BioTech Holdings Ltd
+01165.HK	
+01166.HK	Solartech International Holdings Ltd
+01168.HK	Sinolink Worldwide Holdings Ltd
+01169.HK	Haier Electronics Group Co. Ltd
+01170.HK	Kingmaker Footwear Holdings Ltd
+01171.HK	Yanzhou Coal Mining Co. Ltd
+01172.HK	Midas International Holdings Ltd
+01173.HK	Veeko International Holdings Ltd
+01174.HK	Pacific Andes International Holdings Ltd
+01175.HK	FU JI Food and Catering Services Holdings Ltd
+01176.HK	Nam Fong International Holdings Ltd
+01177.HK	Sino Biopharmaceutical Ltd
+01178.HK	Vitop Bioenergy Holdings Ltd
+01180.HK	LifeTec Group Ltd
+01181.HK	
+01182.HK	Foundation Group Ltd
+01184.HK	S.A.S. Dragon Holdings Ltd
+01185.HK	China Energine
+01186.HK	Value Partners China Greenchip Fund Ltd
+01187.HK	Pearl River Tyre (Holdings) Ltd
+01188.HK	Hybrid Kinetic Group Limited
+01189.HK	Wing On Travel (Holdings) Ltd
+01190.HK	Bakers Group International Holding Ltd
+01191.HK	Yueshou Environmental Holdings
+01192.HK	Titan Petrochemicals Group Ltd
+01193.HK	China Resources Gas
+01194.HK	China Precious Metal Resources
+01195.HK	Sinotronics Holdings Ltd
+01196.HK	Cheong Ming Investments Ltd
+01197.HK	China Hengshi Foundation
+01198.HK	Chitaly Holdings Ltd
+01199.HK	COSCO Pacific Ltd
+01200.HK	Midland Holdings Ltd
+01201.HK	Kith Holdings Ltd
+01202.HK	Chengdu PUTIAN Telecommunications Cable Co. Ltd
+01203.HK	Guangnan (Holdings) Ltd
+01205.HK	CITIC Resources Holdings Ltd
+01206.HK	
+01207.HK	SRE Group Limited
+01208.HK	Minmetals Resources Ltd
+01210.HK	
+01211.HK	BYD Co. Ltd
+01212.HK	Lifestyle International Holdings Ltd
+01213.HK	Mobicon Group Ltd
+01215.HK	Guo Xin Group Ltd
+01216.HK	
+01217.HK	Sino Technology Investments Co. Ltd
+01218.HK	Easyknit International Holdings Ltd
+01219.HK	
+01220.HK	Ocean Grand Holdings
+01221.HK	Sino Hotels (Holdings) Ltd
+01222.HK	Wang On Group Ltd
+01223.HK	Symphony Holdings Ltd
+01224.HK	C C Land Holdings
+01225.HK	Lerado Group (Holding) Co. Ltd
+01226.HK	Garron International Ltd
+01227.HK	China Financial Industry Investment Fund Ltd
+01228.HK	Tak Shun Technology Group Ltd
+01229.HK	Artfield Group Ltd
+01230.HK	
+01231.HK	Deutsche Bank AG - Nikkei 225 Index European Wts Jun 2007 A
+01232.HK	
+01233.HK	
+01234.HK	China Lilang Ltd
+01235.HK	Deutsche Bank AG - Nikkei 225 Index Euro Put Wts Jun 2007 B
+01236.HK	Qianlong Technology International
+01237.HK	Merry Garden Ltd
+01238.HK	Powerlong Real Estate Holdings Ltd
+01239.HK	
+01240.HK	Sunley Holdings Ltd
+01241.HK	
+01243.HK	Wang On PPT
+01245.HK	UBS AG - Esprit European Warrants Sep 2007
+01246.HK	UBS AG - HSBC European Put Warrants Apr 2007
+01247.HK	UBS AG - Jiangxi Copper European Warrants Dec 2007
+01249.HK	
+01250.HK	Jin Cai Holdings Co Ltd
+01251.HK	
+01252.HK	Goldman Sachs SP (Asia) - Foxconn European Wts Mar 2007 A
+01253.HK	Broad Greenstate International Company Limited
+01255.HK	
+01257.HK	
+01258.HK	China Nonferrous Mining
+01259.HK	Prince Frog International
+01260.HK	J P Morgan Int'l Der. Ltd. - Foxconn European Wts Mar 2007
+01262.HK	Chine Lifestyle Food & Beverage
+01263.HK	SGA Societe Generale Acceptance N.V. - BOCHK Eu Wts Mar 07 B
+01265.HK	
+01266.HK	
+01268.HK	SGA Societe Generale Acceptance N.V. - N225 Euro Wts Mar 07C
+01269.HK	Macquarie Bank Ltd. - BOCHK European Warrants May 2007
+01270.HK	
+01271.HK	SGA Societe Generale Acceptance N.V. - N225 Eu Put Wt Mar07E
+01272.HK	Macquarie Bank Ltd. - CHALCO European Warrants May 2007
+01273.HK	Macquarie Bank Ltd. - Jiangxi Copper European Wts May 2007
+01275.HK	BNP Paribas Arbit Issu B.V. - BOCHK European Wts Mar 2007
+01277.HK	BNP Paribas Arbit Issu B.V. - HSBC European Wts Apr 2007
+01278.HK	
+01280.HK	SGA Societe Generale Acceptance N.V. - CHALCO Eur Wt Apr 07B
+01281.HK	SGA Societe Generale Acceptance N.V. - CK(H) Euro Wts Mar 07
+01282.HK	
+01285.HK	
+01288.HK	Agricultural Bank of China Ltd
+01289.HK	Wuxi Sunlit Science Limited
+01290.HK	
+01292.HK	
+01293.HK	Baoxin Auto Group Limited
+01296.HK	
+01297.HK	SGA Societe Generale Acceptance N.V. - CP&CC Euro Wts Mar 07
+01298.HK	Techcomp (Holdings)
+01299.HK	SGA Societe Generale Acceptance N.V. - HSI Euro Wts Mar 07 B
+01300.HK	SGA Societe Generale Acceptance N.V. - HSBC Eur Wts Apr 2008
+01301.HK	HK Bank - HKEx European Warrants Mar 2007
+01302.HK	Lifetech Scientific Corporation
+01303.HK	
+01305.HK	
+01308.HK	Deutsche Bank AG - China Mobile European Warrants Mar 2007
+01310.HK	
+01312.HK	
+01313.HK	China Resources Cement Holdings Ltd
+01314.HK	Tsui Wah Holding
+01315.HK	
+01316.HK	Nexteer
+01317.HK	China Maple Leaf Educational Systems Limited
+01318.HK	J P Morgan Int'l Der. Ltd. - HS Bank European Wts Mar 2007
+01319.HK	J P Morgan Int'l Der. Ltd. - JX Copper European Wts Mar 2007
+01321.HK	J P Morgan Int'l Der. Ltd. - PICC P&C European Wts Mar 2007
+01322.HK	J P Morgan Int'l Der. Ltd. - Sh Petrochem Euro Wts Mar 2007
+01323.HK	
+01326.HK	Pegasus Ent
+01327.HK	Time2u International Holding Limited
+01328.HK	International Elite Ltd
+01329.HK	
+01330.HK	SGA Societe Generale Acceptance N.V. - HSBC Eur Wts Apr 07 A
+01332.HK	Qualipak International
+01333.HK	BOCI Asia Ltd. - CNOOC European Warrants Jun 2007
+01335.HK	BOCI Asia Ltd. - Kingboard European Warrants Jun 2007
+01336.HK	New China Life Insurance Company
+01337.HK	
+01338.HK	Macquarie Bank Ltd. - HSBC European Put Warrants Mar 2007
+01339.HK	Fortis Bank S.A./N.V. - Bank of EA European Wts Jul 2007
+01340.HK	Fortis Bank S.A./N.V. - China Mobile European Wts Sep 2007
+01341.HK	Clear Lift
+01345.HK	
+01347.HK	
+01348.HK	
+01349.HK	
+01350.HK	Goldman Sachs SP (Asia) - Foxconn European Put Wts Mar 2007
+01353.HK	
+01355.HK	Macquarie Bank Ltd. - Zijin Mining European Wts Apr 2007
+01357.HK	Citigroup Global Mkt H Inc. - HSBC European Wts Mar 2007
+01358.HK	Citigroup Global Mkt H Inc. - HSBC European Wts Apr 2007 B
+01359.HK	China Cinda
+01360.HK	
+01361.HK	SGA Societe Generale Acceptance N.V. - PetCh Eur Wts Apr 08
+01362.HK	SiS Mobile Holdings Limited
+01363.HK	CTEG
+01365.HK	
+01366.HK	Jiangnan Group Ltd
+01367.HK	Hanbo Enterprises Holdings Limited
+01368.HK	Xtep International Holdings Ltd
+01369.HK	
+01370.HK	Calyon Fin P (G) Ltd. - Agile Ppt European Warrants Mar 2007
+01371.HK	China Lotsyn
+01372.HK	Citigroup Global Mkt H Inc. - Ch Mobile Eur Put Wts Apr 2007
+01373.HK	Calyon Fin P (G) Ltd. - Zijin Mining European Wts Mar 2007
+01375.HK	Central China Securities
+01378.HK	China Hong Gqiao
+01380.HK	SGA Societe Generale Acceptance N.V. - SHK Ppt Eu Wt Apr 07A
+01381.HK	
+01382.HK	Pacific Textiles Holdings Ltd
+01383.HK	Hong Long Holdings Ltd
+01385.HK	
+01386.HK	Walker Group Holdings Ltd
+01387.HK	Renhe Commercial Holdings
+01388.HK	Embry Holdings Ltd
+01389.HK	Major Holding
+01393.HK	Hidili Industry International Devt Ltd
+01395.HK	Ell Env
+01396.HK	Hydoo International
+01397.HK	Baguio Green
+01398.HK	Industrial and Commercial Bank of China Ltd
+01399.HK	Scud Group Ltd
+01400.HK	Wang Tai Holdings
+01415.HK	Cowell e Holdings Inc
+01417.HK	
+01418.HK	
+01419.HK	Human Health
+01420.HK	Chuan Holdings Limited
+01421.HK	King Bostrike
+01426.HK	
+01428.HK	
+01430.HK	Sushuang Gas
+01431.HK	
+01432.HK	
+01437.HK	
+01439.HK	
+01443.HK	
+01446.HK	
+01447.HK	SFK Construction Holdings
+01448.HK	
+01450.HK	
+01452.HK	Denox Environmental & Technology Holdings
+01456.HK	
+01458.HK	
+01459.HK	Jujiang Cons
+01460.HK	
+01461.HK	
+01462.HK	Nga Chun Holdings Company
+01466.HK	Man Sang Jewellery Holdings
+01468.HK	
+01469.HK	Get Nice Finance Company Limited
+01470.HK	Tic Tac
+01475.HK	
+01476.HK	
+01478.HK	
+01480.HK	Yan Tat Group
+01482.HK	
+01483.HK	
+01486.HK	C Cheng Holdings Limited
+01487.HK	
+01488.HK	
+01492.HK	China ZhongDi Dairy Holdings Company
+01495.HK	Jiyi Household International Holdings
+01496.HK	AP Rentals Holdings Limited
+01498.HK	
+01499.HK	Leap Holdings Group
+01500.HK	
+01508.HK	China Reinsurance (Group) Corporation
+01509.HK	
+01513.HK	
+01515.HK	Phoenix Health
+01518.HK	
+01520.HK	Runaway Global
+01522.HK	
+01523.HK	
+01526.HK	
+01527.HK	Zhejiang Tengy Environmental Technology
+01528.HK	
+01530.HK	
+01532.HK	China Partytime Culture Holdings
+01533.HK	
+01536.HK	
+01537.HK	
+01538.HK	Zhong Ao Home Group
+01539.HK	Synergy Group
+01543.HK	
+01546.HK	
+01547.HK	
+01548.HK	Genscript Biotech Corporation
+01549.HK	Ever Harvest Group Holdings
+01551.HK	
+01552.HK	
+01555.HK	MIE Holdings Corporation
+01556.HK	Chinney Kin Wing Holdings
+01557.HK	KH GP Holdings
+01558.HK	YiChang HEC ChangJiang Pharmaceutical
+01559.HK	Kwan On Holdings
+01560.HK	
+01561.HK	Manfield Chem
+01565.HK	Virscend Education Company Limited
+01566.HK	China Animation Characters Company
+01568.HK	Sundart Holdings Limited
+01569.HK	Minsheng EDU
+01570.HK	Weiye Holdings Limited
+01571.HK	Xin Point Hold
+01572.HK	China Art Fin
+01573.HK	China Unienergy Group Ltd
+01575.HK	Morris Holdings Limited
+01577.HK	
+01578.HK	
+01579.HK	
+01580.HK	Da Sen Holdings Group
+01581.HK	Progressive Path Group
+01583.HK	
+01585.HK	
+01586.HK	China Leon
+01588.HK	
+01589.HK	China Logistics Property Holdings
+01590.HK	
+01591.HK	Shun Wo Group Holdings
+01596.HK	
+01599.HK	
+01600.HK	
+01606.HK	
+01608.HK	Vpower Group
+01609.HK	
+01610.HK	COFCO Meat Holdings Limited
+01611.HK	Pantronics Holdings
+01612.HK	Vincent Med
+01613.HK	
+01616.HK	Silverman Holdings Ltd
+01617.HK	Nanfang Communication Holdings Limited
+01618.HK	MCC
+01619.HK	Tianhe Chemicals Group Limited
+01622.HK	
+01623.HK	
+01626.HK	
+01627.HK	Able Engineering Holdings Limited
+01628.HK	Ford Motor Credit Company 10 N0201
+01629.HK	MENGKE Holdings
+01630.HK	Kin Shing Holdings
+01631.HK	
+01632.HK	Foodwise Holding
+01633.HK	Sheung Yue Group Holdings Limited
+01635.HK	
+01636.HK	CMRU
+01637.HK	SH Group Holdings
+01638.HK	Kaisa Group
+01639.HK	AKM Industrial
+01647.HK	Shis Limited
+01649.HK	
+01651.HK	
+01655.HK	
+01656.HK	
+01658.HK	
+01660.HK	Sanroc International
+01661.HK	
+01662.HK	Yee Hop Holdings Limited
+01663.HK	Sino Harbour Property Group Limited
+01666.HK	Republic Of Italy 100n0205
+01667.HK	Milestone Build
+01668.HK	China South City Holdings Ltd
+01669.HK	
+01673.HK	
+01676.HK	
+01677.HK	
+01678.HK	
+01679.HK	Risecomm Group Holdings
+01680.HK	
+01681.HK	
+01682.HK	Highlight China IoT International Ltd
+01683.HK	LC Group Holdings Limited
+01685.HK	Boer Power Holdings Ltd
+01689.HK	
+01693.HK	
+01695.HK	
+01696.HK	
+01697.HK	
+01698.HK	Toyota Motor Credit Corporation 100 N0305
+01699.HK	China Putian Food Ltd
+01700.HK	
+01702.HK	Dongguang Chemical Limited
+01706.HK	
+01707.HK	Geotech Holdings Limited
+01708.HK	
+01709.HK	
+01710.HK	
+01717.HK	Ausnutria
+01718.HK	Wan Kei Group Holdings
+01720.HK	
+01722.HK	
+01727.HK	
+01728.HK	Zhentong Auto Services Holding
+01730.HK	
+01733.HK	Winsway
+01738.HK	
+01766.HK	CSR Corporation Limited
+01771.HK	
+01776.HK	GF Sec
+01777.HK	Fantasia Holdings Group Co Ltd
+01778.HK	Colour Life Services Group
+01786.HK	CRCC High-Tech Equipment
+01788.HK	
+01789.HK	
+01798.HK	Datang Corp Renewable Power
+01799.HK	
+01800.HK	China Communications Construction Co Ltd
+01803.HK	
+01808.HK	Tai-I International Holdings Ltd
+01811.HK	CGN Meiya Power Holdings
+01812.HK	CHENMING PAPER
+01813.HK	KWG Property Holding Ltd
+01816.HK	
+01818.HK	Zhaojin Mining Industry Co. Ltd
+01819.HK	
+01822.HK	
+01823.HK	Huayu Expressway
+01826.HK	
+01828.HK	Dah Chong Hong Holding Ltd
+01829.HK	CMEC
+01830.HK	
+01831.HK	
+01836.HK	Stella International Holdings Ltd
+01838.HK	China Properties Group Ltd
+01848.HK	China Aircraft Leasing Group
+01856.HK	Ernest Borel Holdings Limited
+01858.HK	
+01862.HK	Sino Gold Mining
+01863.HK	Sijia Group Co Ltd
+01866.HK	Neo-Neon Holdings Ltd
+01868.HK	Neo-Neon Holdings Ltd
+01878.HK	SouthGobi Energy Resources
+01881.HK	Regal Real Estate Investment Trust
+01882.HK	Haitian International Holdings Ltd
+01883.HK	Citic Telecom International Holdings
+01884.HK	Eprint Group
+01885.HK	
+01886.HK	China Huiyuan Juice Group Ltd
+01888.HK	Kingboard Laminates Holdings Ltd
+01889.HK	Wuyi International Pharmaceutical Co. Ltd
+01893.HK	China National Materials Company Ltd
+01898.HK	China Coal Energy Co. Ltd
+01899.HK	Xingda International Holdings Ltd
+01900.HK	China ITS (Holdings) Co Ltd
+01908.HK	South West Eco Development
+01910.HK	Samsonite International SA
+01913.HK	Prada SPA
+01918.HK	
+01919.HK	China COSCO Holdings Co. Ltd
+01928.HK	Sands China Ltd
+01929.HK	Chow Tai Fook
+01932.HK	CPM Group Limited
+01938.HK	Chu Kong Pipe
+01958.HK	
+01962.HK	
+01963.HK	
+01966.HK	China SCE PPT
+01970.HK	IMAX China Holding
+01972.HK	Swire Properties Ltd
+01975.HK	
+01979.HK	
+01980.HK	
+01982.HK	
+01985.HK	
+01986.HK	Tsaker Chemical Group Ltd
+01988.HK	Minsheng Bank Corp
+01989.HK	Pine Care Group Limited
+01991.HK	TA Yang Group Holdings Ltd
+01993.HK	Asiaray Media Group Limited
+01997.HK	
+01998.HK	Flyke International Holdings Ltd
+01999.HK	Man Wah Holdings Limited
+02000.HK	SIM Technology Group Ltd
+02001.HK	
+02002.HK	China Sunshine Paper Holdings Company Ltd
+02005.HK	Lijun International Pharmaceutical (Holding) Co. Ltd
+02006.HK	Shanghai Jin Jiang Int'l Hotels (Group) Co. Ltd
+02007.HK	Country Garden Holdings Company Ltd
+02008.HK	Phoenix Satellite Television Holdings
+02009.HK	BBMG Corp
+02010.HK	RUINIAN
+02011.HK	Kee
+02012.HK	
+02014.HK	Ozner Water International
+02016.HK	
+02017.HK	Chanhigh Holdings
+02018.HK	AAC Acoustic Technologies Holdings Inc.
+02020.HK	Anta Sports
+02022.HK	
+02023.HK	
+02025.HK	
+02028.HK	Jolimark
+02030.HK	
+02031.HK	
+02033.HK	
+02038.HK	Foxconn International Holdings Ltd
+02039.HK	CIMC
+02066.HK	
+02068.HK	China Aluminum Intl
+02078.HK	
+02080.HK	
+02083.HK	
+02086.HK	Advanced Card
+02088.HK	Xiwang Sugar Holdings Co. Ltd
+02098.HK	
+02099.HK	
+02100.HK	Baioo
+02111.HK	Best Pacific International Holdings
+02112.HK	
+02113.HK	
+02118.HK	Credit Suisse - BOC HK Euro (AR) Wts Jan 2007
+02120.HK	SGA Societe Generale Acceptance N.V. - N225 Eu Put Wt Jun07B
+02121.HK	
+02122.HK	ABN AMRO Bank N.V. - China Telecom European Wts Oct 2006
+02123.HK	
+02128.HK	ABN AMRO Bank N.V. - CC Bank European Warrants Sep 2006 B
+02133.HK	China Polymetallic Mining
+02136.HK	Lifestyle China Group Limited
+02138.HK	Union Medical Healthcare Limited
+02166.HK	
+02178.HK	Macquarie Bank Ltd. - China Life European Wts Mar 2007 B
+02183.HK	Lifestyle PPT
+02186.HK	Luye Pharma Group Ltd
+02188.HK	
+02193.HK	KBC Fin Products Int'l Ltd. - ICBC European Wts Jul 2007 G
+02196.HK	Shanghai Fosun
+02198.HK	SGA Societe Generale Acceptance N.V. - Ch Tel Eur Wt Oct 06
+02199.HK	Regina Miracle International
+02200.HK	Hosa International
+02202.HK	China Vanke Co Limited
+02203.HK	Top Dynamic International
+02208.HK	Macquarie Bank Ltd. - HSBC European Warrants Mar 2007 B
+02211.HK	Jintian Pharm
+02212.HK	Future Bright Mining Holdings Limited
+02213.HK	
+02218.HK	Credit Suisse-sinopec Corp Ec0111
+02221.HK	New Concepts Holdings Limited
+02222.HK	NVC Lighting Holding Ltd
+02223.HK	Macquarie Bank Ltd. - Foxconn European Warrants Jun 2007
+02225.HK	Kakiko Group Limited
+02226.HK	
+02227.HK	
+02228.HK	Credit Suisse-new World Dev Ec0112
+02229.HK	Deutsche Bank AG - BankComm European Warrants Jul 2007 B
+02232.HK	Credit Suisse-new World Dev Ep0111
+02233.HK	West China Cement Ltd
+02236.HK	Wison Engineering Services
+02238.HK	Guangzhou Automobile
+02239.HK	
+02255.HK	SGA Societe Generale Acceptance N.V. - HSI Eu Put Wt Mar 07D
+02266.HK	Lis Enterprise
+02268.HK	
+02269.HK	
+02277.HK	Macquarie Bank Ltd-hutchison Ec0110
+02278.HK	KBC Fin Products Int'l Ltd. - HSI Euro Put Wts Mar 2007 F
+02280.HK	HC International
+02281.HK	Goldman Sachs SP (Asia) - Hutchison European Wts Oct 2006
+02282.HK	MGM China Holdings Ltd
+02283.HK	Macquarie Bank Ltd. - HKEx European Put Warrants May 2007
+02286.HK	
+02288.HK	SGA Societe Generale Acceptance N.V. - Ping An Eur Wt Apr 07
+02289.HK	
+02293.HK	
+02298.HK	Cosmo Lady (China) Holdings
+02299.HK	Billion Industrial Holdings Lim
+02300.HK	AMVIG Holdings
+02302.HK	United Metals Holdings Ltd
+02303.HK	
+02307.HK	Kam Hing International Holdings Ltd
+02308.HK	
+02309.HK	Birmingham International Holdings
+02310.HK	Kwang Sung Electronics H.K. Co. Ltd
+02312.HK	China Finance Leasing
+02313.HK	Shenzhou International Group Holdings Ltd
+02314.HK	Lee & Man Paper Manufacturing Ltd
+02317.HK	Vedan International (Holdings) Ltd
+02318.HK	Ping An Insurance (Group) Co. of China Ltd
+02319.HK	Mengniu Dairy
+02320.HK	Hop Fung Group Holdings Ltd
+02322.HK	Sam Woo Holdings Ltd
+02323.HK	Topsearch International Holdings Ltd
+02324.HK	Sino Katalytics Investment Corporation
+02326.HK	BEP International Holdings Ltd
+02327.HK	Jiwa Bio-Pharm Holdings Ltd
+02328.HK	PICC Property and Casualty Co. Ltd
+02329.HK	
+02330.HK	Quaypoint Corporation
+02331.HK	Li Ning Co. Ltd
+02333.HK	Great Wall Motor Co. Ltd
+02336.HK	Sunlink International Holdings Ltd
+02337.HK	United Strength Power Holdings
+02338.HK	Weichai Power Co. Ltd
+02339.HK	Norstar Founders Group Ltd
+02340.HK	Synergis Holdings Ltd
+02341.HK	EcoGreen Fine Chemicals Group Ltd
+02342.HK	Comba Telecom Systems Holdings Ltd
+02343.HK	Pacific Basin Shipping Ltd
+02345.HK	Shanghai Prime Machinery Co. Ltd
+02348.HK	Dawnrays Pharmaceutical (Holdings) Ltd
+02349.HK	Wah Yuen Holdings Ltd
+02355.HK	Baoye Group Co. Ltd
+02356.HK	Dah Sing Banking Group Ltd
+02357.HK	AviChina Industry & Technology Co. Ltd
+02358.HK	Mitsumaru East Kit (Holdings) Ltd
+02362.HK	Signal Media and Communications Holdings Ltd
+02366.HK	SMI Culture Group Holdings Ltd
+02368.HK	Eagle Nice (International) Holdings Ltd
+02369.HK	China Wireless Technologies Ltd
+02371.HK	ZZNode Technologies Co. Ltd
+02378.HK	
+02379.HK	Zhongtian International Ltd
+02380.HK	China Power International Development Ltd
+02382.HK	Sunny Optical Technology (Group) Ltd
+02383.HK	TOM Group Ltd
+02386.HK	
+02388.HK	BOC Hong Kong (Holdings) Ltd
+02389.HK	Wang Sing International Holdings Group Ltd
+02393.HK	Yestar International
+02398.HK	Good Friend International Holdings Inc.
+02399.HK	
+02468.HK	Goldman Sachs SP (Asia) - N225 Index Euro Wts Mar 2007
+02488.HK	
+02588.HK	
+02600.HK	Aluminum Corporation of China Ltd
+02601.HK	China Pacific Insurance (Group) Co Ltd
+02607.HK	
+02608.HK	
+02611.HK	
+02623.HK	
+02628.HK	China Life Insurance Co. Ltd
+02633.HK	Nam Tai Electronic & Electrical Products Ltd
+02638.HK	
+02662.HK	Fittec International Group Ltd
+02663.HK	
+02666.HK	Universal Medical Financial
+02668.HK	Pak Tak International Ltd
+02669.HK	China Overseas Property Holdings
+02678.HK	Texhong Textile Group Ltd
+02686.HK	Chen Xing
+02688.HK	XinAo Gas Holdings Ltd
+02689.HK	Nine Dragons Paper (Holdings) Ltd
+02698.HK	Weiqiao Textile Co. Ltd
+02699.HK	
+02700.HK	Smart Union Group (Holdings) Ltd
+02708.HK	
+02722.HK	Chongqing Machinery & Electric Ltd
+02727.HK	Shanghai Electric Group Co. Ltd
+02728.HK	Shinhint Acoustic Link Holdings Ltd
+02738.HK	
+02768.HK	
+02777.HK	Guangzhou R&F Properties Co. Ltd
+02778.HK	Champion Real Estate Investment Trust
+02788.HK	Yorkey Optical International (Cayman) Ltd
+02789.HK	
+02799.HK	
+02800.HK	Tracker Fund of Hong Kong
+02801.HK	Chang Hwa Commerciai Bank
+02802.HK	iShares EM Asia
+02803.HK	Lyxoretf Rafius
+02805.HK	
+02808.HK	
+02811.HK	
+02819.HK	ABF Hong Kong Bond Index Fund
+02821.HK	ABF Pan Asia Bond Index
+02822.HK	CSOP A50 ETF
+02823.HK	iShares FTSE A50 China Index ETF
+02824.HK	
+02825.HK	
+02827.HK	Wise CSI200 EFT
+02828.HK	Hang Seng H-Share Index ETF
+02832.HK	
+02833.HK	Hang Seng Index ETF
+02834.HK	
+02835.HK	
+02836.HK	iShares BSE SENSEX India Index
+02838.HK	Hang Seng FTSE China 25 Index
+02840.HK	SPDR GOLD TRUST
+02843.HK	
+02846.HK	iShares CSI 300 A-Share Index
+02847.HK	
+02848.HK	
+02858.HK	
+02863.HK	Golden Faith Group Holdings
+02866.HK	China Shipping Container Lines
+02868.HK	Beijing Capital Land Ltd
+02869.HK	
+02877.HK	China Shineway Pharmaceutical Group Ltd
+02878.HK	Solomon Systech (International) Ltd
+02880.HK	Dalian Port (PDA) Co. Ltd
+02882.HK	Ocean Grand Chemicals Holdings Ltd
+02883.HK	China Oilfield Services Ltd
+02886.HK	
+02888.HK	Standard Chartered PLC
+02889.HK	China Special Steel Holdings Co. Ltd
+02898.HK	Long Far Pharmaceutical Holdings Ltd
+02899.HK	Zijin Mining Group Co. Ltd
+02906.HK	
+02912.HK	
+02914.HK	
+02915.HK	
+02918.HK	
+03007.HK	X DBFXIC25
+03008.HK	
+03010.HK	
+03012.HK	
+03015.HK	X DBSPCNXNIFTY
+03016.HK	
+03019.HK	
+03020.HK	
+03021.HK	
+03024.HK	
+03027.HK	
+03036.HK	
+03040.HK	
+03041.HK	
+03043.HK	X DBMSCIPACEXJ
+03046.HK	VALUE CHINA ETF
+03048.HK	X DBMSCIBRAZIL
+03049.HK	X DBMSCIBRAZIL
+03055.HK	
+03056.HK	
+03060.HK	
+03065.HK	
+03070.HK	Ping An of China CSI HK Dividend ETF
+03073.HK	
+03074.HK	
+03080.HK	
+03081.HK	VALUE GOLD ETF
+03082.HK	
+03084.HK	Value Japan ETF
+03085.HK	
+03086.HK	
+03087.HK	X DBFTSEVIET
+03092.HK	
+03095.HK	
+03097.HK	
+03099.HK	
+03100.HK	
+03101.HK	Vanguard FTSE Developed Europe ETF
+03102.HK	
+03107.HK	
+03110.HK	
+03115.HK	
+03116.HK	
+03118.HK	
+03120.HK	
+03121.HK	
+03122.HK	
+03126.HK	
+03127.HK	
+03128.HK	
+03129.HK	
+03132.HK	
+03135.HK	
+03136.HK	
+03137.HK	
+03140.HK	
+03141.HK	
+03143.HK	
+03145.HK	
+03146.HK	
+03147.HK	CSOP Chinext
+03149.HK	
+03150.HK	
+03155.HK	
+03156.HK	
+03157.HK	
+03160.HK	
+03161.HK	
+03162.HK	
+03165.HK	
+03167.HK	
+03170.HK	
+03171.HK	
+03173.HK	
+03175.HK	
+03177.HK	
+03180.HK	
+03188.HK	CAM CSI300
+03199.HK	
+03300.HK	China Glass Holdings Ltd
+03301.HK	
+03303.HK	Jutal Offshore Oil Services Ltd
+03306.HK	
+03308.HK	Golden Eagle Retail Group Ltd
+03311.HK	China State Construction International Holdings Ltd
+03313.HK	Meadville Holdings
+03315.HK	Goldpac Group
+03318.HK	China Flavors and Fragrances Co. Ltd
+03320.HK	
+03322.HK	Win Hanverky Holdings Ltd
+03323.HK	China National Building Material Co. Ltd
+03326.HK	Perfect Group International Holdings
+03328.HK	Bank of Communications Co. Ltd
+03329.HK	
+03330.HK	Lingbao Gold Co. Ltd
+03331.HK	Vinda International Holdings Ltd
+03332.HK	
+03333.HK	Evergrande
+03335.HK	DBA Telecommunication (Asia) Holdings Ltd
+03336.HK	Ju Teng International Holdings Ltd
+03337.HK	Anton Oilfield Services Group
+03339.HK	Lonking
+03344.HK	Addchance Holdings Ltd
+03355.HK	Advanced Semiconductor Manufacturing Corporation Ltd -H Shs
+03358.HK	
+03360.HK	
+03363.HK	
+03366.HK	Huali Holdings (Group) Ltd
+03368.HK	Parkson Retail Group Ltd
+03369.HK	
+03377.HK	Sino-Ocean Land Holdings
+03378.HK	Xiamen International Port Co. Ltd
+03380.HK	
+03382.HK	Tianjin Port Development Holdings Ltd
+03383.HK	Agile Property Holdings Ltd
+03389.HK	Hengdeli Holding
+03393.HK	Wasion Meters Group Ltd
+03395.HK	
+03396.HK	
+03398.HK	China Ting Group Holdings Ltd
+03399.HK	Guangdong Nan Yue Logistics Co. Ltd
+03600.HK	Modern Dental Group Limited
+03606.HK	
+03608.HK	
+03618.HK	Chongqing Rural Commerical Bank Ltd
+03623.HK	
+03626.HK	
+03628.HK	KBC Fin Products Int'l Ltd - Ping An European Wts Oct 2006
+03633.HK	Macquarie Bank Ltd - HKEx European Warrants Oct 2006 A
+03636.HK	KBC Fin Products Int'l Ltd - Ch Life Euro Put Wts Oct 2006
+03638.HK	Deutsche Bank AG - China Mobile European Warrants Oct 2006 A
+03639.HK	Deutsche Bank AG - Nikkei 225 Index European Wts Mar 2007 A
+03663.HK	Xiezhong International
+03666.HK	Macquarie Bank Ltd - HSI European Put Warrants Oct 2006 B
+03669.HK	China Yongda Automobiles
+03678.HK	Holly Futures Co
+03683.HK	CC Rabobank B.A. - Hutchison European Warrants Apr 2007
+03686.HK	Cliffordml
+03688.HK	
+03689.HK	KBC Fin Products Int'l Ltd - HSBC European Put Wts Oct 2006
+03698.HK	Deutsche Bank AG - HSI European Warrants Oct 2006 C
+03708.HK	Yat Sing Holdings Limited
+03709.HK	
+03728.HK	
+03737.HK	
+03738.HK	
+03768.HK	
+03773.HK	NNK Group Limited
+03777.HK	
+03778.HK	
+03788.HK	
+03789.HK	Royal Deluxe
+03799.HK	Dali Foods Group Company
+03800.HK	GCL-Poly Energy
+03808.HK	Sinotruk (Hong Kong) Ltd
+03813.HK	ABN AMRO Bank N.V. - Sinopec Corp European Wts Nov 2006 C
+03816.HK	KFM Kingdom Holdings
+03818.HK	China Dongxiang (Group) Ltd
+03822.HK	Sam Woo Cons
+03823.HK	Macquarie Bank Ltd - HSI European Warrants Nov 2006
+03828.HK	Macquarie Bank Ltd - Denway European Warrants Nov 2006
+03830.HK	Macquarie Bank Ltd - JX Copper European Warrants Jul 2007
+03833.HK	SGA Societe Generale Acceptance N.V. - PetCh Eu Wt Nov 06 A
+03836.HK	
+03838.HK	HK Bank - Jiangxi Copper European Warrants Jan 2007
+03839.HK	Chia Tai Enterprises International
+03848.HK	
+03866.HK	
+03869.HK	
+03878.HK	
+03882.HK	Skylight Holdings
+03883.HK	KBC Fin Products Int'l Ltd - HSBC European Wts Dec 2006 C
+03886.HK	Macquarie Bank Ltd - Ch Life European Warrants Dec 2007 B
+03888.HK	Kingsoft
+03889.HK	KBC Fin Products Int'l Ltd - Ch Life Euro Wts Nov 2006 A
+03893.HK	
+03898.HK	Zhuzhou CSR Times Electric Ltd
+03899.HK	Enric Energy Equipment Holdings Ltd
+03900.HK	Greentown China Holdings Ltd
+03903.HK	Hanhua Financial Holding
+03908.HK	China International Capital Corporation
+03918.HK	Nagacorp Ltd
+03919.HK	
+03933.HK	The United Laboratories International Holdings Ltd
+03939.HK	Wanguo International Mining
+03948.HK	Inner Mongolia Coal
+03958.HK	
+03963.HK	China Rongzhong Financial Holdings
+03966.HK	
+03968.HK	China Merchants Bank Co
+03969.HK	
+03983.HK	China Bluechemical Ltd
+03988.HK	Bank of China Ltd
+03989.HK	Hembly International Holdings Ltd
+03993.HK	China Molybdenum Ltd
+03996.HK	China Energy Engineering Corporation
+03998.HK	Bosideng International Holdings Ltd
+03999.HK	DaChan Food (Asia) Ltd
+04228.HK	
+04231.HK	
+06030.HK	
+06033.HK	
+06038.HK	
+06060.HK	ZhongAn Online P & C Insurance
+06066.HK	
+06068.HK	
+06080.HK	Wing Chi Holdings
+06083.HK	
+06088.HK	Foxconn Interconnect Technology Limited
+06090.HK	
+06099.HK	
+06108.HK	New Ray Medic
+06113.HK	
+06116.HK	Shanghai La Chapelle Fashion
+06118.HK	
+06122.HK	
+06123.HK	
+06128.HK	Earthasia International Holdings Limited
+06133.HK	
+06136.HK	
+06138.HK	
+06139.HK	
+06161.HK	Target Insurance Limited
+06163.HK	Gemilang International
+06166.HK	
+06168.HK	
+06169.HK	China YuHua Education Corp
+06178.HK	
+06183.HK	
+06188.HK	Beijing Digital Telecom Co Ltd
+06189.HK	
+06196.HK	
+06198.HK	
+06288.HK	
+06388.HK	
+06808.HK	Sun Art Retail Group Ltd
+06816.HK	
+06818.HK	
+06822.HK	Kings Flair
+06823.HK	
+06826.HK	
+06828.HK	
+06830.HK	
+06833.HK	Sinco Pharmaceuticals Holdings
+06836.HK	
+06837.HK	
+06838.HK	
+06839.HK	
+06858.HK	
+06863.HK	Huishan Dairy
+06865.HK	Flat Glass
+06866.HK	Zuoli Kechuang Micro-finance
+06868.HK	
+06869.HK	
+06877.HK	
+06878.HK	Differ Group Holding
+06880.HK	
+06881.HK	
+06882.HK	
+06885.HK	
+06886.HK	
+06888.HK	
+06889.HK	Dynam Japan Holdings
+06893.HK	
+06896.HK	
+06898.HK	
+06899.HK	Ourgame International Holdings Limited
+07200.HK	CSOP Hang Seng Dly
+07202.HK	
+07205.HK	
+07210.HK	
+07221.HK	
+07222.HK	
+07225.HK	
+07228.HK	Samsung HSCEI Dly
+07230.HK	
+07231.HK	
+07242.HK	
+07261.HK	
+07267.HK	
+07288.HK	CSOP Hang Seng CHN Enp Idx Dly
+07300.HK	CSOP Hang Seng Dly
+07302.HK	
+07312.HK	
+07315.HK	
+07321.HK	
+07322.HK	
+07328.HK	
+07331.HK	
+07335.HK	
+07336.HK	
+07341.HK	
+07362.HK	
+07388.HK	
+09010.HK	
+09074.HK	
+09081.HK	
+09115.HK	
+09146.HK	
+09155.HK	
+09170.HK	
+09834.HK	
+09836.HK	
+09846.HK	
+09847.HK	
