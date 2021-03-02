@@ -1,32 +1,3 @@
-# NASDAQ
-
-current_dir = Dir.pwd
-
-File.open("#{current_dir}/db/NASDAQ.txt").each do |line|
-  info = line.split(" ", 2)
-  product = Product.new(ticker: info[0].strip, name: info[1].strip)
-  if product.save
-    puts "#{product.ticker} : #{product.name}"
-  end
-end
-
-puts "NASDAQ complete. Products count: #{Product.count}"
-
-# NYSE
-
-require 'csv'
-
-csv_options = {headers: :first_row}
-
-CSV.foreach("#{current_dir}/db/nyse.csv", csv_options) do |row|
-  product = Product.new(ticker: row['Symbol'], name: row['Name'])
-  if product.save
-    puts "#{product.ticker} : #{product.name}"
-  end
-end
-
-puts "NYSE complete. Products count: #{Product.count}"
-
 # Cryopto supported by AlphaVantage
 
 CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
@@ -38,17 +9,27 @@ end
 
 puts "Crypto complete. Products count: #{Product.count}"
 
-# TSE
+require 'json'
+require 'open-uri'
 
-require 'roo'
-require 'roo-xls'
+def finnhubStockSeeder(marketCode)
+  accessToken = ENV["FINNHUB_API_KEY"]
+  base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
+  symbol_json = JSON.parse(base_url, {:symbolize_names => true})
 
-spreadsheet = Roo::Spreadsheet.open("#{current_dir}/db/data_e.xls", extension: :xls)
-
-spreadsheet.sheet(0).each do |row|
-  product = Product.new(ticker: row[1].to_i, name: row[2])
-  if product.save
-    puts "#{product.ticker} : #{product.name}"
+  symbol_json.each do |row|
+    product = Product.new(ticker: row[:displaySymbol], name: row[:description])
+    if product.save
+      puts "#{product.ticker} : #{product.name}"
+    end
   end
 end
+
+# Actual seeding
+
+['US', 'T', 'HK', 'L', 'SZ'].each do |code|
+  finnhubStockSeeder(code)
+end
+
+
 
