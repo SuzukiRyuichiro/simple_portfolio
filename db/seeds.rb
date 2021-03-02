@@ -1,4 +1,8 @@
-# Cryopto supported by AlphaVantage
+current_dir = Dir.pwd
+csv_options = { headers: :first_row}
+
+# Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
+require 'csv'
 
 CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
   product = Product.new(ticker: row['currency code'], name: row['currency name'])
@@ -8,6 +12,8 @@ CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
 end
 
 puts "Crypto complete. Products count: #{Product.count}"
+
+# Products (stocks) ----------------------------------------------------------------------------------------------------------------------
 
 require 'json'
 require 'open-uri'
@@ -31,5 +37,7 @@ end
   finnhubStockSeeder(code)
 end
 
+# Platforms -----------------------------------------------------------------------------------------------------------------------------------
 
+names = ["Robinhood", "Rakuten Securities", "LINE Securities", "BitFlyer", "Binance", "SBI Securities", "Kraken", "Robinhood",]
 
