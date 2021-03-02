@@ -1,4 +1,5 @@
 # Cryopto supported by AlphaVantage
+require 'csv'
 
 CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
   product = Product.new(ticker: row['currency code'], name: row['currency name'])
