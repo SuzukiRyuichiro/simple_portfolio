@@ -30,6 +30,3 @@ end
 ['US', 'T', 'HK', 'L', 'SZ'].each do |code|
   finnhubStockSeeder(code)
 end
-
-
-
