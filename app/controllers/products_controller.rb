@@ -2,7 +2,8 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
 
   def show
-   
+   @user = current_user
+  #  authorize @user
   end
 
   def index
