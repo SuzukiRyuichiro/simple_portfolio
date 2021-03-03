@@ -3,8 +3,10 @@ class UsersController < ApplicationController
     @user = current_user
     @purchases = current_user.purchases
     @products = @user.products
-
-    @total_valuation = calc_valuation
+    @hello = []
+    @products.each do |product|
+      @hello << [product.name, calc_valuation(product)]
+    end
     authorize @user
   end
 
@@ -13,6 +15,9 @@ class UsersController < ApplicationController
   def calc_valuation(product)
     # expects an instance of a product
     quote_json = get_json(product)
+    unless quote_json["Global Quote"].nil?
+      return quote_json["Global Quote"]["05. price"]
+    end
   end
 
   def get_json(product)
@@ -32,6 +37,7 @@ class UsersController < ApplicationController
     request["x-rapidapi-host"] = 'alpha-vantage.p.rapidapi.com'
 
     response = http.request(request)
+    puts JSON.parse(response.read_body)
     return JSON.parse(response.read_body)
   end
 end
