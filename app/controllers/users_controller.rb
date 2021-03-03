@@ -3,10 +3,7 @@ class UsersController < ApplicationController
     @user = current_user
     @purchases = current_user.purchases
     @products = @user.products
-    @hello = []
-    @products.each do |product|
-      @hello << [product.name, calc_valuation(product)]
-    end
+    @total_valuation = @products.inject(0) {|result, product| result + calc_valuation(product) }
     authorize @user
   end
 
@@ -16,28 +13,23 @@ class UsersController < ApplicationController
     # expects an instance of a product
     quote_json = get_json(product)
     unless quote_json["Global Quote"].nil?
-      return quote_json["Global Quote"]["05. price"]
+      # if the API does not return the quote, it would skip the price retrieval
+      price = quote_json["Global Quote"]["05. price"].to_f
+      total = 0.0
+      product.purchases.each do |purchase|
+        total += price * purchase.shares
+      end
+      return total
     end
   end
 
   def get_json(product)
     # expects an instance of a product. It will call alpha vantage API to get the quote
-    require 'uri'
-    require 'net/http'
-    require 'openssl'
+    require 'open-uri'
+    require 'json'
 
-    url = URI("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=#{product.ticker}&datatype=json")
-
-    http = Net::HTTP.new(url.host, url.port)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-
-    request = Net::HTTP::Get.new(url)
-    request["x-rapidapi-key"] = ENV['RAPID_API_ALPHA_VANTAGE_KEY']
-    request["x-rapidapi-host"] = 'alpha-vantage.p.rapidapi.com'
-
-    response = http.request(request)
-    puts JSON.parse(response.read_body)
-    return JSON.parse(response.read_body)
+    url = open("https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=#{product.ticker}&apikey=#{ENV['ALPHA_VANTAGE_API_KEY']}").read
+    puts JSON.parse(url)
+    return JSON.parse(url)
   end
 end
