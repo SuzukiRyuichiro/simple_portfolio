@@ -1,12 +1,18 @@
+<<<<<<< HEAD
+
+# Cryopto supported by AlphaVantage
+=======
 def percentage(json, index)
   all = json.count
   printf("\rComplete: %d%%", (index * 100 / all))
 end
+>>>>>>> master
 
 current_dir = Dir.pwd
 csv_options = { headers: :first_row }
 
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
+
 require 'csv'
 
 puts "Crypto"
