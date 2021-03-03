@@ -3,6 +3,7 @@
     <%= simple_form_for @purchase do |f| %>
       <%= f.association :product %>
       <%= f.association :platform %>
+      <%= f.input :price_at_purchase %>
       <%= f.input :shares, as: :float, input_html: { min: 1} %>
       <%= f.input :date, as: :date, html5: true  %>
       <%= f.submit class: "btn btn-primary" %>

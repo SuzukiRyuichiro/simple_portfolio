@@ -19,6 +19,6 @@ class PurchasesController < ApplicationController
   private
 
   def purchase_params
-    params.require(:purchase).permit(:shares, :date, :product_id, :platform_id)
+    params.require(:purchase).permit(:shares, :date, :price_at_purchase, :product_id, :platform_id)
   end
 end
