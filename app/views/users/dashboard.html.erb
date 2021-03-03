@@ -17,7 +17,13 @@
     <div class="col-4">
       <div id="user-stock" class="card card-trip">
         <h2>My stocks</h2>
-        <p> AAP </p>
+        <% @user.products.each do |product| %>
+        <ul>
+          <li>
+            <%= product.name %>, <%= product.ticker %>
+          </li>
+        </ul>
+        <% end %>
       </div>
     </div>
   </div>
