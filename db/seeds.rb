@@ -85,4 +85,3 @@ test_stocks.each do |stock|
     puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
   end
 end
-
