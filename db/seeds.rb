@@ -19,45 +19,64 @@ end
 
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
 
-require 'csv'
+# require 'csv'
 
-puts "Crypto"
-i = 0
+# puts "Crypto"
+# i = 0
 
-CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
-  product = Product.new(ticker: row['currency code'], name: row['currency name'])
-  product.save
-  percentage(CSV.read("#{current_dir}/db/crypto.csv"), i)
-  i += 1
-end
+# CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
+#   product = Product.new(ticker: row['currency code'], name: row['currency name'])
+#   product.save
+#   percentage(CSV.read("#{current_dir}/db/crypto.csv"), i)
+#   i += 1
+# end
 
-puts "Crypto complete"
+# puts "Crypto complete"
 
-# Products (stocks) ----------------------------------------------------------------------------------------------------------------------
-
+# Products (short version) ----------------------------------------------------------------------------------------------------------------------
 require 'json'
 require 'open-uri'
 
-def finnhubStockSeeder(marketCode)
-  accessToken = ENV["FINNHUB_API_KEY"]
-  base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
-  symbol_json = JSON.parse(base_url, {:symbolize_names => true})
-  puts marketCode
+accessToken = ENV["FINNHUB_API_KEY"]
 
-  symbol_json.each_with_index do |row, index|
-    product = Product.new(ticker: row[:displaySymbol], name: row[:description])
-    product.save
-    percentage(symbol_json, index)
-  end
-
-  puts "#{marketCode} complete"
+['AAPL', 'tesla', 'gamestop'].each do |company|
+  base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
+  json = JSON.parse(base_url, {:symbolize_names => true})
+  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol])
+  product.save
 end
 
-# Actual seeding
-
-['US', 'T', 'HK', 'L', 'SZ'].each do |code|
-  finnhubStockSeeder(code)
+[{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}].each do |crypto|
+  product = Product.new(name: crypto[:name], ticker: crypto[:ticker])
+  product.save
 end
+
+
+# Products (stocks) ----------------------------------------------------------------------------------------------------------------------
+
+# require 'json'
+# require 'open-uri'
+
+# def finnhubStockSeeder(marketCode)
+#   accessToken = ENV["FINNHUB_API_KEY"]
+#   base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
+#   symbol_json = JSON.parse(base_url, {:symbolize_names => true})
+#   puts marketCode
+
+#   symbol_json.each_with_index do |row, index|
+#     product = Product.new(ticker: row[:displaySymbol], name: row[:description])
+#     product.save
+#     percentage(symbol_json, index)
+#   end
+
+#   puts "#{marketCode} complete"
+# end
+
+# # Actual seeding
+
+# ['US', 'T', 'HK', 'L', 'SZ'].each do |code|
+#   finnhubStockSeeder(code)
+# end
 
 # Platforms -----------------------------------------------------------------------------------------------------------------------------------
 
