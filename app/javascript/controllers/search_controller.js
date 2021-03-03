@@ -17,17 +17,21 @@ export default class extends Controller {
   }
 
   fetchResults() {
-    fetch(`/api/v1/search/${this.inputTarget.value}`)
-    .then(response => response.json())
-    .then((data) => {
-      // results.innerHTML = "";
-      console.log(data);
-      data.forEach((name) => {
-        const list = `<li>
-          <p>${name.ticker}</p>, <p>${name.name}<p>
-        </li>`;
-        this.resultsTarget.insertAdjacentHTML("beforeend", list);
+    if (this.inputTarget.value === ""){
+      this.resultsTarget.innerHTML = "";
+    } else {
+      fetch(`/api/v1/search/${this.inputTarget.value}`)
+      .then(response => response.json())
+      .then((data) => {
+        this.resultsTarget.innerHTML = "";
+        console.log(data);
+        data.forEach((name) => {
+          const list = `<li>
+            <p>${name.ticker}</p>, <p>${name.name}<p>
+          </li>`;
+          this.resultsTarget.insertAdjacentHTML("beforeend", list);
+        });
       });
-    });
+    }
   }
 }
