@@ -4,5 +4,6 @@ class UsersController < ApplicationController
     @purchases = current_user.purchases
     @products = @user.products
     authorize @user
+
   end
 end
