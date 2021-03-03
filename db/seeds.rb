@@ -57,8 +57,3 @@ names.each do |platform|
     print '>'
   end
 end
-
-
-
-
-
