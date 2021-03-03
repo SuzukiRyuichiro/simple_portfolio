@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard', as: 'dashboard'
   get '/settings', to: 'users#edit', as: 'edit'
   patch '/settings', to: 'users#update', as: 'update'
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      get '/search/:query', to: 'products#search'
+    end
+  end
 end

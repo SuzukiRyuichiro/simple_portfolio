@@ -1,8 +1,17 @@
-<%= form_tag products_path, method: :get, class: 'form-inline' do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control w-75% form-color",
-    placeholder: ""
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary btn-border" %>
-<% end %>
+<div id="container" data-controller="search">
+  <%= form_tag products_path, method: :get, class: 'form-inline' do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control w-75% form-color",
+      placeholder: "",
+      data: {
+        action: "keyup->search#fetchResults",
+        search_target: "input"
+      }
+    %>
+    <ul data-search-target="results">
+
+    </ul>
+    <%= submit_tag "Search", class: "btn btn-primary btn-border" %>
+  <% end %>
+</div>
