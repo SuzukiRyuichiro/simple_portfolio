@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   def calc_valuation(product)
     # expects an instance of a product
-    get
+    quote_json = get_json(product)
   end
 
   def get_json(product)
