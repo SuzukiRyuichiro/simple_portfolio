@@ -1,12 +1,24 @@
+# Fancy loading stuff -----------------------------------------------------------------------------------------------------------------------------------
+
 def percentage(json, index)
   all = json.count
   printf("\rComplete: %d%%", (index * 100 / all))
 end
 
+# setting variables for seeging ---------------------------------------------------------------------------------------------------------------
+
 current_dir = Dir.pwd
 csv_options = { headers: :first_row }
 
+# Test User -----------------------------------------------------------------------------------------------------------------------------------
+
+test_user = User.new(email: "mail@mail.com", password: "123123")
+if test_user.save
+  puts "test user was created. email: #{test_user.email}, password: 123123"
+end
+
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
+
 require 'csv'
 
 puts "Crypto"
@@ -57,3 +69,20 @@ names.each do |platform|
     print '>'
   end
 end
+
+# Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
+
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME']
+
+test_stocks.each do |stock|
+  new_purchase = Purchase.new(
+    date: rand(5.days).seconds.ago,
+    shares: (1..10).to_a.sample,
+    product: Product.find_by(ticker: stock),
+    user: test_user,
+    platform: Platform.all.sample)
+  if new_purchase.save
+    puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
+  end
+end
+
