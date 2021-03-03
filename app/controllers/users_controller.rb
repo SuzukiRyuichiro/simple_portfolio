@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
-
   def dashboard
-    @puchases = current_user.purchases
+    @user = current_user
+    @purchases = current_user.purchases
+    @products = @user.products
+    authorize @user
+
   end
 end
