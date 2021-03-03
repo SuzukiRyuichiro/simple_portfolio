@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = current_user
     @purchases = current_user.purchases
     @products = @user.products
-    @total_valuation = @products.inject(0) {|result, product| result + calc_valuation(product) }
+    @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     authorize @user
   end
 
