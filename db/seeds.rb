@@ -47,7 +47,7 @@ accessToken = ENV["FINNHUB_API_KEY"]
 end
 
 [{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}].each do |crypto|
-  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: crypto[:ticker])
+  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD")
   product.save
 end
 
