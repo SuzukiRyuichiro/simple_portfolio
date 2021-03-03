@@ -10,14 +10,18 @@
         <%= image_tag 'https://imgix.gizmodo.com.au/content/uploads/sites/2/2020/08/27/stonks.jpg?ar=16%3A9&auto=format&fit=crop&q=80&w=1280&nrs=40' %>
       </div>
     </div>
-    <div class="d-flex">
-      <div class="card card-trip">
-        <% @user.products.each do |product| %>
-          <h2><%= product.name %></h2>, <h2><%= product.ticker %></h2>
-        <% end %>
-        <% @user.purchases.each do |purchase| %>
-          <h2><%= purchase.shares  %></h2>
-        <% end %>
+    <div class="col-4">
+      <div class="d-flex justify-content-between">
+        <div class="card card-trip">
+          <div>
+            <% @user.products.each do |product| %>
+              <h2><%= product.name %>, <%= product.ticker %></h2>
+            <% end %>
+            <% @user.purchases.each do |purchase| %>
+              <h2><%= purchase.shares  %></h2>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
   </div>
