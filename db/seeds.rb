@@ -42,12 +42,12 @@ accessToken = ENV["FINNHUB_API_KEY"]
 ['AAPL', 'tesla', 'gamestop'].each do |company|
   base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
   json = JSON.parse(base_url, {:symbolize_names => true})
-  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD")
+  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD", kind: "Stock")
   product.save
 end
 
 [{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}].each do |crypto|
-  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD")
+  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD", kind: 'Crypto')
   product.save
 end
 
