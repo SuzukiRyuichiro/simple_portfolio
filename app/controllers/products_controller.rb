@@ -7,11 +7,11 @@ class ProductsController < ApplicationController
 
   def index
     if params[:query].present?
-      @products = Product.search_by_name_and_ticker(params[:query])
+      @products = policy_scope(Product).search_by_name_and_ticker(params[:query])
     else
-      @products = Product.all
+      @products = policy_scope(Product)
     end
-    @producs = policy_scope(@products)
+    @products = @products.paginate(page: params[:page], per_page: 20)
     
   end
 
