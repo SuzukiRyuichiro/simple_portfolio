@@ -146,7 +146,7 @@ position: relative;
   word-wrap: break-word;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 2px;
+  border-radius: 25px;
   overflow: hidden;
   background: #141526;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -160,3 +160,12 @@ position: relative;
 .card-news {
   background-color: #141526;
 }
+
+.card-dash {
+  overflow: hidden;
+  background: #141526;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 50%;
+  border-radius: 25px;
+}
+

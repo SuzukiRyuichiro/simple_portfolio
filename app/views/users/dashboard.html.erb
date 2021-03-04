@@ -3,15 +3,17 @@
   <div class="row">
     <div class='col-8'>
       <div class="card card-trip">
-        <h2><%= @total_valuation %></h2>
-          <%= line_chart @purchases.group(:date).sum(:shares) %>
+        <h2>$<%= @total_valuation %></h2>
+          <%= line_chart  @total_valuation, id: 'purchase' %>
       </div>
-      <div class="d-flex justify-content-between">
-        <div class="card card-trip">
+      <div class="d-flex justify-content-around">
+        <div class="card-dash">
           <h2>hi</h2>
+          <%= line_chart @products_valuation_pair %>
         </div>
-        <div class="card card-trip">
+        <div class="card-dash">
           <h2>hi</h2>
+          <%= line_chart @products_valuation_pair %>
         </div>
       </div>
     </div>
