@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div>
+    <% @products.each do |product| %>
+    <ul>
+      <li>
+        <%= link_to  "#{product.name}", product_path(product) %>
+        , <%= link_to  "#{product.ticker}", product_path(product) %>
+      </li>
+    </ul>
+    <% end %>
+    <%= will_paginate @posts, :page_links => false %>
+  </div>
+</div>

@@ -2,16 +2,21 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
 
   def show
+    @user = current_user
+  #  authorize @user
+    @purchases = current_user.purchases.where(product: @product)
     @articles = Polygon.new(@product.ticker).run
   end
 
   def index
     if params[:query].present?
-      @products = Product.search_by_name_and_ticker(params[:query])
+      @products = policy_scope(Product).search_by_name_and_ticker(params[:query])
     else
-      @products = Product.all
+      @products = policy_scope(Product)
     end
-    @producs = policy_scope(@products)
+    @products = @products.paginate(page: params[:page], per_page: 20)
+    
+    
   end
 
   private
