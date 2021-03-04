@@ -2,13 +2,10 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
 
   def show
-<<<<<<< HEAD
     @user = current_user
   #  authorize @user
-    @share = Purchase.all.select{|purchase| purchase.product_id == @product.id}[0].shares
-=======
+    @purchases = current_user.purchases.where(product: @product)
     @articles = Polygon.new(@product.ticker).run
->>>>>>> master
   end
 
   def index
@@ -17,12 +14,9 @@ class ProductsController < ApplicationController
     else
       @products = policy_scope(Product)
     end
-<<<<<<< HEAD
     @products = @products.paginate(page: params[:page], per_page: 20)
     
-=======
-    @producs = policy_scope(@products)
->>>>>>> master
+    
   end
 
   private

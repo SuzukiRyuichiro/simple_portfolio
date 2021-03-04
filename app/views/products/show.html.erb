@@ -1,5 +1,4 @@
 <%# Product details, platforms, shares, graph news, link to platform %>
-<<<<<<< HEAD
 <div class="container">
   <h1><%= @product.name %>, <%= @product.ticker %></h1>
 </div>
@@ -8,7 +7,7 @@
   <div class="row">
     <div class="col-8">
       <div class="card card-trip">
-        <%= image_tag 'https://imgix.gizmodo.com.au/content/uploads/sites/2/2020/08/27/stonks.jpg?ar=16%3A9&auto=format&fit=crop&q=80&w=1280&nrs=40' %>
+        <%= line_chart @purchases.group(:date).sum(:shares) %>
       </div>
     </div>      
       <div class="card-show card-trip">
@@ -16,12 +15,10 @@
           <h2><%= @product.name %>, <%= @product.ticker %></h2>
         </div>
         <div>
-          <%= @share %>
+          <%= @purchases.sum(:shares) %>
         </div>
       </div>
     </div>
   </div>
 </div>
-=======
-<h1>Product show page</h1>
->>>>>>> master
+

@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 
   def calc_valuation(product)
     # expects an instance of a product
-    calculate_total_valuation_of_a_prodcut(product, get_product_price(product))
+    calculate_total_valuation_of_a_product(product, get_product_price(product))
   end
 
   def get_stock_json_av(product)
@@ -59,7 +59,7 @@ class UsersController < ApplicationController
     return JSON.parse(res.body) if res.is_a?(Net::HTTPSuccess)
   end
 
-  def calculate_total_valuation_of_a_prodcut(product, price)
+  def calculate_total_valuation_of_a_product(product, price)
     total = 0.0
     product.purchases.each do |purchase|
       total += price * purchase.shares
