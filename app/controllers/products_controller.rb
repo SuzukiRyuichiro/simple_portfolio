@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
 
   def show
-   @articles = Polygon.new(@product.ticker).run
+    @articles = Polygon.new(@product.ticker).run
   end
 
   def index
@@ -12,10 +12,7 @@ class ProductsController < ApplicationController
       @products = Product.all
     end
     @producs = policy_scope(@products)
-
   end
-
-
 
   private
 
