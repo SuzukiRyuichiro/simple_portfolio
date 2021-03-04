@@ -4,7 +4,7 @@
     <div class='col-8'>
       <div class="card card-trip">
         <h2>$<%= @total_valuation %></h2>
-          <%= line_chart  @total_valuation, id: 'purchase' %>
+          <%= line_chart  @user.valuations.group(:date).sum(:total_valuation), id: 'purchase' %>
       </div>
       <div class="d-flex justify-content-around">
         <div class="card-dash">
