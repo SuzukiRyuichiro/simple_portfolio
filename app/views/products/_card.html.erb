@@ -1,11 +1,9 @@
-<% articles.each do |article|  %>
-  <div class="container w-75 m-5 shadow">
-    <div class="card-body card-news">
-      <h6 class="card-title"><%= article['symbols'] %></h6>
-      <h5 class="card-subtitle mb-2"><%= article['title'] %></h5>
-      <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
-      <p><%= article['summary'] %></p>
-      <%= link_to "See full article", "http://#{article['url']}"%>
-    </div>
+<div class="container w-75 m-5 shadow">
+  <div class="card-body card-news">
+    <h6 class="card-title"><%= article['symbols'] %></h6>
+    <h5 class="card-subtitle mb-2"><%= article['title'] %></h5>
+    <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
+    <p><%= article['summary'] %></p>
+    <%= link_to "See full article", "http://#{article['url']}"%>
   </div>
-<% end %>
+</div>
