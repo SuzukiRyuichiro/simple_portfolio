@@ -61,8 +61,10 @@ class UsersController < ApplicationController
 
   def calculate_total_valuation_of_a_product(product, price)
     total = 0.0
-    product.purchases.each do |purchase|
-      total += price * purchase.shares
+    unless price.nil?
+      product.purchases.each do |purchase|
+        total += price * purchase.shares
+      end
     end
     return total
   end
