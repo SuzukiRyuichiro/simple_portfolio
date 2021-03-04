@@ -114,4 +114,6 @@ date = Time.now - 10.days.seconds
   new_valuation = Valuation.new(user: test_user, date: date, total_valuation: 13000 + rand(-1000..1000))
   if new_valuation.save
     puts "On #{new_valuation.date}, #{test_user.email} had total valuation of #{new_valuation.total_valuation}"
+    date += 1.days.seconds
+  end
 end
