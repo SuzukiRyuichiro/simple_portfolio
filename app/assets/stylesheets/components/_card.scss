@@ -143,3 +143,13 @@ position: relative;
 .card-news {
   background-color: #141526;
 }
+.card-dashboard {
+    position: relative;
+    .img-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+  }
+}
