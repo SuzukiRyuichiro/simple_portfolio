@@ -105,3 +105,13 @@ test_stocks.each do |stock|
     puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
   end
 end
+
+# Valuations -----------------------------------------------------------------------------------------------------------------------------------
+
+date = Time.now - 10.days.seconds
+
+10.times do
+  new_valuation = Valuation.new(user: test_user, date: date, total_valuation: 13000 + rand(-1000..1000))
+  if new_valuation.save
+    puts "On #{new_valuation.date}, #{test_user.email} had total valuation of #{new_valuation.total_valuation}"
+end
