@@ -2,8 +2,9 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show]
 
   def show
-   @user = current_user
+    @user = current_user
   #  authorize @user
+    @share = Purchase.all.select{|purchase| purchase.product_id == @product.id}[0].shares
   end
 
   def index
