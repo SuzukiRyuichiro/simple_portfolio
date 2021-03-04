@@ -138,6 +138,23 @@ position: relative;
   position: sticky;
   top: 0;
 }
+
+.card-show {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 2px;
+  overflow: hidden;
+  background: #141526;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 24px;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
 // news-card partial -------------------------
 
 .card-news {
