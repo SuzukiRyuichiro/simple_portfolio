@@ -42,12 +42,12 @@ accessToken = ENV["FINNHUB_API_KEY"]
 ['AAPL', 'tesla', 'gamestop'].each do |company|
   base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
   json = JSON.parse(base_url, {:symbolize_names => true})
-  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol])
+  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD", kind: "Stock")
   product.save
 end
 
 [{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}].each do |crypto|
-  product = Product.new(name: crypto[:name], ticker: crypto[:ticker])
+  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD", kind: 'Crypto')
   product.save
 end
 
@@ -91,7 +91,7 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME', 'ETH']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
@@ -99,7 +99,8 @@ test_stocks.each do |stock|
     shares: (1..10).to_a.sample,
     product: Product.find_by(ticker: stock),
     user: test_user,
-    platform: Platform.all.sample)
+    platform: Platform.all.sample,
+    price_at_purchase: 100.0)
   if new_purchase.save
     puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
   end

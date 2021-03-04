@@ -34,6 +34,7 @@ gem 'pundit'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'httparty', '~> 0.13.7'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
@@ -69,4 +70,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg_search', '~> 2.3.0'
 gem 'searchkick', '~> 4.0'
+<<<<<<< HEAD
 gem 'will_paginate', '~> 3.1.0'
+=======
+>>>>>>> master
