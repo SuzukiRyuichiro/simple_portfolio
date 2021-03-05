@@ -16,6 +16,7 @@
         </div>
         <div>
           <%= @purchases.sum(:shares) %>
+          <%= @purchases.first.platform.name %>
         </div>
       </div>
     </div>

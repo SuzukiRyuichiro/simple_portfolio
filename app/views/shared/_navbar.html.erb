@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <% if user_signed_in? %>
-    <%= link_to dashboard_path, class: "navbar-brand" do %>
-      <%= image_tag "noun_Stock_3423548.svg" %>
+    <%= link_to dashboard_path, class: "navbar-brand d-flex align-items-center" do %>
+      <%= image_tag "noun_Stock_3423548.svg" %> <p>Simple Portfolio</p>
     <% end %>
   <% else %>
     <%= link_to root_path, class: "navbar-brand" do %>
