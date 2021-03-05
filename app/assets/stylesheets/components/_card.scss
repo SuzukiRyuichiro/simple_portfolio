@@ -221,11 +221,13 @@ position: relative;
 }
 .card-dashboard {
     position: relative;
-    .img-link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aqua;
-  }
+    a {
+        text-decoration: none;
+      }
+    a:hover {
+      text-decoration: none;
+    }
+}
+.sm-card {
+  background-color: $card-bg;
 }
