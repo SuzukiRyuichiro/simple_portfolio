@@ -15,5 +15,6 @@ Rails.application.routes.draw do
   end
   namespace :charts do
     get 'valuation_history'
+    get 'stock_price_history/:id', action: 'stock_price_history', as: 'stock_price_history'
   end
 end

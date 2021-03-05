@@ -15,8 +15,6 @@ class ProductsController < ApplicationController
       @products = policy_scope(Product)
     end
     @products = @products.paginate(page: params[:page], per_page: 20)
-    
-    
   end
 
   private
