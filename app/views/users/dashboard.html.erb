@@ -3,7 +3,7 @@
     <div class='col-8'>
       <div class="card card-trip">
         <h2>$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") %></h2>
-        <%= line_chart charts_valuation_history_path, points: false %>
+        <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000 %>
       </div>
     </div>
     <div class="col-4">
@@ -22,13 +22,11 @@
 </div>
 <div class="container ml-0 mt-3">
   <% @products.each do |product| %>
-  <div class="container rounded mt-3">
-    <div class="row justify-content-around w-75 ">
-      <div class="col card w-25 card-dashboard p-1">
-        <%= link_to product_path(product) do %>
-        <%= render 'users/small-card', product: product %>
-        <% end %>
-      </div>
+  <div class="row justify-content-around w-75 ">
+    <div class="col card w-25 card-dashboard p-1">
+      <%= link_to product_path(product) do %>
+      <%= render 'users/small-card', product: product %>
+      <% end %>
     </div>
   </div>
   <% end %>
