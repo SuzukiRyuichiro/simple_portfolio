@@ -7,5 +7,6 @@ class ChartsController < ApplicationController
 
   def stock_price_history
     @product = Product.find(params[:id])
+    render json: @product.date_prices.pluck(:date, :price), xtitle: "Date", ytitle: "Valuation"
   end
 end
