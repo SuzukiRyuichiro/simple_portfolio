@@ -22,12 +22,6 @@
 </div>
 <div class="container ml-0 mt-3">
   <% @products.each do |product| %>
-  <div class="row justify-content-around w-75 ">
-    <div class="col card w-25 card-dashboard p-1">
-      <%= link_to product_path(product) do %>
-      <%= render 'users/small-card', product: product %>
-      <% end %>
-    </div>
-  </div>
+  <%= render 'users/small-card', product: product %>
   <% end %>
 </div>

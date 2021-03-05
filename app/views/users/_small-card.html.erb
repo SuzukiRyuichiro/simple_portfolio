@@ -1,10 +1,12 @@
-<div class="row">
-  <div class="col-sm bg-card-bg text-white">
+<%= link_to product_path(product), style: "text-decoration: none;" do %>
+<div class="d-flex justify-content-between card card-dashboard">
+  <div class="text-white">
     <h5 class="card-title pl-2 pt-1 m-0"><%= product.name %></h5>
     <p class="card-subtitle mb-2 text-muted pl-2" ><%= product.ticker %></p>
     <h3 class="font-weight-bold pl-2">123.12</h3>
   </div>
-  <div class="col-sm bg-card-bg text-white">
+  <div>
     <%= line_chart charts_stock_price_history_path(product), points: false, xmin: "2020-12-01", xmax: "2021-03-01", height: "100%"  %>
   </div>
 </div>
+<% end %>
