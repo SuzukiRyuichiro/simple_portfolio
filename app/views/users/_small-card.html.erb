@@ -1,11 +1,11 @@
 <%= link_to product_path(product), style: "text-decoration: none;" do %>
-<div class="my-2 d-flex flex-row justify-content-between card card-dashboard">
-  <div class="text-white col-3">
-    <h5 class="card-title pl-2 pt-1 m-0"><%= product.name %></h5>
-    <p class="card-subtitle mb-2 text-muted pl-2" ><%= product.ticker %></p>
-    <h3 class="font-weight-bold pl-2"><%= price.round(2) %></h3>
+<div class="m-2 p-2 d-flex flex-row justify-content-between card card-dashboard">
+  <div class="text-white p-1">
+    <h5 class="m-0"><%= product.name %></h5>
+    <p class="mb-2 text-muted" ><%= product.ticker %></p>
+    <h3 class="font-weight-bold"><%= price.round(2) %></h3>
   </div>
-  <div class="col-6">
+  <div class="stock-card-chart">
     <%= line_chart charts_stock_price_history_path(product), points: false, xmin: "2020-12-01", xmax: "2021-03-01", height: "100%"  %>
   </div>
 </div>
