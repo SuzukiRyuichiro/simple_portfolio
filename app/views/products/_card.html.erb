@@ -4,6 +4,6 @@
     <h5 class="card-subtitle mb-2"><%= article['title'] %></h5>
     <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
     <p><%= article['summary'] %></p>
-    <%= link_to "See full article", "http://#{article['url']}"%>
+    <%= link_to "See full article", article['url']%>
   </div>
 </div>

@@ -9,16 +9,18 @@
       <div class="card card-trip">
         <%= line_chart @purchases.group(:date).sum(:shares) %>
       </div>
-    </div>      
-      <div class="card-show card-trip">
-        <div>
-          <h2><%= @product.name %>, <%= @product.ticker %></h2>
-        </div>
-        <div>
-          <%= @purchases.sum(:shares) %>
-        </div>
+    </div>
+    <div class="card-show card-trip">
+      <div>
+        <h2><%= @product.name %>, <%= @product.ticker %></h2>
+      </div>
+      <div>
+        <%= @purchases.sum(:shares) %>
       </div>
     </div>
   </div>
 </div>
-
+</div>
+<% @articles.each do |article| %>
+  <%= render "card", article: article %>
+<% end %>
