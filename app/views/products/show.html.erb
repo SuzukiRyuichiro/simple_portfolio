@@ -1,15 +1,13 @@
 <%# Product details, platforms, shares, graph news, link to platform %>
 <div class="container">
-  <h1><%= @product.name %>, <%= @product.ticker %></h1>
+  <h1 class="mb-3"><%= @product.name %>, <%= @product.ticker %></h1>
 </div>
-
 <div class="container-fluid">
-  <div class="row">
+  <div class="row ml-4">
     <div class="col-8">
       <div class="card card-trip">
         <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
-
       <div class="card-show card-trip">
         <div>
           <h2><%= @product.name %>, <%= @product.ticker %></h2>
@@ -22,6 +20,6 @@
     </div>
   </div>
   <% @articles.each do |article| %>
-  <%= render "news_card", article: article %>
+    <%= render "news_card", article: article %>
   <% end %>
 </div>
