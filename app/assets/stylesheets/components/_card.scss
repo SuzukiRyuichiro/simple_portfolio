@@ -241,8 +241,10 @@ position: relative;
 
 .card-product .card-product-infos {
   padding: 16px;
-// dashboard small card ----------------------------------
 }
+
+// dashboard small card ----------------------------------
+
 .card-dashboard {
     position: relative;
     a {
@@ -254,4 +256,8 @@ position: relative;
 }
 .sm-card {
   background-color: $card-bg;
+}
+.chart-card {
+  height: 10em;
+  width: 100%;
 }
