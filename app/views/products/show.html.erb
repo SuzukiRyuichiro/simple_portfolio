@@ -7,9 +7,9 @@
   <div class="row">
     <div class="col-8">
       <div class="card card-trip">
-        <%= line_chart @purchases.group(:date).sum(:shares) %>
+        <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
-    </div>      
+
       <div class="card-show card-trip">
         <div>
           <h2><%= @product.name %>, <%= @product.ticker %></h2>
@@ -21,5 +21,7 @@
       </div>
     </div>
   </div>
+  <% @articles.each do |article| %>
+  <%= render "news_card", article: article %>
+  <% end %>
 </div>
-

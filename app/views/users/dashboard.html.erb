@@ -4,7 +4,7 @@
       <div class="card card-trip">
                 <h2>$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") %></h2>
         <h2><%= @total_valuation %></h2>
-          <%= line_chart charts_valuation_history_path %>
+          <%= line_chart charts_valuation_history_path, points: false %>
       </div>
       <div class="d-flex justify-content-around">
         <div class="card-dash">

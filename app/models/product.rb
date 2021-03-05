@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   has_many :purchases
+  has_many :date_prices
   has_many :platforms, through: :purchases
   validates :name, presence: true
 

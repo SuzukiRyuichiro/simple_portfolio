@@ -39,7 +39,7 @@ require 'open-uri'
 
 accessToken = ENV["FINNHUB_API_KEY"]
 
-['AAPL', 'tesla', 'gamestop'].each do |company|
+['AAPL', 'TSLA', 'gamestop'].each do |company|
   base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
   json = JSON.parse(base_url, {:symbolize_names => true})
   product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD", kind: "Stock")
@@ -115,5 +115,40 @@ date = Time.now - 10.days.seconds
   if new_valuation.save
     puts "On #{new_valuation.date}, #{test_user.email} had total valuation of #{new_valuation.total_valuation}"
     date += 1.days.seconds
+  end
+end
+
+# Date_Price -----------------------------------------------------------------------------------------------------------------------------------
+test_stocks = ['AAPL', 'TSLA', 'GME']
+
+test_stocks.each do |stock|
+  file = File.read("#{current_dir}/db/sample jsons/#{stock} daily.json")
+  json = JSON.parse(file)
+  json["Time Series (Daily)"].each do |arr|
+    components = arr[0].split('-')
+    year = components[0].to_i
+    month = components[1].to_i
+    day = components[2].to_i
+    date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4. close"].to_f, product: Product.find_by(ticker: stock))
+    if date_price.save
+      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+    end
+  end
+end
+
+test_cryptos = ['BTC', 'ETH']
+
+test_cryptos.each do |crypto|
+  file = File.read("#{current_dir}/db/sample jsons/#{crypto} daily.json")
+  json = JSON.parse(file)
+  json["Time Series (Digital Currency Daily)"].each do |arr|
+    components = arr[0].split('-')
+    year = components[0].to_i
+    month = components[1].to_i
+    day = components[2].to_i
+    date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4a. close (USD)"].to_f, product: Product.find_by(ticker: crypto))
+    if date_price.save
+      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+    end
   end
 end

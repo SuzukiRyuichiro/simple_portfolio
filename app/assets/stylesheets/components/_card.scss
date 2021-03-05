@@ -157,8 +157,32 @@ position: relative;
 }
 // news-card partial -------------------------
 
-.card-news {
+.news-card {
+  border-radius: 25px;
   background-color: #141526;
+  height: 240px;
+
+  a {
+    color: $blue;
+    text-decoration: none
+  }
+
+  a:hover {
+    text-decoration: none
+  }
+
+  .news-picture {
+    img {
+      border-radius: 25px 0 0 25px;
+      height: 100%;
+      width: 240px;
+      object-fit: cover;
+    }
+  }
+
+  .news-card-body {
+    padding: 20px;
+  }
 }
 
 .card-dash {
