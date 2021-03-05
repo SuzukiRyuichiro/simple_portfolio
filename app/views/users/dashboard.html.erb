@@ -3,28 +3,38 @@
     <div class='col-8'>
       <div class="card card-trip">
         <h2><%= @total_valuation %></h2>
-          <%= line_chart @purchases.group(:date).sum(:shares) %>
-      </div>
-      <div class="d-flex justify-content-between">
-        <div class="card card-trip">
-          <h2>hi</h2>
-        </div>
-        <div class="card card-trip">
-          <h2>hi</h2>
-        </div>
+        <%= line_chart @purchases.group(:date).sum(:shares) %>
       </div>
     </div>
     <div class="col-4">
       <div id="user-stock" class="card card-trip">
         <h2>My stocks</h2>
         <% @user.products.each do |product| %>
-        <ul>
-          <li>
-            <%= link_to  "#{product.name}", product_path(product) %>, <%= link_to  "#{product.ticker}", product_path(product) %>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <%= link_to  "#{product.name}", product_path(product) %>, <%= link_to  "#{product.ticker}", product_path(product) %>
+            </li>
+          </ul>
         <% end %>
       </div>
     </div>
   </div>
+</div>
+<div class="container ml-0 mt-3">
+  <% @user.products.each do |product| %>
+    <div class="container rounded mt-3">
+      <div class="row justify-content-around w-75 ">
+        <div class="col card w-25 card-dashboard mr-3 p-1">
+          <%= link_to product_path(product) do %>
+            <%= render 'users/small-card', product: product %>
+          <% end %>
+        </div>
+        <div class="col card w-25 card-dashboard p-1">
+          <%= link_to product_path(product) do %>
+            <%= render 'users/small-card', product: product %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
