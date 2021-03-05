@@ -1,6 +1,12 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "/dashboard", class: "navbar-brand d-flex align-items-center" do %>
-    <%= image_tag "noun_Stock_3423548.svg" %> <p>Simple Portfolio</p>
+  <% if user_signed_in? %>
+    <%= link_to dashboard_path, class: "navbar-brand" do %>
+      <%= image_tag "noun_Stock_3423548.svg" %>
+    <% end %>
+  <% else %>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "noun_Stock_3423548.svg" %>
+    <% end %>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

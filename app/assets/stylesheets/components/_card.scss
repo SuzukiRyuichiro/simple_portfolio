@@ -217,4 +217,15 @@ position: relative;
 
 .card-product .card-product-infos {
   padding: 16px;
+// dashboard small card ----------------------------------
+
+.card-dashboard {
+    position: relative;
+    .img-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+  }
 }
