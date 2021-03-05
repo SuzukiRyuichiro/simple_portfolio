@@ -254,10 +254,10 @@ position: relative;
       text-decoration: none;
     }
 }
-.sm-card {
-  background-color: $card-bg;
-}
 .chart-card {
   height: 10em;
   width: 100%;
+}
+.card-sm-font {
+  color: $font-color;
 }
