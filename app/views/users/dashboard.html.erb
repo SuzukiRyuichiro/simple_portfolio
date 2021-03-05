@@ -1,24 +1,24 @@
 <div class="container-fluid">
   <div class="row">
     <div class='col-8'>
-      <div class="card card-trip">
-                <h2>$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") %></h2>
+      <div class="card card-trip p-4">
+        <h2>$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") %></h2>
         <h2><%= @total_valuation %></h2>
-          <%= line_chart charts_valuation_history_path, points: false %>
+        <%= line_chart charts_valuation_history_path, points: false %>
       </div>
       <div class="d-flex justify-content-around">
-        <div class="card-dash">
+        <div class="card-dash p-4">
           <h2>hi</h2>
           <%= line_chart @products_valuation_pair %>
         </div>
-        <div class="card-dash">
+        <div class="card-dash p-4">
           <h2>hi</h2>
           <%= line_chart @products_valuation_pair %>
         </div>
       </div>
     </div>
     <div class="col-4">
-      <div id="user-stock" class="card card-trip">
+      <div id="user-stock" class="card card-trip p-4">
         <h2>My stocks</h2>
         <% @user.products.each do |product| %>
           <ul>
