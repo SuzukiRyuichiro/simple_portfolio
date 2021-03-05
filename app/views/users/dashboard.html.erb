@@ -4,7 +4,7 @@
     <div class='col-8'>
       <div class="card card-trip">
         <h2><%= @total_valuation %></h2>
-          <%= line_chart @purchases.group(:date).sum(:shares) %>
+          <%= line_chart charts_valuation_history_path %>
       </div>
       <div class="d-flex justify-content-between">
         <div class="card card-trip">

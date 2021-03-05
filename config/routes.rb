@@ -13,4 +13,7 @@ Rails.application.routes.draw do
       get '/search/:query', to: 'products#search'
     end
   end
+  namespace :charts do
+    get 'valuation_history'
+  end
 end
