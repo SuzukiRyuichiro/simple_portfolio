@@ -135,3 +135,20 @@ test_stocks.each do |stock|
     end
   end
 end
+
+test_cryptos = ['BTC', 'ETH']
+
+test_cryptos.each do |crypto|
+  file = File.read("#{current_dir}/db/sample jsons/#{crypto} daily.json")
+  json = JSON.parse(file)
+  json["Time Series (Digital Currency Daily)"].each do |arr|
+    components = arr[0].split('-')
+    year = components[0].to_i
+    month = components[1].to_i
+    day = components[2].to_i
+    date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4a. close (USD)"].to_f, product: Product.find_by(ticker: crypto))
+    if date_price.save
+      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+    end
+  end
+end
