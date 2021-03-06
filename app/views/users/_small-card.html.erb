@@ -6,7 +6,7 @@
     <h3 class="font-weight-bold"><%= price.round(2) %></h3>
   </div>
   <div class="stock-card-chart">
-    <%= line_chart charts_stock_price_history_path(product), points: false, xmin: "2020-12-01", xmax: "2021-03-01", height: "100%"  %>
+    <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%"  %>
   </div>
 </div>
 <% end %>
