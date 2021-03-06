@@ -8,11 +8,26 @@
   border-bottom-right-radius: 0px;
 }
 
+.form-radius-after-input {
+  border-bottom-left-radius: 0px;
+}
+
 .btn-radius {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
+.btn-radius-after-input {
+  border-bottom-right-radius: 0px;
+}
+
 .btn-font-color{
   color: #21212f;
 }
+
+
+.form-results-radius {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+

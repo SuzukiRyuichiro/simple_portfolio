@@ -19,10 +19,14 @@ export default class extends Controller {
   fetchResults() {
     if (this.inputTarget.value === ""){
       this.resultsTarget.innerHTML = "";
+      this.inputTarget.classList.remove("form-radius-after-input");
     } else {
       fetch(`/api/v1/search/${this.inputTarget.value}`)
       .then(response => response.json())
       .then((data) => {
+        if (data !== []) {
+        this.inputTarget.classList.add("form-radius-after-input");
+        }
         this.resultsTarget.innerHTML = "";
         data = data.slice(0,10)
         data.forEach((name) => {
