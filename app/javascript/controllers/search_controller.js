@@ -1,6 +1,6 @@
-// Visit The Stimulus Handbook for more details 
+// Visit The Stimulus Handbook for more details
 // https://stimulusjs.org/handbook/introduction
-// 
+//
 // This example controller works with specially annotated HTML like:
 //
 // <div data-controller="hello">
@@ -24,11 +24,9 @@ export default class extends Controller {
       .then(response => response.json())
       .then((data) => {
         this.resultsTarget.innerHTML = "";
-        console.log(data);
+        data = data.slice(0,10)
         data.forEach((name) => {
-          const list = `<li>
-            <p>${name.ticker}</p>, <p>${name.name}<p>
-          </li>`;
+          const list = `<a class="ist-group-item list-group-item-action p-1">${name.ticker}, ${name.name}</a>`;
           this.resultsTarget.insertAdjacentHTML("beforeend", list);
         });
       });

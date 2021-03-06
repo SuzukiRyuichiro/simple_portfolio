@@ -3,6 +3,7 @@
     <%= link_to dashboard_path, class: "navbar-brand d-flex align-items-center" do %>
       <%= image_tag "noun_Stock_3423548.svg" %> <p>Simple Portfolio</p>
     <% end %>
+    <!-- not signed in, take you to the landing page -->
   <% else %>
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "noun_Stock_3423548.svg" %>
@@ -13,7 +14,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <!-- search bar -->
       <%= render 'shared/search_form', class: "form-radius btn-radius form-color" %>
+      <!-- if signed in, show essential user actions -->
       <% if user_signed_in? %>
         <li class="nav-item active">
           <%= link_to "New Purchase", new_purchase_path, class: "navbar-link" %>
@@ -26,6 +29,7 @@
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </li>
+        <!-- if not signed in, show up login/sign up -->
       <% else %>
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: "navbar-link" %>
