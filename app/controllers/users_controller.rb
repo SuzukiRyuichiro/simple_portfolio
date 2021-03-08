@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   def dashboard
     @user = current_user
     @purchases = current_user.purchases
-    @products = @user.products.uniq
+    @purchase = Purchase.new
+    @products = @user.products.distinct
     @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     authorize @user
   end

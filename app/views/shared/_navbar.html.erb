@@ -17,7 +17,16 @@
       <%= render 'shared/search_form', class: "form-radius btn-radius form-color" %>
       <% if user_signed_in? %>
         <li class="nav-item active mt-2">
-          <%= link_to "New Purchase", new_purchase_path, class: "navbar-link" %>
+        <i class="fas fa-cart-plus" data-toggle="modal"  data-target="#myModal"></i>
+          <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <%= render 'purchases/form', purchase: @new_purchase %>
+              </div>
+            </div>
+          </div>
+</div>
+
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://i.pinimg.com/originals/29/24/89/292489e7d0bf8ce7d5ffd81be62d0800.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
