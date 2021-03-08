@@ -37,6 +37,8 @@ gem 'simple_form'
 gem 'httparty', '~> 0.13.7'
 gem "chartkick"
 gem 'groupdate'
+gem 'sidekiq'
+gem 'sidekiq-failures', '~> 1.0'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

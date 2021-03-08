@@ -138,7 +138,7 @@ test_stocks.each do |stock|
     day = components[2].to_i
     date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4. close"].to_f, product: Product.find_by(ticker: stock))
     if date_price.save
-      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+      # puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
     end
   end
 end
@@ -155,7 +155,7 @@ test_cryptos.each do |crypto|
     day = components[2].to_i
     date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4a. close (USD)"].to_f, product: Product.find_by(ticker: crypto))
     if date_price.save
-      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+      # puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
     end
   end
 end
