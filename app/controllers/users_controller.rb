@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     # @product_valuation_pair = @products.map { |product| [product, calc_valuation(product)] }
     @product_price_pair = @products.map { |product| [product, product.get_product_price] }
+
     authorize @user
   end
 

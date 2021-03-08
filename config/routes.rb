@@ -13,6 +13,10 @@ Rails.application.routes.draw do
       get '/search/:query', to: 'products#search'
     end
   end
+  require "sidekiq/web"
+  authenticate :user, ->(user) { user.admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  end
   namespace :charts do
     get 'valuation_history'
     get 'stock_price_history/:id', action: 'stock_price_history', as: 'stock_price_history'
