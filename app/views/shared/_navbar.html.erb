@@ -17,11 +17,11 @@
       <%= render 'shared/search_form', class: "form-radius btn-radius form-color" %>
       <% if user_signed_in? %>
         <li class="nav-item active mt-2">
-          <button type="button" data-toggle="modal" data-target="#myModal" class='navbar-link'>New purchase</button>
+        <i class="fas fa-cart-plus" data-toggle="modal"  data-target="#myModal"></i>
           <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
-                <%= render 'purchases/form' %>
+                <%= render 'purchases/form', purchase: @new_purchase %>
               </div>
             </div>
           </div>

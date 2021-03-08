@@ -1,4 +1,4 @@
-<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+
 <div class="container-fluid">
   <div class="row">
     <div class='col-8'>
@@ -10,7 +10,7 @@
     <div class="col-4">
       <div id="user-stock" class="card card-trip p-4">
         <h2>My stocks</h2>
-        <% @user.products.each do |product| %>
+        <% @user.products.distinct.each do |product| %>
         <ul>
           <li>
             <%= link_to  "#{product.name}", product_path(product) %>, <%= link_to  "#{product.ticker}", product_path(product) %>
@@ -27,10 +27,4 @@
   <% end %>
 </div>
 
-<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <%= render 'purchases/form' %>
-  </div>
-</div>
 
