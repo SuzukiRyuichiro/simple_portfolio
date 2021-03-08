@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
   <div class="row">
     <div class='col-8'>
@@ -9,7 +10,7 @@
     <div class="col-4">
       <div id="user-stock" class="card card-trip p-4">
         <h2>My stocks</h2>
-        <% @user.products.each do |product| %>
+        <% @user.products.distinct.each do |product| %>
         <ul>
           <li>
             <%= link_to  "#{product.name}", product_path(product) %>, <%= link_to  "#{product.ticker}", product_path(product) %>
@@ -25,3 +26,5 @@
   <%= render 'users/small-card', product: product_price_pair[0], price: product_price_pair[1] %>
   <% end %>
 </div>
+
+
