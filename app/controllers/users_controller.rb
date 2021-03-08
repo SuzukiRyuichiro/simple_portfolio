@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def dashboard
     @user = current_user
     @purchases = current_user.purchases
+    @purchase = Purchase.new
     @products = @user.products
     @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     @product_valuation_pair = @products.map { |product| [product, calc_valuation(product)] }

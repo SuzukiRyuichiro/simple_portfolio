@@ -1,3 +1,4 @@
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 <div class="container-fluid">
   <div class="row">
     <div class='col-8'>
@@ -25,3 +26,22 @@
   <%= render 'users/small-card', product: product_price_pair[0], price: product_price_pair[1] %>
   <% end %>
 </div>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="container mt-5 w-25">
+        <div class="form-card">
+          <%= simple_form_for @purchase do |f| %>
+            <%= f.association :product %>
+            <%= f.association :platform %>
+            <%= f.input :price_at_purchase, input_html: { min: 1} %>
+            <%= f.input :shares, as: :float, input_html: { min: 1} %>
+            <%= f.input :date, as: :date, html5: true  %>
+            <%= f.submit class: "btn btn-primary" %>
+          <% end %>
+        </div>
+    </div>
+  </div>
+</div>
+
