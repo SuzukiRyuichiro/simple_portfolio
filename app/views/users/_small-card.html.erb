@@ -3,7 +3,7 @@
   <div class="text-white p-1">
     <h5 class="m-0"><%= product.name %></h5>
     <p class="mb-2 text-muted" ><%= product.ticker %></p>
-    <h3 class="font-weight-bold"><%= price.round(2) %></h3>
+    <h3 class="font-weight-bold">$<%= number_with_delimiter(price.round(2), delmiter: ',') %></h3>
   </div>
   <div class="stock-card-chart">
     <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%"  %>
