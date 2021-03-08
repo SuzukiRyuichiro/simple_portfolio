@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       get '/search/:query', to: 'products#search'
+      get '/products/:id', to: 'products#fetch_price'
     end
   end
   require "sidekiq/web"
