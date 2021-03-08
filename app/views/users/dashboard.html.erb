@@ -8,21 +8,13 @@
       </div>
     </div>
     <div class="col-4">
-      <div id="user-stock" class="card card-trip p-4">
-        <h2>My stocks</h2>
-        <% @user.products.distinct.each do |product| %>
-        <ul>
-          <li>
-            <%= link_to "#{product.name}", product_path(product) %>, <%= link_to "#{product.ticker}", product_path(product) %>
-          </li>
-        </ul>
-        <% end %>
+          <div class="mt-3 col-8 stock-cards">
+            <% @products.each do |product| %>
+            <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases %>
+            <% end %>
+          </div>
       </div>
     </div>
   </div>
 </div>
-<div class="mt-3 col-8 stock-cards">
-  <% @products.each do |product| %>
-  <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases %>
-  <% end %>
-</div>
+
