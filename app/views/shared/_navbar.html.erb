@@ -1,7 +1,8 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <% if user_signed_in? %>
     <%= link_to dashboard_path, class: "navbar-brand d-flex align-items-center" do %>
-      <%= image_tag "noun_Stock_3423548.svg" %> <p>Simple Portfolio</p>
+      <%= image_tag "noun_Stock_3423548.svg" %>
+      <p>Simple Portfolio</p>
     <% end %>
   <% else %>
     <%= link_to root_path, class: "navbar-brand" do %>
@@ -15,8 +16,17 @@
     <ul class="navbar-nav mr-auto">
       <%= render 'shared/search_form', class: "form-radius btn-radius form-color" %>
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "New Purchase", new_purchase_path, class: "navbar-link" %>
+        <li class="nav-item active mt-2">
+          <button type="button" data-toggle="modal" data-target="#myModal" class='navbar-link'>New purchase</button>
+          <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <%= render 'purchases/form' %>
+              </div>
+            </div>
+          </div>
+</div>
+
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://i.pinimg.com/originals/29/24/89/292489e7d0bf8ce7d5ffd81be62d0800.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
