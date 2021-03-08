@@ -23,6 +23,6 @@
 </div>
 <div class="mt-3 col-8 stock-cards">
   <% @products.each do |product| %>
-  <%= render 'users/small-card', product: product, price: product.get_product_price %>
+  <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases %>
   <% end %>
 </div>
