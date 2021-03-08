@@ -113,4 +113,13 @@ class Product < ApplicationRecord
       return 0
     end
   end
+
+  def calc_margin(purchases)
+    # calculate the margin for a product instance. It would return zero if there is no purchase made for that product by the user.
+    total_margin = 0
+    purchases.select { |purchase| purchase.product == self }.each do |purchase|
+      total_margin += (get_product_price - purchase.price_at_purchase) * purchase.shares
+    end
+    return total_margin
+  end
 end
