@@ -1,3 +1,10 @@
+DatePrice.destroy_all
+Purchase.destroy_all
+Product.destroy_all
+Platform.destroy_all
+Valuation.destroy_all
+User.destroy_all
+
 # Fancy loading stuff -----------------------------------------------------------------------------------------------------------------------------------
 
 def percentage(json, index)
