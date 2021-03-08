@@ -20,7 +20,7 @@
     </div>
   </div>
 </div>
-<div class="container ml-0 mt-3">
+<div class="mt-3 col-8 stock-cards">
   <% @product_price_pair.each do |product_price_pair| %>
   <%= render 'users/small-card', product: product_price_pair[0], price: product_price_pair[1] %>
   <% end %>
