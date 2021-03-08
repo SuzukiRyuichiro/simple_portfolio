@@ -19,7 +19,7 @@ csv_options = { headers: :first_row }
 
 # Test User -----------------------------------------------------------------------------------------------------------------------------------
 
-test_user = User.new(email: "mail@mail.com", password: "123123")
+test_user = User.new(email: "mail@mail.com", password: "123123", admin: true)
 if test_user.save
   puts "test user was created. email: #{test_user.email}, password: 123123"
 end
