@@ -11,4 +11,9 @@ class Api::V1::ProductsController < Api::V1::BaseController
       end
     end
   end
+
+  def fetch_price
+    @product = Product.find(params[:id])
+    render json: { price: @product.get_product_price }
+  end
 end
