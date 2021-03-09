@@ -1,10 +1,21 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class='col-8' style="overflow:hidden;">
+<div class="d-flex">
+  <!-- left -->
+  <div class="col-8">
+    <!-- valuation and big chart (left top) -->
+    <div style="overflow:hidden;">
       <%= render 'users/chart-card', valuation: @valuation %>
     </div>
-
-    <div class="col-4 sticky-top" >
+    <!-- News articles (left bottom) -->
+    <div>
+      <% @articles.flatten.each do |article| %>
+      <%= render 'products/news_card', article: article %>
+      <% end %>
+    </div>
+  </div>
+  <!-- right -->
+  <div class="col-4">
+    <!-- Stock cards (top right) -->
+    <div sticky-top" >
       <div class="mt-3 col- stock-cards" style="">
         <% @products.each do |product| %>
         <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases%>
@@ -12,4 +23,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

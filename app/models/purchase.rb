@@ -6,6 +6,6 @@ class Purchase < ApplicationRecord
   validates :date, presence: true
 
   def margin_at(current_price)
-    (current_price * shares - price_at_purchase * shares).round(2)
+    (current_price - price_at_purchase) * current_price
   end
 end
