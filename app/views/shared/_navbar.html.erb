@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto list-unstyled">
         <% if user_signed_in? %>
-          <li class="nav-item active mt-2">
+          <li class="nav-item active mt-2" style="z-index: 10000;">
             <i class="fas fa-plus-circle" data-toggle="modal" data-target="#myModal"></i>
             <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -28,7 +28,7 @@
                 </div>
               </div>
             </div>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" style="z-index: 10000;">
               <%= image_tag "https://i.pinimg.com/originals/29/24/89/292489e7d0bf8ce7d5ffd81be62d0800.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <%= link_to "new ", "#", class: "dropdown-item" %>
