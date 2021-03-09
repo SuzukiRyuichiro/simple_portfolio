@@ -25,7 +25,7 @@ class User < ApplicationRecord
   def average_purchased_price(product)
     product_purchases = purchases.where(product: product)
     return nil unless product_purchases.any?
-    return product_purchases.sum('price_at_purchase * shares') / product_purchases.sum(:shares)
+    return product_purchases.sum('price_at_purchase * shares') / product_purchases.sum(:shares).round(2)
   end
 
   private

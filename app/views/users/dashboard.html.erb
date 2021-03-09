@@ -4,7 +4,7 @@
       <%= render 'users/chart-card', valuation: @valuation %>
     </div>
 
-    <div class="col-4 sticky-top" >
+    <div class="col-4" >
       <div class="mt-3 col- stock-cards" style="">
         <% @products.each do |product| %>
         <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases%>
