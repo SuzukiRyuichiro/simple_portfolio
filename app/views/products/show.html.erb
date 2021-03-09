@@ -2,9 +2,9 @@
   <h1 class="mb-3"><%= @product.name %>, <%= @product.ticker %></h1>
 </div>
 <div class="container-fluid">
-  <div class="row ml-4">
+  <div class="row mx-4">
     <div class="col-8">
-      <div class="card card-trip">
+      <div class="card card-trip p-2">
         <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
     </div>
