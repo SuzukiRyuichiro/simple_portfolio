@@ -1,7 +1,7 @@
 <div class="m-5 shadow">
   <div class="news-card d-flex">
     <div class="news-picture">
-      <% if article['image']&.split(/(?=https)/).count == 1 %>
+      <% if article['image']&.split(/(?=https)/)&.count == 1 %>
       <% link = article['image'] %>
       <% else %>
       <% link = article['image'].split(/(?=https)/)[1] %>
