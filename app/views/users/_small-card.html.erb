@@ -1,15 +1,15 @@
 <%= link_to product_path(product), style: "text-decoration: none;" do %>
-<div class="my-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="product-card chartkick" data-product-id="<%= product.id %>">
-  <div class="text-white px-2">
-    <h5 class="m-0"><%= product.name %></h5>
-    <p class="mb-2 text-muted" ><%= product.ticker %></p>
-    <!-- gotta fix this later ↓ -->
-    <h3 class="font-weight-bold">$<%= number_with_delimiter(price.round(2), delmiter: ',') if defined? price %></h3>
-    <p><%= format_number(product.calc_margin(purchases)) %></p>
-    <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
+  <div class="mb-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="product-card chartkick" data-product-id="<%= product.id %>">
+    <div class="text-white py-3 pl-3">
+      <h5 class="m-0"><%= product.name %></h5>
+      <p class="mb-2 text-muted" ><%= product.ticker %></p>
+      <!-- gotta fix this later ↓ -->
+      <h3 class="font-weight-bold">$<%= number_with_delimiter(price.round(2), delmiter: ',') if defined? price %></h3>
+      <p><%= format_number(product.calc_margin(purchases)) %></p>
+      <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
+    </div>
+    <div class="stock-card-chart py-1">
+      <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%" %>
+    </div>
   </div>
-  <div class="stock-card-chart">
-    <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%"  %>
-  </div>
-</div>
 <% end %>
