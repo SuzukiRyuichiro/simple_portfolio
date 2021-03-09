@@ -20,6 +20,10 @@ class PurchasesController < ApplicationController
     @user = current_user
     @bitflyer_api_key = @user.bitflyer_api_key
     @bitflyer_api_secret = @user.bitflyer_api_secret
+    get_past_orders_json_bitflyer.each do |order|
+      purchase = Purchase.new(bitflyer_params)
+      purchase.save
+    end
   end
 
   private
@@ -29,6 +33,8 @@ class PurchasesController < ApplicationController
   end
 
   def get_past_orders_bitflyer
+    # this returns an array of hashes of past 100 orders. each array has
+    # order date, order price, order size, and commision fee + alpha
     require "json"
     require "net/http"
     require "uri"
@@ -54,6 +60,15 @@ class PurchasesController < ApplicationController
     https = Net::HTTP.new(uri.host, uri.port)
     https.use_ssl = true
     response = https.request(options)
-    return response.body
+    return JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def bitflyer_params
+  # this method returns hash of information needed to create purchase
+
+
+  return {
+    platform_id: Platform.find_by(name: 'Bitflyer')
+  }
   end
 end
