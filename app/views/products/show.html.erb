@@ -1,4 +1,3 @@
-<%# Product details, platforms, shares, graph news, link to platform %>
 <div class="container">
   <h1 class="mb-3"><%= @product.name %>, <%= @product.ticker %></h1>
 </div>
@@ -8,17 +7,49 @@
       <div class="card card-trip">
         <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
-      <div class="card-show card-trip">
-        <div>
-          <h2><%= @product.name %>, <%= @product.ticker %></h2>
+    </div>
+    <div class="card-show card-trip col">
+      <div class="w-100">
+        <h2><%= @product.name %>, <%= @product.ticker %></h2>
+        <div class="d-flex justify-content-between">
+          <div>
+            <h2>Shares</h2>
+          </div>
+          <div class="">
+            <h2><%= @purchases.sum(:shares) %></h2>
+          </div>
         </div>
-        <div>
-          <%= @purchases.sum(:shares) %>
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <h2>Margin</h2>
+          </div>
+          <div class="">
+            <h2><%= format_number(get_margin(@purchases, @product.get_product_price))%></h2>
+          </div>
         </div>
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <h2>Current Price</h2>
+          </div>
+          <div class="">
+            <h2>$<%= @product.get_product_price %></h2>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <h2>Average</h2>
+          </div>
+          <div class="">
+            <h2>$<%= current_user.average_purchased_price(@product) %></h2>
+          </div>
+        </div>
+      </div>
+      <div>
       </div>
     </div>
   </div>
-  <% @articles.each do |article| %>
-    <%= render "news_card", article: article %>
-  <% end %>
+</div>
+<% @articles.each do |article| %>
+  <%= render "news_card", article: article %>
+<% end %>
 </div>
