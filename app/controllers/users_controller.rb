@@ -4,8 +4,7 @@ class UsersController < ApplicationController
     @purchases = current_user.purchases
     @purchase = Purchase.new
     @products = @user.products.distinct
-    @total_valuation = 0
-    # @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
+    @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     authorize @user
   end
 
