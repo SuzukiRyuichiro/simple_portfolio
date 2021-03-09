@@ -261,9 +261,12 @@ position: relative;
 // grid --------------
 
 .stock-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   grid-gap: 8px;
+  h3 {
+    font-size: 16px;
+  }
 }
 
 // Smallest device
