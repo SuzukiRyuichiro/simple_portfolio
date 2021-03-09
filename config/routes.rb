@@ -14,12 +14,16 @@ Rails.application.routes.draw do
       get '/products/:id', to: 'products#fetch_price'
     end
   end
+  # sidekiq
   require "sidekiq/web"
   authenticate :user, ->(user) { user.admin? } do
     mount Sidekiq::Web => '/sidekiq'
   end
+  # chartkick renders
   namespace :charts do
     get 'valuation_history'
     get 'stock_price_history/:id', action: 'stock_price_history', as: 'stock_price_history'
   end
+  #bitflyer connection
+  get '/bitflyer_connect', to: 'users#connect_to_bitflyer', as: 'bitflyer_connect'
 end

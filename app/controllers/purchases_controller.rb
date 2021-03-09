@@ -16,9 +16,44 @@ class PurchasesController < ApplicationController
     end
   end
 
+  def initial_bitflyer_connection
+    @user = current_user
+    @bitflyer_api_key = @user.bitflyer_api_key
+    @bitflyer_api_secret = @user.bitflyer_api_secret
+  end
+
   private
 
   def purchase_params
     params.require(:purchase).permit(:shares, :date, :price_at_purchase, :product_id, :platform_id)
+  end
+
+  def get_past_orders_bitflyer
+    require "json"
+    require "net/http"
+    require "uri"
+    require "openssl"
+
+    key = ENV['BITFLYER_API_KEY']
+    secret = ENV['BITFLYER_API_SECRET']
+    timestamp = Time.now.to_i.to_s
+    method = "GET"
+    uri = URI.parse("https://api.bitflyer.com")
+    uri.path = "/v1/me/getchildorders"
+    uri.query = "product_code=BTC_JPY&count=100&before=0&after=0"
+
+    text = timestamp + method + uri.request_uri
+    sign = OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new("sha256"), secret, text)
+
+    options = Net::HTTP::Get.new(uri.request_uri, initheader = {
+      "ACCESS-KEY" => key,
+      "ACCESS-TIMESTAMP" => timestamp,
+      "ACCESS-SIGN" => sign,
+    });
+
+    https = Net::HTTP.new(uri.host, uri.port)
+    https.use_ssl = true
+    response = https.request(options)
+    return response.body
   end
 end

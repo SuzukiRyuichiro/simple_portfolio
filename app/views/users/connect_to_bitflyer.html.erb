@@ -1,0 +1,5 @@
+<%= simple_form_for(@user, method: :patch, url: user_registration_path) do |f| %>
+  <%= f.input :bitflyer_api_key %>
+  <%= f.input :bitflyer_api_secret, input_html: { type: 'password' } %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>

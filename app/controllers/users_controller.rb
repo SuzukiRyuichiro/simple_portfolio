@@ -9,6 +9,11 @@ class UsersController < ApplicationController
     authorize @user
   end
 
+  def connect_to_bitflyer
+    @user = current_user
+    authorize @user
+  end
+
   private
 
   def calc_valuation(product)
