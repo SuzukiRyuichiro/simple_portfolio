@@ -9,7 +9,7 @@ module DashboardHelper
     if number.positive?
       "+$#{number_with_delimiter(sprintf("%.2f", number))}"
     else
-      "-$#{number_with_delimiter(sprintf("%.2f", number))}"
+      "-$#{number_with_delimiter(sprintf("%.2f", number.abs))}"
     end
   end
 

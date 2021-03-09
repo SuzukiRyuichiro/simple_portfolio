@@ -22,6 +22,12 @@ class User < ApplicationRecord
     end
   end
 
+  def average_purchased_price(product)
+    product_purchases = purchases.where(product: product)
+    return nil unless product_purchases.any?
+    return product_purchases.sum('price_at_purchase * shares') / product_purchases.sum(:shares)
+  end
+
   private
 
   def bitflyer_params(order)
@@ -68,11 +74,5 @@ class User < ApplicationRecord
     https.use_ssl = true
     response = https.request(options)
     return JSON.parse(response.body, symbolize_names: true)
-  end
-  
-  def average_purchased_price(product)
-    product_purchases = purchases.where(product: product)
-    return nil unless product_purchases.any?
-    return product_purchases.sum('price_at_purchase * shares') / product_purchases.sum(:shares)
   end
 end
