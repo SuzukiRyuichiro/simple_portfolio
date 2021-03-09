@@ -9,4 +9,10 @@ class User < ApplicationRecord
   has_many :products, through: :purchases
   has_many :platforms, through: :purchases
 
+  def average_purchased_price(product)
+    product_purchases = purchases.where(product: product)
+    return nil unless product_purchases.any?
+
+    return product_purchases.sum('price_at_purchase * shares') / product_purchases.sum(:shares)
+  end
 end

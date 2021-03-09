@@ -6,8 +6,11 @@ module DashboardHelper
   end
 
   def format_number(number)
-    number_with_delimiter(sprintf("%+.2f", number))
+    if number.positive?
+      "+$#{number_with_delimiter(sprintf("%.2f", number))}"
+    else
+      "-$#{number_with_delimiter(sprintf("%.2f", number))}"
+    end
   end
-  
 
 end
