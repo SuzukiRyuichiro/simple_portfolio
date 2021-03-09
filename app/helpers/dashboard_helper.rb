@@ -1,8 +1,8 @@
 module DashboardHelper
-  def get_margin(purchases, price)
+  def get_margin(purchases, current_price)
     @margin = purchases.sum do |purchase|
-      purchase.margin_at(price)
-    end.round(2)
+      purchase.margin_at(current_price)
+    end
   end
 
   def format_number(number)
