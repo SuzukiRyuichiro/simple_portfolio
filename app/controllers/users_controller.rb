@@ -3,6 +3,11 @@ class UsersController < ApplicationController
     @user = current_user
     @purchases = current_user.purchases
     @products = @user.products.distinct
+
+    @articles = @products.map do |product|
+      Polygon.new(product.ticker).run
+    end
+
     # @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
     # @total_margin = calc_total_margin(@purchases)
     authorize @user
