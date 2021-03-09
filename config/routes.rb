@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/search/:query', to: 'products#search'
       get '/products/:id', to: 'products#fetch_price'
+      get '/valuations/:current_user_id', to: 'valuations#fetch_total'
     end
   end
   # sidekiq
