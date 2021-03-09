@@ -266,6 +266,11 @@ position: relative;
   grid-gap: 8px;
 }
 
+// show page right card -----------------------
+
+.card-show-margin {
+  margin: 2em 0;
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .stock-cards {
