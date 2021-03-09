@@ -87,7 +87,7 @@ end
 
 # Platforms -----------------------------------------------------------------------------------------------------------------------------------
 
-names = ["Robinhood", "Rakuten Securities", "LINE Securities", "BitFlyer", "Binance", "SBI Securities", "Kraken", "BITMAX", "kabu.com Securities", "Matsui Securities", "coinbase", "GMO Coin", "DMM Bitcoint"]
+names = ["Robinhood", "Rakuten Securities", "LINE Securities", "bitFlyer", "Binance", "SBI Securities", "Kraken", "BITMAX", "kabu.com Securities", "Matsui Securities", "coinbase", "GMO Coin", "DMM Bitcoint"]
 
 names.each do |platform|
   new_platform = Platform.new(name: platform)

@@ -8,4 +8,12 @@ class UserPolicy < ApplicationPolicy
   def dashboard?
     true
   end
+
+  def connect_to_bitflyer?
+    update?
+  end
+
+  def update?
+    record == user
+  end
 end
