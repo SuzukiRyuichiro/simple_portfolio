@@ -1,0 +1,11 @@
+<div data-controller="valuation chartkick" data-product-id="<%= current_user.id %>">
+  <div class="card card-trip">
+    <h2 class="text-center" data-valuation-target="total">$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") if defined? @total_valuation %></h2>
+    <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000 %>
+  </div>
+  <div>
+    <% @articles.flatten.each do |article| %>
+      <%= render 'products/news_card', article: article %>
+    <% end %>
+  </div>
+</div>

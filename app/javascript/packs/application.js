@@ -30,10 +30,6 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-});
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
   const chart = Chartkick.chart['purchase'].getChartObject();
   setInterval(function(){
     const indexToUpdate = Math.round(Math.random() * 30);
