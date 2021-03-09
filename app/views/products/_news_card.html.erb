@@ -1,7 +1,7 @@
 <div class="m-5 shadow">
   <div class="news-card d-flex">
     <div class="news-picture">
-      <% if article['image'].split(/(?=https)/).count == 1 %>
+      <% if article['image']&.split(/(?=https)/).count == 1 %>
       <% link = article['image'] %>
       <% else %>
       <% link = article['image'].split(/(?=https)/)[1] %>
@@ -13,7 +13,11 @@
         <h5 class="card-subtitle mb-2"><%= article['title'] %></h5>
         <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
       </div>
-      <p><%= article['summary'] %></p>
+      <% if article['summary']&.length > 220  %>
+        <p><%= article['summary']&.slice(0..220) %>...</p>
+      <% else %>
+        <p><%= article['summary'] %></p>
+      <% end %>
       <%= link_to "See full article", article['url']%>
     </div>
   </div>
