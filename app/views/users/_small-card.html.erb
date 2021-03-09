@@ -4,6 +4,8 @@
     <h5 class="m-0"><%= product.name %></h5>
     <p class="mb-2 text-muted" ><%= product.ticker %></p>
     <h3 class="font-weight-bold">$<%= number_with_delimiter(price.round(2), delmiter: ',') %></h3>
+    <p>$<%= number_with_delimiter(product.calc_margin(purchases).round(2), delimiter: ',') %>, 
+    <%= format_number(get_margin(purchases, price)) %></p>
   </div>
   <div class="stock-card-chart">
     <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%"  %>
