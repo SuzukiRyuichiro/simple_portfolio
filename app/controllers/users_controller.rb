@@ -18,6 +18,13 @@ class UsersController < ApplicationController
     authorize @user
   end
 
+  def update
+    @user = User.find(params[:id])
+    authorize @user
+    @user.update(user_params)
+    redirect_to dashboard_path
+  end
+
   private
 
   def calc_valuation(product)
@@ -32,5 +39,9 @@ class UsersController < ApplicationController
       total_margin += (purchase.product.get_product_price - purchase.price_at_purchase) * purchase.shares
     end
     return total_margin
+  end
+
+  def user_params
+    params.require(:user).permit(:bitflyer_api_key, :bitflyer_api_secret)
   end
 end

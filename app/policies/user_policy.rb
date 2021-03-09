@@ -10,6 +10,10 @@ class UserPolicy < ApplicationPolicy
   end
 
   def connect_to_bitflyer?
-    true
+    update?
+  end
+
+  def update?
+    record == user
   end
 end
