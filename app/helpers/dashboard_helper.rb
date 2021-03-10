@@ -13,4 +13,8 @@ module DashboardHelper
     end
   end
 
+  def format_number_to_price(number)
+    "$#{number_with_delimiter(sprintf("%.2f", number))}"
+  end
+
 end
