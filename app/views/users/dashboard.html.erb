@@ -4,12 +4,12 @@
     <!-- valuation and big chart (left top) -->
     <div style="overflow:hidden;">
       <%= render 'users/chart-card', valuation: @valuation %>
+      <%= @total_margin %>
     </div>
     <!-- News articles (left bottom) -->
-    <div>
-      <% @finnhub_articles.flatten.each do |article| %>
-        <%= render 'users/finnhub_news_card', article: article %>
-      <% end %>
+    <div data-controller="news">
+      <div data-news-target="container">
+      </div>
     </div>
   </div>
   <!-- right -->
