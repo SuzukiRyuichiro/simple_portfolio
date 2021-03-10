@@ -248,7 +248,7 @@ position: relative;
 // dashboard small card ----------------------------------
 
 .card-dashboard {
-  width: 25em;
+  width: 23em;
   padding-right: 1em;
 }
 .chart-card {
@@ -260,12 +260,11 @@ position: relative;
 }
 
 // grid --------------
-.stock-cards-padding {
-  padding: 15px;
+
 
   .stock-cards-wrapper {
-    background-color: white;
-    padding: 10px;
+    background-color: $boody-background;
+    // padding: 10px;
     height: 95vh;
 
     .stock-cards-header{
@@ -273,18 +272,28 @@ position: relative;
     }
 
     .stock-cards {
-      height: 95%;
-      overflow-y: scroll;
+      max-height: 95%;
+      overflow-y: auto;
+      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       grid-gap: 8px;
+      background-color: $boody-background;
 
       h3 {
         font-size: 16px;
       }
     }
+    .stock-cards::-webkit-scrollbar {
+      display: none;
+    }
   }
-}
+  .stock-card-chart {
+    canvas {
+      max-width: 250px;
+      padding: 0.8em;
+    }
+  }
 
 
 
