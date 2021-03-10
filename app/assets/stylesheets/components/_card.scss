@@ -260,15 +260,33 @@ position: relative;
 }
 
 // grid --------------
+.stock-cards-padding {
+  padding: 15px;
 
-.stock-cards {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 8px;
-  h3 {
-    font-size: 16px;
+  .stock-cards-wrapper {
+    background-color: white;
+    padding: 10px;
+    height: 95vh;
+
+    .stock-cards-header{
+      height: 5%;
+    }
+
+    .stock-cards {
+      height: 95%;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 8px;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
   }
 }
+
+
 
 // show page right card -----------------------
 
