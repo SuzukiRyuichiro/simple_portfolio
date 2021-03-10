@@ -10,9 +10,37 @@
   <%= f.input :date, as: :hidden, input_html: { value: DateTime.now }  %>
   <%= hidden_field_tag :api_order, 'bitflyer' %>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Minutes until order expiration</label>
+    <label for="minute_to_expire">Minutes until order expiration</label>
     <%= number_field_tag :minute_to_expire, nil, step: 0.001, class: "form-control" %>
     <small id="minuteToExpireHelp" class="form-text text-muted">Specify the time in minutes until the expiration time. If omitted, the value will be 43200 (30 days)</small>
+  </div>
+  <div class="form-group">
+    <label for="time_in_force">Execution amount parameters
+      <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="far fa-question-circle"></i>
+      </a>
+    </label>
+    <div class="collapse" id="collapseExample">
+      <div class="text-muted">
+        <p><b>Good 'Til Canceled</b> (GTC) A Good 'Til Canceled order is one where the order rbains in effect until it is either filled or canceled.</p>
+        <p><b>Immediate or Cancel</b> (IOC) With an Immediate or Cancel order, all or part of the order is immediately filled if a match is found for the price indicated or better. Orders that fail to fill are canceled in their entirety.</p>
+        <p><b>Fill or Kill</b> (FOK) This refers to when the order is canceled if the volume is not immediately contracted (filled) in its entirety.</p>
+      </div>
+    </div>
+    <div class="form-check">
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "GTC") %>
+        <%= label_tag "Good 'Til Canceled" %>
+      </div>
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "IOC") %>
+        <%= label_tag "Immediate or Cancel" %>
+      </div>
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "FOK") %>
+        <%= label_tag "Fill or Kill" %>
+      </div>
+    </div>
   </div>
   <!-- <#%= f.input :date, as: :date, html5: true  %> -->
   <!-- <p>Estimated cost: <#%=  %></p> -->
