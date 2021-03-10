@@ -22,7 +22,14 @@
           <%= render 'purchases/form', purchase: new_purchase %>
         </div>
         <div class="tab-pane fade py-3" id="requests" role="tabpanel" aria-labelledby="profile-tab">
+          <% if current_user.bitflyer_api_key.present? %>
           <%= render 'purchases/bitflyer_form', purchase: new_purchase %>
+          <% else %>
+          <!-- if the user does not have bitflyer API key, it won't show the form -->
+          <div class="d-flex justify-content-center p-5">
+            <%= link_to "Connect to bitFlyer", bitflyer_connect_path, class: 'btn btn-primary' %>
+          </div>
+          <% end %>
         </div>
       </div>
     </div>
