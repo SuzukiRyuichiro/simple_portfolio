@@ -27,15 +27,14 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
+
+
+
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  const chart = Chartkick.chart['purchase'].getChartObject();
-  setInterval(function(){
-    const indexToUpdate = Math.round(Math.random() * 30);
-    chart.data.datasets[0].data[indexToUpdate] = Math.random() *100;
-    chart.update();
-  }, 1000);
+
+
 });
 
 import "controllers"
