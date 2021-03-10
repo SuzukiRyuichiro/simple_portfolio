@@ -13,11 +13,13 @@ class PurchasesController < ApplicationController
       if @purchase.save
         redirect_to product_path(@purchase.product)
       else
-        render :new
+        # render :new this needs fix
       end
     else
-      raise
-      bitflyer_order_api_request(purchase_params)
+      bitflyer_order_api_request
+      if @purchase.save
+        redirect_to product_path(@purchase.product)
+      end
     end
   end
 
@@ -28,21 +30,14 @@ class PurchasesController < ApplicationController
   end
 
   def bitflyer_order_api_request_body
-    # string = "{'product_code': '#{ticker}_JPY',
-    #   'child_order_type': 'LIMIT',
-    #   'side': 'SELL',
-    #   'price': #{price},
-    #   'size': #{shares},
-    #   'minute_to_expire': 1,
-    #   'time_in_force': 'GTC'}"
-    string = '{"product_code": "BTC_JPY",
-  "child_order_type": "LIMIT",
-  "side": "SELL",
-  "price": 9000000,
-  "size": 0.001,
-  "minute_to_expire": 1,
-  "time_in_force": "GTC"}'
-    return string
+    hash = { product_code: "#{Product.find(purchase_params[:product_id]).ticker}_JPY",
+      child_order_type: 'LIMIT',
+      side: 'SELL',
+      price: "#{purchase_params[:price_at_purchase]}",
+      size: "#{purchase_params[:shares]}",
+      minute_to_expire: "#{params[:minute_to_expire].to_i}",
+      time_in_force: "#{params[:time_in_force]}"}
+    render :json => hash
   end
 
   def bitflyer_order_api_request
