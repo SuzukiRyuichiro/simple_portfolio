@@ -8,7 +8,7 @@ export default class extends Controller {
       .then(response => response.json())
       .then(data => {
         data.forEach((article) => {
-          this.containerTarget.insertAdjacentHTMLs('afterbegin', article)
+          this.containerTarget.insertAdjacentHTML('afterbegin', article)
         })
       })
   }
