@@ -7,7 +7,7 @@
     </div>
     <div class="d-flex justify-content-between card-show-margin">
       <h5>Margin</h5>
-      <h2><%= format_number(get_margin(purchases, product.get_product_price))%></h2>
+      <h2><%= format_number(product.calc_margin(purchases))%></h2>
     </div>
     <div class="d-flex justify-content-between card-show-margin">
       <h5>Your Average Cost</h5>
