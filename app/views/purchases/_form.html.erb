@@ -1,12 +1,12 @@
-<div class="container mt-5 w-25 form-purchase">
-  <div class="form-card">
-    <%= simple_form_for purchase do |f| %>
-      <%= f.association :product %>
-      <%= f.association :platform %>
-      <%= f.input :price_at_purchase, input_html: { min: 1} %>
-      <%= f.input :shares, as: :float, input_html: { min: 1} %>
-      <%= f.input :date, as: :date, html5: true  %>
-      <%= f.submit class: "btn btn-primary" %>
-    <% end %>
+<div class="px-5 pb-5">
+  <%= simple_form_for purchase do |f| %>
+  <div class="d-flex justify-content-between">
+  <%= f.association :product, wrapper_html: {style: "width: 45%;"} %>
+  <%= f.association :platform, wrapper_html: {style: "width: 45%;"} %>
   </div>
+  <%= f.input :price_at_purchase, input_html: { min: 1} %>
+  <%= f.input :shares, label: 'Number of shares', as: :float, input_html: { min: 1} %>
+  <%= f.input :date, as: :date, html5: true  %>
+  <%= f.submit 'Save', class: "btn btn-primary" %>
+  <% end %>
 </div>
