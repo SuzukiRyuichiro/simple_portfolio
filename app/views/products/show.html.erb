@@ -1,39 +1,37 @@
-<div class="container">
-  <h1 class="mb-3 ml-5"><%= @product.name %>, <%= @product.ticker %></h1>
-  <div class="container-fluid">
-    <div class="row mx-4">
-      <div class="col-8">
-        <div class="card card-trip p-2 mb-5">
-          <h1 class="text-center my-1 text-white">$<%= @product.get_product_price %></h1>
-          <% if @product.price_percentage.positive? %>
-            <h2 class="text-center mb-1"><i class="fas fa-arrow-up arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
-          <% else %>
-            <h2 class="text-center mb-1"><i class="fas fa-arrow-down arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
-          <% end %>
-          <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
-        </div>
+<h1 class="mb-3 ml-5 text-white"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
+<div class="container-fluid">
+  <div class="row mx-4">
+    <div class="col-8">
+      <div class="card card-trip p-2 mb-5">
+        <h1 class="text-center my-1 text-white">$<%= @product.get_product_price %></h1>
+        <% if @product.price_percentage.positive? %>
+          <h2 class="text-center mb-1"><i class="fas fa-arrow-up arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
+        <% else %>
+          <h2 class="text-center mb-1"><i class="fas fa-arrow-down arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
+        <% end %>
+        <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
-      <div class="card-show card-trip col mb-5">
-        <div class="w-100 card-insights">
-          <h3 class="text-white mb-5 mt-3 border-bottom">Insights</h3>
-          <div class="d-flex justify-content-between card-show-margin">
-            <h5>Shares</h5>
-            <h2><%= @purchases.sum(:shares).round(4) %></h2>
-          </div>
-          <div class="d-flex justify-content-between card-show-margin">
-            <h5>Margin</h5>
-            <h2><%= format_number(get_margin(@purchases, @product.get_product_price))%></h2>
-          </div>
-          <div class="d-flex justify-content-between card-show-margin">
-            <h5>Your Average Cost</h5>
-            <h2>$<%= current_user.average_purchased_price(@product).round(2) %></h2>
-          </div>
+    </div>
+    <div class="card-show card-trip col mb-5">
+      <div class="w-100 card-insights">
+        <h3 class="text-white mb-5 mt-3 border-bottom">Insights</h3>
+        <div class="d-flex justify-content-between card-show-margin">
+          <h5>Shares</h5>
+          <h2><%= @purchases.sum(:shares).round(4) %></h2>
+        </div>
+        <div class="d-flex justify-content-between card-show-margin">
+          <h5>Margin</h5>
+          <h2><%= format_number(get_margin(@purchases, @product.get_product_price))%></h2>
+        </div>
+        <div class="d-flex justify-content-between card-show-margin">
+          <h5>Your Average Cost</h5>
+          <h2>$<%= current_user.average_purchased_price(@product).round(2) %></h2>
         </div>
       </div>
     </div>
   </div>
-  <h1 class="text-white ml-5">Related news</h1>
-  <% @articles.each do |article| %>
-    <%= render "news_card", article: article %>
-  <% end %>
 </div>
+<h1 class="text-white ml-5">Related news</h1>
+<% @articles.each do |article| %>
+  <%= render "news_card", article: article %>
+<% end %>
