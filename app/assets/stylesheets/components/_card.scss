@@ -260,15 +260,20 @@ position: relative;
 
 // grid --------------
 .stock-cards-padding {
-  padding: 30px;
+  padding: 15px;
 
   .stock-cards-wrapper {
     background-color: white;
     padding: 10px;
-    height: 90vh;
-    overflow-y: scroll;
+    height: 95vh;
+
+    .stock-cards-header{
+      height: 5%;
+    }
 
     .stock-cards {
+      height: 95%;
+      overflow-y: scroll;
       display: flex;
       flex-direction: column;
       grid-gap: 8px;
