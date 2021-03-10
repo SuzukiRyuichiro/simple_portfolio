@@ -28,12 +28,12 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 
+window.socket = new WebSocket('wss://ws.finnhub.io?token=c147hh748v6oc78d7n90');
 
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-
 
 });
 

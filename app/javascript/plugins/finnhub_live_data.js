@@ -1,6 +1,6 @@
-const finnhubLiveData = (symbol) => {
 
-    const socket = new WebSocket('wss://ws.finnhub.io?token=c0uu9pf48v6or05b83o0');
+const finnhubLiveData = (socket, symbol, onMessage) => {
+
     
     // Connection opened -> Subscribe
     socket.addEventListener('open', function (event) {
@@ -10,9 +10,7 @@ const finnhubLiveData = (symbol) => {
     });
     
     // Listen for messages
-    socket.addEventListener('message', function (event) {
-        console.log('Message from server ', event.data);
-    });
+    socket.addEventListener('message', onMessage);
     
     // Unsubscribe
     var unsubscribe = function(symbol) {

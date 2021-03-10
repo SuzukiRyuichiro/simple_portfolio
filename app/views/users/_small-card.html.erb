@@ -4,12 +4,12 @@
       <h5 class="m-0"><%= product.name %></h5>
       <p class="mb-2 text-muted" ><%= product.ticker %></p>
       <!-- gotta fix this later ↓ -->
-      <h3 class="font-weight-bold">$<%= number_with_delimiter(price.round(2), delmiter: ',') if defined? price %></h3>
+      <h3 class="font-weight-bold" data-chart-target='price'>$<%= number_with_delimiter(price.round(2), delmiter: ',') if defined? price %></h3>
       <p><%= format_number(product.calc_margin(purchases)) %></p>
       <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
     </div>
     <div class="stock-card-chart py-1">
-      <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%" %>
+      <%= line_chart [charts_stock_price_history_path(product)], id: "chart-#{product.id}", points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%" %>
     </div>
   </div>
 <% end %>
