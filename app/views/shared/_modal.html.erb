@@ -9,7 +9,22 @@
         <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= render 'purchases/form', purchase: new_purchase %>
+      <ul class="nav tabs-underlined" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="active tab-underlined text-muted" id="home-tab" data-toggle="tab" href="#bookings" role="tab" aria-controls="home" aria-selected="true">Manual Record</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="tab-underlined text-muted" id="profile-tab" data-toggle="tab" href="#requests" role="tab" aria-controls="profile" aria-selected="false">Order through bitFlyer</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade py-3 show active" id="bookings" role="tabpanel" aria-labelledby="home-tab">
+          <%= render 'purchases/form', purchase: new_purchase %>
+        </div>
+        <div class="tab-pane fade py-3" id="requests" role="tabpanel" aria-labelledby="profile-tab">
+          <%= render 'purchases/bitflyer_form', purchase: new_purchase %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
