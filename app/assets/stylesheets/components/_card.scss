@@ -288,6 +288,12 @@ position: relative;
       display: none;
     }
   }
+  .stock-card-chart {
+    canvas {
+      max-width: 250px;
+      padding: 0.8em;
+    }
+  }
 
 
 
