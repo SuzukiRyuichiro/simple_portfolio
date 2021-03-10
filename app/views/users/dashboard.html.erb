@@ -8,8 +8,8 @@
     <!-- News articles (left bottom) -->
     <div>
       <h1 class="mt-3 text-white ml-5">News</h1>
-      <% @articles.flatten.each do |article| %>
-        <%= render 'products/news_card', article: article %>
+      <% @finnhub_articles.each do |article| %>
+      <%= render 'users/finnhub_news_card', article: article %>
       <% end %>
     </div>
   </div>
