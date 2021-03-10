@@ -1,13 +1,19 @@
 <div class="px-5 pb-5">
   <%= simple_form_for purchase do |f| %>
   <div class="d-flex justify-content-between">
-  <% bitflyer_supported = ['BTC', 'BCH', 'ETH'] %>
-  <%= f.association :product, wrapper_html: {style: "width: 45%;"}, collection: bitflyer_supported.map {|ticker| Product.find_by(ticker: ticker) } %>
-  <%= f.association :platform, wrapper_html: {style: "width: 45%;"}, collection: [Platform.find_by(name: 'bitFlyer')] %>
+    <% bitflyer_supported = ['BTC', 'BCH', 'ETH'] %>
+    <%= f.association :product, wrapper_html: {style: "width: 45%;"}, collection: bitflyer_supported.map {|ticker| Product.find_by(ticker: ticker) } %>
+    <%= f.association :platform, wrapper_html: {style: "width: 45%;"}, collection: [Platform.find_by(name: 'bitFlyer')], selected: Platform.find_by(name: 'bitFlyer') %>
   </div>
-  <%= f.input :price_at_purchase, label: 'Order amount', input_html: { min: 1 } %>
+  <%= f.input :price_at_purchase, label: 'Order price', as: :float, input_html: { min: 1, value: Product.find_by(ticker: 'BTC').get_product_price } %>
   <%= f.input :shares, label: 'Number of shares', as: :float, input_html: { min: 1} %>
   <%= f.input :date, as: :hidden, input_html: { value: DateTime.now }  %>
+  <%= hidden_field_tag :api_order, 'bitflyer' %>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Minutes until order expiration</label>
+    <%= number_field_tag :minute_to_expire, nil, step: 0.001, class: "form-control" %>
+    <small id="minuteToExpireHelp" class="form-text text-muted">Specify the time in minutes until the expiration time. If omitted, the value will be 43200 (30 days)</small>
+  </div>
   <!-- <#%= f.input :date, as: :date, html5: true  %> -->
   <!-- <p>Estimated cost: <#%=  %></p> -->
   <%= f.submit 'Save', class: "btn btn-primary" %>
