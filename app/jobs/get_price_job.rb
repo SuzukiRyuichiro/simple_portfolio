@@ -1,8 +1,3 @@
-require 'open-uri'
-require 'json'
-require 'uri'
-require 'net/http'
-
 class GetPriceJob < ApplicationJob
   queue_as :critical
 
