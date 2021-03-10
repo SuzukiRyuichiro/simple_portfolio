@@ -53,7 +53,7 @@ accessToken = ENV["FINNHUB_API_KEY"]
   product.save
 end
 
-[{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}].each do |crypto|
+[{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}, {name: 'Bitcoin Cash', ticker: 'BCH'}].each do |crypto|
   product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD", kind: 'Crypto')
   product.save
 end
@@ -98,7 +98,7 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME', 'ETH']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME', 'ETH', 'BCH']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
@@ -143,7 +143,7 @@ test_stocks.each do |stock|
   end
 end
 
-test_cryptos = ['BTC', 'ETH']
+test_cryptos = ['BTC', 'ETH', 'BCH']
 
 test_cryptos.each do |crypto|
   file = File.read("#{current_dir}/db/sample jsons/#{crypto} daily.json")
