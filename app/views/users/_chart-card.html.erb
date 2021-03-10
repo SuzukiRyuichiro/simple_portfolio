@@ -1,7 +1,8 @@
 <div data-controller="valuation chartkick" data-product-id="<%= current_user.id %>">
   <div class="card card-trip width-margin">
     <h5 class="text-center mb-0">Total</h5>
-    <h1 class="display-4 mb-2 text-center text-white" data-valuation-target="total"><%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") if defined? number_with_delimiter(@total_valuation.round(2), delimiter: ',') %></h1>
+    <h1 class="display-4 text-center text-white" data-valuation-target="total"><%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") if defined? number_with_delimiter(@total_valuation.round(2), delimiter: ',') %></h1>
+    <h5 class="text-center mb-4"><small class="text-muted">Margin</small> $<%= number_with_delimiter(@total_margin.round(2), delimiter: ",") %></h5>
     <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000 %>
   </div>
 </div>

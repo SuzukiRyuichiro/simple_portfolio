@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @finnhub_articles = finnhub_news.sample(10)
 
     # @total_valuation = @products.inject(0) { |result, product| result + calc_valuation(product) }
-    # @total_margin = calc_total_margin(@purchases)
+    @total_margin = calc_total_margin(@purchases)
     authorize @user
   end
 
