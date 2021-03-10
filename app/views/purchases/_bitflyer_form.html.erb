@@ -22,23 +22,23 @@
     </label>
     <div class="collapse" id="collapseExample">
       <div class="text-muted">
-        <h6><b>Good 'Til Canceled (GTC)</b> - A Good 'Til Canceled order is one where the order rbains in effect until it is either filled or canceled.</h6>
-        <h6><b>Immediate or Cancel (IOC)</b> - With an Immediate or Cancel order, all or part of the order is immediately filled if a match is found for the price indicated or better. Orders that fail to fill are canceled in their entirety.</h6>
-        <h6><b>Fill or Kill (FOK)</b> - This refers to when the order is canceled if the volume is not immediately contracted (filled) in its entirety.</h6>
+        <p><small><em>Good 'Til Canceled (GTC)</em> - A Good 'Til Canceled order is one where the order rbains in effect until it is either filled or canceled.</small></p>
+        <p><small><em>Immediate or Cancel (IOC)</em> - With an Immediate or Cancel order, all or part of the order is immediately filled if a match is found for the price indicated or better. Orders that fail to fill are canceled in their entirety.</small></p>
+        <p><small><em>Fill or Kill (FOK)</em> - This refers to when the order is canceled if the volume is not immediately contracted (filled) in its entirety.</small></p>
       </div>
     </div>
     <div class="form-check">
       <div class="ml-1">
         <%= radio_button_tag(:time_in_force, "GTC") %>
-        <%= label_tag "Good 'Til Canceled" %>
+        <%= label_tag "time_in_force_GTC", "Good 'Til Canceled", class: "form-check-label" %>
       </div>
       <div class="ml-1">
         <%= radio_button_tag(:time_in_force, "IOC") %>
-        <%= label_tag "Immediate or Cancel" %>
+        <%= label_tag "time_in_force_IOC", "Immediate or Cancel", class: "form-check-label" %>
       </div>
       <div class="ml-1">
         <%= radio_button_tag(:time_in_force, "FOK") %>
-        <%= label_tag "Fill or Kill" %>
+        <%= label_tag "time_in_force_FOK", "Fill or Kill", class: "form-check-label" %>
       </div>
     </div>
   </div>
