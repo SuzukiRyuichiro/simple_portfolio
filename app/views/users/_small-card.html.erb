@@ -4,7 +4,7 @@
       <h5 class="m-0"><%= product.name %></h5>
       <p class="mb-2 text-muted" ><%= product.ticker %></p>
       <!-- gotta fix this later ↓ -->
-      <h3 class="font-weight-bold" data-chart-target='price'>$<%= number_with_delimiter(price.round(2), delmiter: ',') if defined? price %></h3>
+      <h3 class="font-weight-bold" data-chart-target='price'><%= format_number_to_price(price) if defined? price %></h3>
       <p><%= format_number(product.calc_margin(purchases)) %></p>
       <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
     </div>

@@ -36,17 +36,17 @@ export default class extends Controller {
               }]
           }
         };
-        chart.options.scales.yAxes[0].ticks.beginAtZero = false
-        chart.options.scales.yAxes[0].ticks.max = 40000
-        chart.options.scales.yAxes[0].ticks.min = 30000
-        chart.update()
-        chart.setOptions(newOptions)
-        chart.updateData(newData)
-        // chart.options.title.text = 'as;kja'
-        // chart.update();
-        // console.log(chart.getOptions())
-        chart.redraw();
+        // chart.setOptions(newOptions)
+        // chart.updateData(newData)
+        // // chart.options.title.text = 'as;kja'
+        // // chart.update();
+        // // console.log(chart.getOptions())
+        // chart.redraw();
       }
+      chart.options.scales.yAxes[0].ticks.beginAtZero = false
+      chart.options.scales.yAxes[0].ticks.max = 40000
+      chart.options.scales.yAxes[0].ticks.min = 30000
+      chart.update()
     }
     window.addEventListener('load', (event) => {
       console.log('DOM fully loaded and parsed');
