@@ -10,13 +10,17 @@ export default class extends Controller {
     this.newData = []
     window.addEventListener('load', (event) => {
       this.chart = Chartkick.charts[`chart-${this.element.dataset.productId}`]
-      console.log(this.chart)
+      // console.log(this.chart)
       // Hide axis labels
-      this.chart.chart.options.scales.yAxes[0].ticks.display = false
-      this.chart.chart.options.scales.xAxes[0].ticks.display = false
-      this.chart.chart.update()
-      // Start websocket connection
-      finnhubLiveData(window.socket, this.element.dataset.symbol, (event) => onMessage(event));
+      if (this.chart.chart) {
+
+        this.chart.chart.options.scales.yAxes[0].ticks.display = false
+        console.log(this.chart.chart.options)
+        this.chart.chart.options.scales.xAxes[0].ticks.display = false
+        this.chart.chart.update()
+        // Start websocket connection
+        finnhubLiveData(window.socket, this.element.dataset.symbol, (event) => onMessage(event));
+      }
     });
     const onMessage = (event) => {
       const data = JSON.parse(event.data).data
