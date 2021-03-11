@@ -19,4 +19,6 @@
 @import "components/img";
 @import "components/modals";
 @import "components/dash_header";
-@import "components/dashboard_scroll"
+@import "components/dashboard_scroll";
+@import 'select2/dist/css/select2';
+.select2-container{ width: 100% !important; }

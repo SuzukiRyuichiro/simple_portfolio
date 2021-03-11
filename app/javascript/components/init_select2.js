@@ -3,7 +3,8 @@ import 'select2';
 
 const initSelect2 = () => {
   $('.select2').select2({
-    dropdownParent: $("#myModal")
+    dropdownParent: $("#myModal"),
+    minimumInputLength: 2
   });
 };
 
