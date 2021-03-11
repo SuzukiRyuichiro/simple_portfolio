@@ -28,7 +28,7 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 
-window.socket = new WebSocket('wss://ws.finnhub.io?token=c147hh748v6oc78d7n90');
+window.socket = new WebSocket('wss://ws.finnhub.io?token=c147h0v48v6oc78d7mtg');
 
 
 document.addEventListener('turbolinks:load', () => {

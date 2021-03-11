@@ -20,7 +20,7 @@
           <h3 class="mb-2 ml-2">My Stocks</h3>
         </div>
         <div class="mt-3 stock-cards card" >
-          <% @products.each do |product| %>
+          <% @products.reverse.each do |product| %>
             <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases%>
           <% end %>
         </div>
