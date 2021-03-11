@@ -1,15 +1,15 @@
 <%= link_to product_path(product), style: "text-decoration: none;" do %>
-  <div class="mb-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="product-card chartkick" data-product-id="<%= product.id %>">
+  <div class="mb-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="chart" data-product-id="<%= product.id %>" data-symbol="<%= product.finnhub_symbol || product.ticker %>">
     <div class="text-white py-3 pl-3">
       <h5 class="m-0"><%= product.name %></h5>
       <p class="mb-2 text-muted" ><%= product.ticker %></p>
       <!-- gotta fix this later ↓ -->
-      <h3 class="font-weight-bold"><%= format_number_to_price(price) if defined? price %></h3>
+      <h3 class="font-weight-bold" data-chart-target='price'><%= format_number_to_price(price) if defined? price %></h3>
       <p><%= format_number(product.calc_margin(purchases)) %></p>
       <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
     </div>
     <div class="stock-card-chart py-1">
-      <%= line_chart charts_stock_price_history_path(product), points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%", width: "100%" %>
+      <%= line_chart charts_stock_price_history_path(product), id: "chart-#{product.id}", points: false, height: "100%", width: "100%" %>
     </div>
   </div>
 <% end %>

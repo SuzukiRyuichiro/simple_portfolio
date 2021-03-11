@@ -1,25 +1,21 @@
-<h1 class="mb-3 ml-5 text-white"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
+<h1 class="mb-3 ml-5 text-white title-sm"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
 <div class="container-fluid">
   <div class="row mx-4">
-    <div class="col-8">
-      <div class="card card-trip p-2 mb-5">
-        <h1 class="text-center my-1 text-white"><%= format_number_to_price(@product.get_product_price) %></h1>
+    <div class="col-8 padding-sm">
+      <div class="card card-trip p-2 mb-5 height-sm" data-controller="chart" data-product-id="<%= @product.id %>" data-symbol="<%= @product.finnhub_symbol || @product.ticker %>">
+        <h1 class="text-center my-1 text-white title-sm" data-chart-target='price' ><%= format_number_to_price(@product.get_product_price) %></h1>
         <% if @product.price_percentage.positive? %>
           <h2 class="text-center mb-1"><i class="fas fa-arrow-up arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
         <% else %>
           <h2 class="text-center mb-1"><i class="fas fa-arrow-down arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
         <% end %>
-        <% if @product.date_prices.present?%>
-          <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
-        <% else %>
-          <%= line_chart charts_stock_price_history_path(Product.find_by(ticker: 'AAPL')), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
-        <% end %>
+        <%= line_chart charts_stock_price_history_path(@product), id: "chart-#{@product.id}", points: false, height: "100%", width: "100%" %>
       </div>
     </div>
     <%= render "user_info", product: @product, purchases: @purchases %>
   </div>
 </div>
-<h1 class="text-white ml-5">Related news</h1>
+<h1 class="text-white ml-5 title-sm">Related news</h1>
 <% @articles.each do |article| %>
   <%= render "news_card", article: article %>
 <% end %>
