@@ -1,3 +1,5 @@
+puts "Seeding......"
+
 DatePrice.destroy_all
 Purchase.destroy_all
 Product.destroy_all
@@ -26,64 +28,64 @@ end
 
 # Products (cryptos) ----------------------------------------------------------------------------------------------------------------------
 
-# require 'csv'
+require 'csv'
 
-# puts "Crypto"
-# i = 0
+puts "Crypto"
+i = 0
 
-# CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
-#   product = Product.new(ticker: row['currency code'], name: row['currency name'])
-#   product.save
-#   percentage(CSV.read("#{current_dir}/db/crypto.csv"), i)
-#   i += 1
-# end
+CSV.foreach("#{current_dir}/db/crypto.csv", csv_options) do |row|
+  product = Product.new(ticker: row['currency code'], name: row['currency name'], currency: "USD", kind: 'Crypto')
+  product.save
+  percentage(CSV.read("#{current_dir}/db/crypto.csv"), i)
+  i += 1
+end
 
-# puts "Crypto complete"
+puts "Crypto complete"
 
 # Products (short version) ----------------------------------------------------------------------------------------------------------------------
-require 'json'
-require 'open-uri'
+# require 'json'
+# require 'open-uri'
 
-accessToken = ENV["FINNHUB_API_KEY"]
+# accessToken = ENV["FINNHUB_API_KEY"]
 
-['AAPL', 'TSLA', 'gamestop'].each do |company|
-  base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
-  json = JSON.parse(base_url, {:symbolize_names => true})
-  product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD", kind: "Stock")
-  product.save
-end
+# ['AAPL', 'TSLA', 'gamestop'].each do |company|
+#   base_url = open("https://finnhub.io/api/v1/search?q=#{company}&token=#{accessToken}").read
+#   json = JSON.parse(base_url, {:symbolize_names => true})
+#   product = Product.new(name: json[:result][0][:description], ticker: json[:result][0][:displaySymbol], currency: "USD", kind: "Stock")
+#   product.save
+# end
 
-[{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}, {name: 'Bitcoin Cash', ticker: 'BCH'}].each do |crypto|
-  product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD", kind: 'Crypto')
-  product.save
-end
+# [{name: 'Bitcoin', ticker: 'BTC'}, {name: 'Etherium', ticker: 'ETH'}, {name: 'Bitcoin Cash', ticker: 'BCH'}].each do |crypto|
+#   product = Product.new(name: crypto[:name], ticker: crypto[:ticker], currency: "USD", kind: 'Crypto')
+#   product.save
+# end
 
 
 # Products (stocks) ----------------------------------------------------------------------------------------------------------------------
 
-# require 'json'
-# require 'open-uri'
+require 'json'
+require 'open-uri'
 
-# def finnhubStockSeeder(marketCode)
-#   accessToken = ENV["FINNHUB_API_KEY"]
-#   base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
-#   symbol_json = JSON.parse(base_url, {:symbolize_names => true})
-#   puts marketCode
+def finnhubStockSeeder(marketCode)
+  accessToken = ENV["FINNHUB_API_KEY"]
+  base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
+  symbol_json = JSON.parse(base_url, {:symbolize_names => true})
+  puts marketCode
 
-#   symbol_json.each_with_index do |row, index|
-#     product = Product.new(ticker: row[:displaySymbol], name: row[:description])
-#     product.save
-#     percentage(symbol_json, index)
-#   end
+  symbol_json.each_with_index do |row, index|
+    product = Product.new(ticker: row[:displaySymbol], name: row[:description], currency: "USD", kind: "Stock")
+    product.save
+    percentage(symbol_json, index)
+  end
 
-#   puts "#{marketCode} complete"
-# end
+  puts "#{marketCode} complete"
+end
 
-# # Actual seeding
+# Actual seeding
 
-# ['US', 'T', 'HK', 'L', 'SZ'].each do |code|
-#   finnhubStockSeeder(code)
-# end
+['US'].each do |code|
+  finnhubStockSeeder(code)
+end
 
 # Platforms -----------------------------------------------------------------------------------------------------------------------------------
 
@@ -98,7 +100,7 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'GME', 'ETH', 'BCH']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOG', 'NTDOY', 'BA', 'PFE']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
@@ -128,6 +130,7 @@ end
 # Date_Price -----------------------------------------------------------------------------------------------------------------------------------
 test_stocks = ['AAPL', 'TSLA', 'GME']
 
+# from local files
 test_stocks.each do |stock|
   file = File.read("#{current_dir}/db/sample jsons/#{stock} daily.json")
   json = JSON.parse(file)
@@ -142,6 +145,25 @@ test_stocks.each do |stock|
     end
   end
 end
+
+test_stocks = ['GOOG', 'NTDOY', 'BA', 'PFE']
+
+test_stocks.each do |stock|
+  file = open("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=#{stock}&apikey=#{ENV['ALPHA_VANTAGE_API_KEY']}").read
+  json = JSON.parse(file)
+  json["Time Series (Daily)"].each do |arr|
+    components = arr[0].split('-')
+    year = components[0].to_i
+    month = components[1].to_i
+    day = components[2].to_i
+    date_price = DatePrice.new(date: DateTime.new(year, month, day), price: arr[1]["4. close"].to_f, product: Product.find_by(ticker: stock))
+    if date_price.save
+      puts "#{date_price.product.ticker} was #{date_price.price} on #{date_price.date}"
+    end
+  end
+end
+
+# from API
 
 test_cryptos = ['BTC', 'ETH', 'BCH']
 
