@@ -9,10 +9,10 @@
   search_target: "input"
   }
   %>
-  <%= submit_tag "Search", class: "btn btn-primary btn-border btn-radius btn-font-color" %>
+  <%= submit_tag "Search", class: "btn btn-primary btn-border btn-radius btn-font-color", data: { search_target: 'button' } %>
   <% end %>
   <div class="dropdown">
-    <div class="list-group dropdown-menu" style="padding: 0;" data-search-target="results">
+    <div class="list-group dropdown-menu search-result" style="padding: 0;" data-search-target="results">
       <!-- insert results here -->
     </div>
   </div>
