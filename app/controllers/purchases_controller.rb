@@ -13,7 +13,7 @@ class PurchasesController < ApplicationController
       BitFlyerOrderJob.perform_now(params, purchase_params) if params[:api_order] == 'bitflyer'
       redirect_to product_path(@purchase.product)
     else
-      # render ??
+      render 'fail'
     end
   end
 
