@@ -33,13 +33,15 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 
-window.socket = new WebSocket('wss://ws.finnhub.io?token=c147h0v48v6oc78d7mtg');
+// window.socket = new WebSocket('wss://ws.finnhub.io?token=c147h0v48v6oc78d7mtg');
 
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-
+  if (!window.socket && document.querySelector('[data-controller="chart"]')) {
+    window.socket = new WebSocket(`wss://ws.finnhub.io?token=c147h0v48v6oc78d7mtg`);
+  }
 });
 
 import "controllers"

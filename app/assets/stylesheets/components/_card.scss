@@ -321,7 +321,7 @@ position: relative;
   height: 100%;
 }
 
-div[id^="chart-"]{
+div[id^="chart-"] {
   canvas {
     height: 300px;
   }
