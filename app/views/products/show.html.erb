@@ -4,11 +4,11 @@
 <div class="container-fluid">
   <div class="row mx-4">
     <div class="col-8">
-      <div class="card card-trip p-2">
-        <%= line_chart charts_stock_price_history_path(@product), points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
+      <div class="card card-trip p-2" data-chart-target='price'>
+        <%= line_chart [charts_stock_price_history_path(@product)], points: false, xmin: "2020-12-01", xmax: "2021-03-01"  %>
       </div>
     </div>
-    <div class="card-show card-trip col">
+    <div class="card-show card-trip col" data-controller="product-card chart" data-product-id="<%= @product.id %>" data-symbol="<%= @product.finnhub_symbol || @product.ticker %>">
       <div class="w-100">
         <h2><%= @product.name %>, <%= @product.ticker %></h2>
         <div class="d-flex justify-content-between card-show-margin">
@@ -19,9 +19,9 @@
           <h2>Margin</h2>
           <h2><%= format_number(get_margin(@purchases, @product.get_product_price))%></h2>
         </div>
-        <div class="d-flex justify-content-between card-show-margin">
+        <div class="d-flex justify-content-between card-show-margin" >
           <h2>Current Price</h2>
-          <h2>$<%= @product.get_product_price %></h2>
+          <h2 data-chart-target='price'>$<%= number_with_delimiter(@product.get_product_price.round(2), delimiter: ',') %></h2>
         </div>
         <div class="d-flex justify-content-between card-show-margin">
           <h2>Your Average Cost</h2>

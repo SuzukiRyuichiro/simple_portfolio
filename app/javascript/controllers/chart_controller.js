@@ -10,7 +10,7 @@ export default class extends Controller {
     const onMessage = (event, chart) => {
       // console.log(chart)
       // console.log(chartID)
-      console.log(event)
+      console.log(event, this.element.dataset.symbol)
       const data = JSON.parse(event.data).data
       console.log(data)
       if (data[0].s === this.element.dataset.symbol) {
@@ -36,6 +36,10 @@ export default class extends Controller {
               }]
           }
         };
+        chart.options.scales.yAxes[0].ticks.beginAtZero = false
+        chart.options.scales.yAxes[0].ticks.max = 40000
+        chart.options.scales.yAxes[0].ticks.min = 30000
+        chart.update()
         chart.setOptions(newOptions)
         chart.updateData(newData)
         // chart.options.title.text = 'as;kja'
