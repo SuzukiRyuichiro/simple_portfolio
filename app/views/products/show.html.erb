@@ -1,9 +1,9 @@
-<h1 class="mb-3 ml-5 text-white"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
+<h1 class="mb-3 ml-5 text-white title-sm"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
 <div class="container-fluid">
   <div class="row mx-4">
-    <div class="col-8">
-      <div class="card card-trip p-2 mb-5">
-        <h1 class="text-center my-1 text-white"><%= format_number_to_price(@product.get_product_price) %></h1>
+    <div class="col-md-8 padding-sm">
+      <div class="card card-trip p-2 mb-5 height-sm">
+        <h1 class="text-center my-1 text-white title-sm"><%= format_number_to_price(@product.get_product_price) %></h1>
         <% if @product.price_percentage.positive? %>
           <h2 class="text-center mb-1"><i class="fas fa-arrow-up arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
         <% else %>
@@ -19,7 +19,7 @@
     <%= render "user_info", product: @product, purchases: @purchases %>
   </div>
 </div>
-<h1 class="text-white ml-5">Related news</h1>
+<h1 class="text-white ml-5 title-sm">Related news</h1>
 <% @articles.each do |article| %>
   <%= render "news_card", article: article %>
 <% end %>
