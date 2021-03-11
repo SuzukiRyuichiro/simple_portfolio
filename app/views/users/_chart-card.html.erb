@@ -1,4 +1,4 @@
-<div data-controller="valuation chartkick" data-product-id="<%= current_user.id %>">
+<div data-controller="valuation">
   <div class="card card-trip width-margin">
     <h5 class="text-center mb-0">Total</h5>
     <h1 class="display-4 text-center text-white" data-valuation-target="total"><%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") if defined? number_with_delimiter(@total_valuation.round(2), delimiter: ',') %></h1>
