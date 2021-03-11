@@ -335,6 +335,18 @@ div[id^="chart-"] {
   padding: 1rem;
 }
 
+.form-card {
+  width: 40%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20%;
+  .submit-button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .stock-cards {
@@ -389,3 +401,5 @@ div[id^="chart-"] {
     grid-template-columns: 1fr;
   }
 }
+
+
