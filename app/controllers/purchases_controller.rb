@@ -16,9 +16,10 @@ class PurchasesController < ApplicationController
         # render :new this needs fix
       end
     else
-      bitflyer_order_api_request
       if @purchase.save
+        bitflyer_order_api_request
         redirect_to product_path(@purchase.product)
+      else
       end
     end
   end
@@ -31,12 +32,12 @@ class PurchasesController < ApplicationController
 
   def bitflyer_order_api_request_body
     hash = { product_code: "#{Product.find(purchase_params[:product_id]).ticker}_JPY",
-      child_order_type: 'LIMIT',
-      side: 'SELL',
-      price: "#{purchase_params[:price_at_purchase]}",
-      size: "#{purchase_params[:shares]}",
-      minute_to_expire: "#{params[:minute_to_expire].to_i}",
-      time_in_force: "#{params[:time_in_force]}"}
+             child_order_type: 'LIMIT',
+             side: 'SELL',
+             price: "#{purchase_params[:price_at_purchase]}",
+             size: "#{purchase_params[:shares]}",
+             minute_to_expire: "#{params[:minute_to_expire].to_i}",
+             time_in_force: "#{params[:time_in_force]}"}
     render :json => hash
   end
 
