@@ -19,21 +19,10 @@
       <ul class="navbar-nav mr-auto list-unstyled">
         <% if user_signed_in? %>
         <li class="nav-item active mt-2 mr-2" style="z-index: 10000;">
-          <i class="fas fa-plus-circle plus-icon text-white" data-toggle="modal" data-target="#myModal"></i>
-          <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content modal-color">
-                <div class="modal-header px-5 mt-3" style="border: 0;">
-                  <h5 class="modal-title">Record a purchase</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <%= render 'purchases/form', purchase: @new_purchase %>
-              </div>
-            </div>
-          </div>
+        <!-- modal start -->
+          <%= render "shared/modal", new_purchase: @new_purchase %>
+        <!-- modal end -->
+        </li>
           <li class="nav-item dropdown" style="z-index: 10000;">
             <%= image_tag "https://i.pinimg.com/originals/29/24/89/292489e7d0bf8ce7d5ffd81be62d0800.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

@@ -20,8 +20,8 @@ class Product < ApplicationRecord
   }
 
   def price_percentage
-    yesterday = self.date_prices.find_by(date: Date.today - 2)
-    today = self.date_prices.find_by(date: Date.today - 1)
+    yesterday = self.date_prices.find_by(date: Date.today - 3)
+    today = self.date_prices.find_by(date: Date.today - 2)
     (today.price - yesterday.price) / yesterday.price * 100
   end
 
