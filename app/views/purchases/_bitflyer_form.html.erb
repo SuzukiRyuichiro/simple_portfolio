@@ -11,7 +11,7 @@
   <%= hidden_field_tag :api_order, 'bitflyer' %>
   <div class="form-group">
     <label for="minute_to_expire">Minutes until order expiration</label>
-    <%= number_field_tag :minute_to_expire, nil, step: 0.001, class: "form-control" %>
+    <%= number_field_tag :minute_to_expire, nil, step: 1, class: "form-control" %>
     <small id="minuteToExpireHelp" class="form-text text-muted">Specify the time in minutes until the expiration time. If omitted, the value will be 43200 (30 days)</small>
   </div>
   <div class="form-group">

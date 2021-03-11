@@ -9,18 +9,13 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.new(purchase_params)
     @purchase.user = current_user
     authorize @purchase
-    if params[:api_order].nil?
-      if @purchase.save
-        redirect_to product_path(@purchase.product)
-      else
-        # render :new this needs fix
-      end
-    else
-      if @purchase.save
+    if @purchase.save
+      if params[:api_order] == 'bitflyer'
         bitflyer_order_api_request
-        redirect_to product_path(@purchase.product)
-      else
       end
+      redirect_to product_path(@purchase.product)
+    else
+      # render ??
     end
   end
 
