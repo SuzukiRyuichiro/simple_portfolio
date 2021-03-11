@@ -112,7 +112,7 @@ class Product < ApplicationRecord
 
   def get_crypto_price_from_json_cmc
     quote_json = get_crypto_json_cmc
-    unless quote_json["status"]["error_code"] == 400
+    unless quote_json["status"].nil? || quote_json["status"]["error_code"] == 400
       price = quote_json["data"][ticker]["quote"]["USD"]["price"].to_f
       return price
     else
