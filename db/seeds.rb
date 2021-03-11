@@ -102,7 +102,7 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOG', 'NTDOY', 'BA', 'PFE']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOGL', 'NTDOY', 'BA', 'PFE']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
