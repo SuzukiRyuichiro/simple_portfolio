@@ -1,5 +1,5 @@
 <%= link_to product_path(product), style: "text-decoration: none;" do %>
-  <div class="mb-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="product-card chart" data-product-id="<%= product.id %>" data-symbol="<%= product.finnhub_symbol || product.ticker %>">
+  <div class="mb-2 d-flex flex-row justify-content-between card card-dashboard" data-controller="chart" data-product-id="<%= product.id %>" data-symbol="<%= product.finnhub_symbol || product.ticker %>">
     <div class="text-white py-3 pl-3">
       <h5 class="m-0"><%= product.name %></h5>
       <p class="mb-2 text-muted" ><%= product.ticker %></p>
@@ -9,7 +9,7 @@
       <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
     </div>
     <div class="stock-card-chart py-1">
-      <%= line_chart charts_stock_price_history_path(product), id: "chart-#{product.id}", points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%", width: "100%" %>
+      <%= line_chart charts_stock_price_history_path(product), id: "chart-#{product.id}", points: false, height: "100%", width: "100%" %>
     </div>
   </div>
 <% end %>
