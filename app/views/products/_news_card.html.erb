@@ -11,11 +11,11 @@
     </div>
     <div class="news-card-body d-flex flex-column justify-content-between">
       <div>
-        <h5 class="card-subtitle mb-2 text-white"><%= article['title'] %></h5>
+        <h5 class="card-subtitle mb-2 text-white text-sm"><%= article['title'] %></h5>
         <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
       </div>
       <% if article['summary']&.length > 150  %>
-        <p><%= article['summary']&.slice(0..150) %>...</p>
+        <p class="media-sm"><%= article['summary']&.slice(0..150) %>...</p>
       <% else %>
         <p><%= article['summary'] %></p>
       <% end %>

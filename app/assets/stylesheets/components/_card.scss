@@ -334,6 +334,16 @@ position: relative;
   .stock-cards {
     grid-template-columns: 1fr;
   }
+  .news-picture {
+    display: none;
+  }
+  .media-sm {
+    display: none;
+  }
+  .text-sm {
+    font-size: 1em;
+    margin: auto;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
