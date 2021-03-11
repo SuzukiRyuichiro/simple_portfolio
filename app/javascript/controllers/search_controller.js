@@ -26,7 +26,7 @@ export default class extends Controller {
         this.resultsTarget.innerHTML = "";
         console.log(data);
         data.forEach((name) => {
-          const list = `<a href="/products/${name.id}" class="list-group-item list-group-item-action-active" style="text-decoration-none">(${name.ticker})${name.name}</a>`;
+          const list = `<a href="/products/${name.id}" class="list-group-item list-group-item-action-active" style="text-decoration-none">${name.name} (${name.ticker})</a>`;
           this.resultsTarget.insertAdjacentHTML("beforeend", list);
         });
       });
