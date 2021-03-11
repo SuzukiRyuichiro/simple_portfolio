@@ -320,7 +320,8 @@ position: relative;
 .card-insights {
   height: 100%;
 }
-#chart-42 {
+
+div[id^="chart-"]{
   canvas {
     height: 300px;
   }
