@@ -102,7 +102,7 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOG', 'NTDOY', 'BA', 'PFE']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOGL', 'NTDOY', 'BA', 'PFE']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
@@ -111,7 +111,7 @@ test_stocks.each do |stock|
     product: Product.find_by(ticker: stock),
     user: test_user,
     platform: Platform.all.sample,
-    price_at_purchase: 0.0)
+    price_at_purchase: Product.find_by(ticker: stock).get_product_price || 10.0 )
   if new_purchase.save
     puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
   end
