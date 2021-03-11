@@ -9,7 +9,7 @@
         <% else %>
           <h2 class="text-center mb-1"><i class="fas fa-arrow-down arrow-size"></i> <%= @product.price_percentage.round(2) %> %</h2>
         <% end %>
-        <%= line_chart charts_stock_price_history_path(@product), id: "chart-#{@product.id}", points: false, height: "100%", width: "100%" %>
+        <%= line_chart charts_stock_price_history_path(@product), id: "chart-#{@product.id}", points: false, height: "300px", width: "100%" %>
       </div>
     </div>
     <%= render "user_info", product: @product, purchases: @purchases %>
