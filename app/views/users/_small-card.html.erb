@@ -9,7 +9,7 @@
       <!-- <p><#%= format_number(get_margin(purchases, price)) %></p> -->
     </div>
     <div class="stock-card-chart py-1">
-      <%= line_chart [charts_stock_price_history_path(product)], id: "chart-#{product.id}", points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%" %>
+      <%= line_chart [charts_stock_price_history_path(product)], id: "chart-#{product.id}", points: false, xmin: Date.today - 30, xmax: Date.today, height: "100%", width: "100%" %>
     </div>
   </div>
 <% end %>

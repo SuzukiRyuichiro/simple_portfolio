@@ -1,16 +1,17 @@
 <div class="mx-5 mt-3 shadow">
   <div class="news-card d-flex">
     <div class="news-picture">
+      <% link = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fbreaking-news-logo-template-vector-20608299&psig=AOvVaw3oeocKHqZ0Y4ZoasXrX0GK&ust=1615425837173000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMigrKzIpO8CFQAAAAAdAAAAABAD' %>
       <% if article['image']&.split(/(?=https)/)&.count == 1 %>
         <% link = article['image'] %>
       <% else %>
-        <% link = article['image'].split(/(?=https)/)[1] %>
+        <% link = article['image']&.split(/(?=https)/)[1] unless article['image'].nil?%>
       <% end %>
       <%= image_tag link, alt: "alttext" %>
     </div>
     <div class="news-card-body d-flex flex-column justify-content-between">
       <div>
-        <h6 class="card-subtitle mb-2 text-white"><%= article['title'] %></h6>
+        <h5 class="card-subtitle mb-2 text-white"><%= article['title'] %></h5>
         <p class="card-subtitle mb-2 text-muted"><%= article['source'] %></p>
       </div>
       <% if article['summary']&.length > 150  %>

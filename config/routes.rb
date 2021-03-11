@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get '/search/:query', to: 'products#search'
       get '/products/:id', to: 'products#fetch_price'
       get '/valuations/:current_user_id', to: 'valuations#fetch_total'
+      get '/news', to: 'news#index'
     end
   end
   # sidekiq
@@ -28,4 +29,5 @@ Rails.application.routes.draw do
   end
   #bitflyer connection
   get '/bitflyer_connect', to: 'users#connect_to_bitflyer', as: 'bitflyer_connect'
+  # post '/purchases', to: 'purchases#order_through_bitflyer', as: 'bitflyer_order'
 end

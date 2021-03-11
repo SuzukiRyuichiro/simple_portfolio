@@ -1,0 +1,37 @@
+<i class="fas fa-plus-circle plus-icon text-white" data-toggle="modal" data-target="#myModal"></i>
+<div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+  aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content modal-color">
+      <div class="modal-header px-5 mt-3" style="border: 0;">
+        <h5 class="modal-title">Record a purchase</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <ul class="nav tabs-underlined" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="active tab-underlined text-muted" id="home-tab" data-toggle="tab" href="#bookings" role="tab" aria-controls="home" aria-selected="true">Manual Record</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="tab-underlined text-muted" id="profile-tab" data-toggle="tab" href="#requests" role="tab" aria-controls="profile" aria-selected="false">Order through bitFlyer</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade py-3 show active" id="bookings" role="tabpanel" aria-labelledby="home-tab">
+          <%= render 'purchases/form', purchase: new_purchase %>
+        </div>
+        <div class="tab-pane fade py-3" id="requests" role="tabpanel" aria-labelledby="profile-tab">
+          <% if current_user.bitflyer_api_key.present? %>
+          <%= render 'purchases/bitflyer_form', purchase: new_purchase %>
+          <% else %>
+          <!-- if the user does not have bitflyer API key, it won't show the form -->
+          <div class="d-flex justify-content-center p-5">
+            <%= link_to "Connect to bitFlyer", bitflyer_connect_path, class: 'btn btn-primary' %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

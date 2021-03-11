@@ -1,0 +1,49 @@
+<div class="px-5 pb-5">
+  <%= simple_form_for purchase do |f| %>
+  <div class="d-flex justify-content-between">
+    <% bitflyer_supported = ['BTC', 'BCH', 'ETH'] %>
+    <%= f.association :product, wrapper_html: {style: "width: 45%;"}, collection: bitflyer_supported.map {|ticker| Product.find_by(ticker: ticker) } %>
+    <%= f.association :platform, wrapper_html: {style: "width: 45%;"}, collection: [Platform.find_by(name: 'bitFlyer')], selected: Platform.find_by(name: 'bitFlyer') %>
+  </div>
+  <%= f.input :price_at_purchase, label: 'Order price', as: :float, input_html: { min: 1, value: Product.find_by(ticker: 'BTC').get_product_price } %>
+  <%= f.input :shares, label: 'Number of shares', as: :float, input_html: { min: 1} %>
+  <%= f.input :date, as: :hidden, input_html: { value: DateTime.now }  %>
+  <%= hidden_field_tag :api_order, 'bitflyer' %>
+  <div class="form-group">
+    <label for="minute_to_expire">Minutes until order expiration</label>
+    <%= number_field_tag :minute_to_expire, nil, step: 0.001, class: "form-control" %>
+    <small id="minuteToExpireHelp" class="form-text text-muted">Specify the time in minutes until the expiration time. If omitted, the value will be 43200 (30 days)</small>
+  </div>
+  <div class="form-group">
+    <label for="time_in_force">Execution amount parameters
+      <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="far fa-question-circle" style="color: gray;"></i>
+      </a>
+    </label>
+    <div class="collapse" id="collapseExample">
+      <div class="text-muted">
+        <p><small><em>Good 'Til Canceled (GTC)</em> - A Good 'Til Canceled order is one where the order rbains in effect until it is either filled or canceled.</small></p>
+        <p><small><em>Immediate or Cancel (IOC)</em> - With an Immediate or Cancel order, all or part of the order is immediately filled if a match is found for the price indicated or better. Orders that fail to fill are canceled in their entirety.</small></p>
+        <p><small><em>Fill or Kill (FOK)</em> - This refers to when the order is canceled if the volume is not immediately contracted (filled) in its entirety.</small></p>
+      </div>
+    </div>
+    <div class="form-check">
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "GTC") %>
+        <%= label_tag "time_in_force_GTC", "Good 'Til Canceled", class: "form-check-label" %>
+      </div>
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "IOC") %>
+        <%= label_tag "time_in_force_IOC", "Immediate or Cancel", class: "form-check-label" %>
+      </div>
+      <div class="ml-1">
+        <%= radio_button_tag(:time_in_force, "FOK") %>
+        <%= label_tag "time_in_force_FOK", "Fill or Kill", class: "form-check-label" %>
+      </div>
+    </div>
+  </div>
+  <!-- <#%= f.input :date, as: :date, html5: true  %> -->
+  <!-- <p>Estimated cost: <#%=  %></p> -->
+  <%= f.submit 'Place the order', class: "btn btn-primary" %>
+  <% end %>
+</div>

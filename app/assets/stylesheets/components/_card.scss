@@ -248,7 +248,8 @@ position: relative;
 // dashboard small card ----------------------------------
 
 .card-dashboard {
-
+  width: 23em;
+  padding-right: 1em;
 }
 .chart-card {
   height: 10em;
@@ -260,14 +261,41 @@ position: relative;
 
 // grid --------------
 
-.stock-cards {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 8px;
-  h3 {
-    font-size: 16px;
+
+  .stock-cards-wrapper {
+    background-color: $boody-background;
+    // padding: 10px;
+    height: 95vh;
+
+    .stock-cards-header{
+      height: 5%;
+    }
+
+    .stock-cards {
+      max-height: 95%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 8px;
+      background-color: $boody-background;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .stock-cards::-webkit-scrollbar {
+      display: none;
+    }
   }
-}
+  .stock-card-chart {
+    canvas {
+      max-width: 250px;
+      padding: 0.8em;
+    }
+  }
+
+
 
 // show page right card -----------------------
 
@@ -285,6 +313,12 @@ position: relative;
 .width-modal {
   width: 50%;
   margin-right: -12em;
+}
+.arrow-size {
+  font-size: 0.9em;
+}
+.card-insights {
+  height: 100%;
 }
 
 //dashboard

@@ -6,6 +6,6 @@ class PurchasePolicy < ApplicationPolicy
   end
 
   def create?
-    true
+    record.user == user
   end
 end

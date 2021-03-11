@@ -19,6 +19,12 @@ class Product < ApplicationRecord
     tsearch: { prefix: true } # <-- now `superman batm` will return something!
   }
 
+  def price_percentage
+    yesterday = self.date_prices.find_by(date: Date.today - 3)
+    today = self.date_prices.find_by(date: Date.today - 2)
+    (today.price - yesterday.price) / yesterday.price * 100
+  end
+
   def get_product_price
     if kind == 'Stock'
       if currency == 'USD'
