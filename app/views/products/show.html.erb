@@ -1,7 +1,7 @@
 <h1 class="mb-3 ml-5 text-white"><%= @product.name.split(' ').map{ |word| word.capitalize}.join(' ') %></h1>
 <div class="container-fluid">
   <div class="row mx-4">
-    <div class="col-8">
+    <div class="col-md-8">
       <div class="card card-trip p-2 mb-5">
         <h1 class="text-center my-1 text-white"><%= format_number_to_price(@product.get_product_price) %></h1>
         <% if @product.price_percentage.positive? %>
