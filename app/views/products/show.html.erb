@@ -15,7 +15,7 @@
     <%= render "user_info", product: @product, purchases: @purchases %>
   </div>
 </div>
-<h1 class="text-white ml-5">Related news</h1>
+<h1 class="text-white ml-5 title-sm">Related news</h1>
 <% @articles.each do |article| %>
   <%= render "news_card", article: article %>
 <% end %>
