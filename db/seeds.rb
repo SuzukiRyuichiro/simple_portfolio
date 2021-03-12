@@ -21,7 +21,7 @@ csv_options = { headers: :first_row }
 
 # Test User -----------------------------------------------------------------------------------------------------------------------------------
 
-test_user = User.new(email: "mail@mail.com", password: "123123")
+test_user = User.new(email: "mail@mail.com", password: "123123", admin: true)
 if test_user.save
   puts "test user was created. email: #{test_user.email}, password: 123123"
 end
@@ -68,25 +68,24 @@ end
 require 'json'
 require 'open-uri'
 
-def finnhubStockSeeder(marketCode)
+def finnhubStockSeeder(marketCodeAndMic)
   accessToken = ENV["FINNHUB_API_KEY"]
-  base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCode}&token=#{accessToken}").read
+  base_url = open("https://finnhub.io/api/v1/stock/symbol?exchange=#{marketCodeAndMic[:marketCode]}&mic=#{marketCodeAndMic[:mic]}&token=#{accessToken}").read
   symbol_json = JSON.parse(base_url, {:symbolize_names => true})
-  puts marketCode
-
+  # puts "#{marketCodeAndMic[:marketCode]}, #{marketCodeAndMic[:mic]}"
   symbol_json.each_with_index do |row, index|
     product = Product.new(ticker: row[:displaySymbol], name: row[:description], currency: "USD", kind: "Stock")
-    product.save
-    percentage(symbol_json, index)
+    puts "#{product.name&.capitalize} saved" if product.save
+    # percentage(symbol_json, index)
   end
 
-  puts "#{marketCode} complete"
+  puts "#{marketCodeAndMic[:mic]} complete"
 end
 
 # Actual seeding
 
-['US'].each do |code|
-  finnhubStockSeeder(code)
+[{marketCode: 'US', mic: 'XNYS'}, {marketCode: 'US', mic: 'XNAS'}].each do |marketCodeAndMic|
+  finnhubStockSeeder(marketCodeAndMic)
 end
 
 # Platforms -----------------------------------------------------------------------------------------------------------------------------------
@@ -102,18 +101,18 @@ end
 
 # Purchsaes -----------------------------------------------------------------------------------------------------------------------------------
 
-test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOGL', 'NTDOY', 'BA', 'PFE']
+test_stocks = ['AAPL', 'TSLA', 'BTC', 'ETH', 'BCH', 'GOOGL', 'AMD', 'BA', 'PFE']
 
 test_stocks.each do |stock|
   new_purchase = Purchase.new(
     date: rand(5.days).seconds.ago,
-    shares: (1..10).to_a.sample,
     product: Product.find_by(ticker: stock),
+    shares: Product.find_by(ticker: stock).kind == 'Crypto' ? rand(0..0.3).round(2) : (1..10).to_a.sample,
     user: test_user,
     platform: Platform.all.sample,
     price_at_purchase: Product.find_by(ticker: stock).get_product_price || 10.0 )
   if new_purchase.save
-    puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} on #{new_purchase.date}"
+    puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} at #{new_purchase.price_at_purchase}"
   end
 end
 
@@ -148,7 +147,7 @@ test_stocks.each do |stock|
   end
 end
 
-test_stocks = ['GOOG', 'NTDOY', 'BA', 'PFE']
+test_stocks = ['AMD', 'GOOGL', 'BA', 'PFE']
 
 test_stocks.each do |stock|
   file = open("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=#{stock}&apikey=#{ENV['ALPHA_VANTAGE_API_KEY']}").read
