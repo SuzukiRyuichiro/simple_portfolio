@@ -80,5 +80,7 @@ class User < ApplicationRecord
     https.use_ssl = true
     response = https.request(options)
     return JSON.parse(response.body, symbolize_names: true)
+  rescue
+    return []
   end
 end
