@@ -9,6 +9,14 @@
     <div data-controller="news">
       <h1 class="text-white ml-5 mt-3">News</h1>
       <div data-news-target="container">
+        <% article =  {
+        headline: "Retail’s 5 Biggest Winners and Laggards During the Pandemic",
+        image: "https://images.barrons.com/im-310742/social",
+        source: "MarketWatch",
+        summary: "GameStop stock gained more than 6,000%. On the flip side, Winmark shares fell almost 7%.",
+        url: "https://finnhub.io/api/news?id=93f85e525ab3509e20d053612cca8e7bc80b4c364271753eedc6ae74b7a851c3"
+    } %>
+        <%= render 'api/v1/news/card', article: article %>
       </div>
     </div>
   </div>
