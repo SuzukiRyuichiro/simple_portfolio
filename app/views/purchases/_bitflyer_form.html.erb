@@ -5,7 +5,7 @@
       <%= f.association :product, wrapper_html: {style: "width: 45%;"}, collection: bitflyer_supported.map {|ticker| Product.find_by(ticker: ticker) } %>
       <%= f.association :platform, wrapper_html: {style: "width: 45%;"}, collection: [Platform.find_by(name: 'bitFlyer')], selected: Platform.find_by(name: 'bitFlyer') %>
     </div>
-    <%= f.input :price_at_purchase, label: 'Order price', as: :float, placeholder: 'Please input in USD' input_html: { min: 1, value: Product.find_by(ticker: 'BTC').get_product_price } %>
+    <%= f.input :price_at_purchase, label: 'Order price', as: :float, placeholder: 'Please input in USD', input_html: { min: 1, value: Product.find_by(ticker: 'BTC').get_product_price } %>
     <%= f.input :shares, label: 'Number of shares', as: :float, input_html: { min: 1} %>
     <%= f.input :date, as: :hidden, input_html: { value: DateTime.now }  %>
     <%= hidden_field_tag :api_order, 'bitflyer' %>
