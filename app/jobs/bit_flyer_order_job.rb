@@ -18,10 +18,11 @@ class BitFlyerOrderJob < ApplicationJob
     hash = { product_code: "#{Product.find(purchase_params[:product_id]).ticker}_JPY",
              child_order_type: 'LIMIT',
              side: 'BUY',
-             price: "#{purchase_params[:price_at_purchase] * get_usd_jpy}",
+             price: "#{(purchase_params[:price_at_purchase].to_f * get_usd_jpy).to_i}",
              size: "#{purchase_params[:shares]}",
              minute_to_expire: "#{params[:minute_to_expire].to_i}",
              time_in_force: "#{params[:time_in_force]}"}
+    puts hash
     hash.to_json
   end
 
