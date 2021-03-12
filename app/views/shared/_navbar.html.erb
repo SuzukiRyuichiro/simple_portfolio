@@ -5,8 +5,9 @@
       <p>Simple Portfolio</p>
     <% end %>
   <% else %>
-    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand d-flex align-items-center" do %>
       <%= image_tag "noun_Stock_3423548.svg" %>
+      <p>Simple Portfolio</p>
     <% end %>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -31,10 +32,6 @@
             </div>
           </li>
         <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "navbar-link" %>
-            <%= link_to "Sign up", new_user_registration_path, class: 'navbar-link' %>
-          </li>
         <% end %>
       </ul>
     </div>
