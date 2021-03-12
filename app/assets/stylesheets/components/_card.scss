@@ -260,12 +260,15 @@ position: relative;
 }
 
 // grid --------------
-
+  .sticky-top {
+    z-index: 999;
+  }
 
   .stock-cards-wrapper {
     background-color: $boody-background;
     // padding: 10px;
     height: 95vh;
+
 
     .stock-cards-header{
       height: 5%;
