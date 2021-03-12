@@ -2,7 +2,12 @@
   <div class="container">
     <h1 >Welcome to your Simple Portfolio</h1>
     <p>Never be confused, Stay ahead of the game</p>
-    <a class="btn btn-primary btn-border btn-font-color" href="/dashboard">To Your Portfolio</a>
+    <% if user_signed_in? %>
+      <a class="btn btn-primary btn-border btn-font-color" href="/dashboard">To Your Portfolio</a>
+    <% else %>
+      <%= link_to "Login", new_user_session_path, class: "btn btn-primary btn-font-color" %>
+      <%= link_to "Do not have an account?", new_user_registration_path, class: 'text-muted' %>
+    <% end %>
   </div>
 </div>
 <div class="container-fluid">
