@@ -6,11 +6,19 @@ class BitFlyerOrderJob < ApplicationJob
     bitflyer_order_api_request(params, purchase_params)
   end
 
+  def get_usd_jpy
+    require 'json'
+    require 'open-uri'
+    json = open("https://finnhub.io/api/v1/forex/rates?base=USD&token=#{ENV['FINNHUB_API_KEY']}").read
+    hash = JSON.parse(json, symbolize_names: true)
+    hash[:quote].nil? ? 110 : hash[:quote][:JPY]
+  end
+
   def bitflyer_order_api_request_body(params, purchase_params)
     hash = { product_code: "#{Product.find(purchase_params[:product_id]).ticker}_JPY",
              child_order_type: 'LIMIT',
-             side: 'SELL',
-             price: "#{purchase_params[:price_at_purchase]}",
+             side: 'BUY',
+             price: "#{purchase_params[:price_at_purchase] * get_usd_jpy}",
              size: "#{purchase_params[:shares]}",
              minute_to_expire: "#{params[:minute_to_expire].to_i}",
              time_in_force: "#{params[:time_in_force]}"}

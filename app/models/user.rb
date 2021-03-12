@@ -33,11 +33,17 @@ class User < ApplicationRecord
   def bitflyer_params(order)
     # expects a single hash from bitflyer API response
     # this method returns hash of information needed to create purchase
+    require 'json'
+    require 'open-uri'
+    json = open("https://finnhub.io/api/v1/forex/rates?base=USD&token=#{ENV['FINNHUB_API_KEY']}").read
+    hash = JSON.parse(json, symbolize_names: true)
+    usd_jpy = hash[:quote].nil? ? 110 : hash[:quote][:JPY]
+
     return {
       user: self,
       shares: order[:size],
       date: DateTime.parse(order[:child_order_date]),
-      price_at_purchase: order[:average_price],
+      price_at_purchase: (order[:average_price] / usd_jpy),
       product: Product.find_by(ticker: 'BTC'),
       platform: Platform.find_by(name: 'bitFlyer')
     }

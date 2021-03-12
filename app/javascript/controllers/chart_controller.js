@@ -4,7 +4,7 @@ import { Controller } from "stimulus"
 // import { charts } from 'chartkick';
 
 export default class extends Controller {
-  static targets = ['price'] 
+  static targets = ['price']
 
   connect() {
     this.newData = []
@@ -17,7 +17,7 @@ export default class extends Controller {
       if (!data) return
       for (let el of data) {
         if (el.s === this.element.dataset.symbol && el.t && el.p) {
-          this.priceTarget.innerText = el.p
+          this.priceTarget.innerText = `$${el.p}`
           const dataPoint = [new Date(el.t), el.p]
           // Add new data point
           this.newData.push(dataPoint)
