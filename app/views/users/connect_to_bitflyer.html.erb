@@ -1,5 +1,10 @@
-<%= simple_form_for @user do |f| %>
-  <%= f.input :bitflyer_api_key %>
-  <%= f.input :bitflyer_api_secret, input_html: { type: 'password' } %>
-  <%= f.submit class: "btn btn-primary" %>
-<% end %>
+<div class="form-card card">
+  <%= simple_form_for @user do |f| %>
+    <h2 class="text-white">Save your bitFlyer API key and secret</h2>
+    <%= f.input :bitflyer_api_key, label: 'bitFlyer API key' %>
+    <%= f.input :bitflyer_api_secret, input_html: { type: 'password' }, label: 'bitFlyer API secret' %>
+    <div class="submit-button-wrap">
+      <%= f.submit class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
