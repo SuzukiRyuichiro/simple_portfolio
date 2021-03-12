@@ -263,6 +263,9 @@ position: relative;
   .sticky-top {
     z-index: 999;
   }
+  .stock-cards-padding {
+    border: none;
+  }
 
   .stock-cards-wrapper {
     background-color: $boody-background;
@@ -276,6 +279,7 @@ position: relative;
     }
 
     .stock-cards {
+      border: none;
       max-height: 95%;
       overflow-y: auto;
       overflow-x: hidden;
