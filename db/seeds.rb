@@ -110,7 +110,7 @@ test_stocks.each do |stock|
     shares: Product.find_by(ticker: stock).kind == 'Crypto' ? rand(0..0.3).round(2) : (1..10).to_a.sample,
     user: test_user,
     platform: Platform.all.sample,
-    price_at_purchase: Product.find_by(ticker: stock).get_product_price || 10.0 )
+    price_at_purchase: (Product.find_by(ticker: stock).get_product_price + rand(-10..10)).round(2) || 10.0 )
   if new_purchase.save
     puts "#{test_user.email} bought #{new_purchase.shares} shares of #{new_purchase.product.name} at #{new_purchase.price_at_purchase}"
   end
