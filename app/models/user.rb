@@ -47,6 +47,17 @@ class User < ApplicationRecord
       product: Product.find_by(ticker: 'BTC'),
       platform: Platform.find_by(name: 'bitFlyer')
     }
+
+  rescue
+
+    return {
+      user: self,
+      shares: 0,
+      date: Time.now,
+      price_at_purchase: 0,
+      product: Product.find_by(ticker: 'BTC'),
+      platform: Platform.find_by(name: 'bitFlyer')
+    }
   end
 
   def get_past_orders_bitflyer

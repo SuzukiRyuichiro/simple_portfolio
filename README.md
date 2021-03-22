@@ -1,1 +1,4 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Simple Portfolio
+
+## What is it?
+[Simple Portfolio](https://single-portfolio.herokuapp.com/) is a Ruby on Rails application that consolidates
