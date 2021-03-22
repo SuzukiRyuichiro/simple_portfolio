@@ -57,7 +57,7 @@ class Product < ApplicationRecord
     url = open("https://finnhub.io/api/v1/quote?symbol=#{ticker}&token=#{ENV['FINNHUB_API_KEY']}").read
     return JSON.parse(url)
   rescue
-    return { c: 123.4 }.to_json
+    return JSON.parse({ c: 123.4 }.to_json)
   end
 
   def get_crypto_json_av
