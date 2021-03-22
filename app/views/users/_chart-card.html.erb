@@ -4,7 +4,9 @@
     <h1 class="display-4 text-center text-white" data-valuation-target="total"><%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") if defined? number_with_delimiter(@total_valuation.round(2), delimiter: ',') %></h1>
     <small class="text-muted text-center">Profits/Losses</small>
     <h5 class="text-center mb-4"><%= format_number(@total_margin) %></h5>
-    <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000, library: {
+    <% if current_user.valuations.any? %>
+      <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000, library: {
         animation: {easing: 'easeOutQuad'}}%>
+    <% end %>
   </div>
 </div>
