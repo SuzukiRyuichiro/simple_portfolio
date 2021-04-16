@@ -3,9 +3,17 @@
 ## What is it?
 [Simple Portfolio](https://single-portfolio.herokuapp.com/) is a Ruby on Rails application that consolidates multiple brokers' account information in one app.
 
+## Demo Login
+
+Email: `mail@mail.com`
+Password `123123`
+
+
+## Instalation
+
 ```
-yarn install
 brew install yarn
+yarn install
 ```
 then
 
