@@ -1,0 +1,19 @@
+<div class="mx-5 mb-4 shadow">
+  <div class="news-card d-flex">
+    <div class="news-picture">
+      <%= image_tag article[:image], alt: "alttext" %>
+    </div>
+    <div class="news-card-body d-flex flex-column justify-content-between">
+      <div>
+        <h6 class="card-subtitle  text-white"><%= article[:headline] %></h6>
+        <small class="card-subtitle text-muted"><%= article[:source] %></small>
+      </div>
+      <% if article[:summary]&.length > 150  %>
+        <small><%= article[:summary]&.slice(0..150) %>...</small>
+      <% else %>
+        <small><%= article[:summary] %></small>
+      <% end %>
+      <%= link_to "See full article", article[:url]%>
+    </div>
+  </div>
+</div>

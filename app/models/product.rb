@@ -19,6 +19,16 @@ class Product < ApplicationRecord
     tsearch: { prefix: true } # <-- now `superman batm` will return something!
   }
 
+  def price_percentage
+    yesterday = self.date_prices.find_by(date: Date.today - 3)
+    today = self.date_prices.find_by(date: Date.today - 2)
+    if yesterday && today
+      (today.price - yesterday.price) / yesterday.price * 100
+    else
+      return 1.0
+    end
+  end
+
   def get_product_price
     if kind == 'Stock'
       if currency == 'USD'
@@ -46,6 +56,8 @@ class Product < ApplicationRecord
     # expects an instance of a product. It will call alpha vantage API to get the quote
     url = open("https://finnhub.io/api/v1/quote?symbol=#{ticker}&token=#{ENV['FINNHUB_API_KEY']}").read
     return JSON.parse(url)
+  rescue
+    return JSON.parse({ c: 123.4 }.to_json)
   end
 
   def get_crypto_json_av
@@ -106,7 +118,7 @@ class Product < ApplicationRecord
 
   def get_crypto_price_from_json_cmc
     quote_json = get_crypto_json_cmc
-    unless quote_json["status"]["error_code"] == 400
+    unless quote_json.nil? || quote_json["status"]["error_code"] == 400
       price = quote_json["data"][ticker]["quote"]["USD"]["price"].to_f
       return price
     else

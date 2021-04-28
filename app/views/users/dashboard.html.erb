@@ -1,27 +1,39 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class='col-8'>
-      <div class="card card-trip">
-        <h2 class="text-center">$<%= number_with_delimiter(@total_valuation.round(2), delimiter: ",") %></h2>
-        <%= line_chart charts_valuation_history_path, points: false, min: current_user.valuations.map { |valuation| valuation.total_valuation }.min - 3000 %>
-      </div>
+<div class="d-flex">
+  <!-- left -->
+  <div class="col-8">
+    <!-- valuation and big chart (left top) -->
+    <div style="overflow:hidden;">
+      <%= render 'users/chart-card', valuation: @valuation %>
     </div>
-    <div class="col-4">
-      <div id="user-stock" class="card card-trip p-4">
-        <h2>My stocks</h2>
-        <% @user.products.distinct.each do |product| %>
-          <ul>
-            <li>
-              <%= link_to "#{product.name}", product_path(product) %>, <%= link_to "#{product.ticker}", product_path(product) %>
-            </li>
-          </ul>
-        <% end %>
+    <!-- News articles (left bottom) -->
+    <div data-controller="news">
+      <h1 class="text-white ml-5 mt-3">News</h1>
+      <div data-news-target="container">
+        <% article =  {
+        headline: "Retail’s 5 Biggest Winners and Laggards During the Pandemic",
+        image: "https://images.barrons.com/im-310742/social",
+        source: "MarketWatch",
+        summary: "GameStop stock gained more than 6,000%. On the flip side, Winmark shares fell almost 7%.",
+        url: "https://finnhub.io/api/news?id=93f85e525ab3509e20d053612cca8e7bc80b4c364271753eedc6ae74b7a851c3"
+    } %>
+        <%= render 'api/v1/news/card', article: article %>
       </div>
     </div>
   </div>
-</div>
-<div class="mt-3 col-8 stock-cards">
-  <% @products.each do |product| %>
-    <%= render 'users/small-card', product: product %>
-  <% end %>
+  <!-- right -->
+  <div class="col-4">
+    <div class="stock-cards-padding sticky-top">
+      <div class="stock-cards-wrapper card">
+        <div class="stock-cards-header">
+          <h2>My Stocks</h2>
+        </div>
+        <div class="mt-3 stock-cards card" >
+          <% @products.each do |product| %>
+            <%= render 'users/small-card', product: product, price: product.get_product_price, purchases: current_user.purchases%>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <!-- Stock cards (top right) -->
+  </div>
 </div>

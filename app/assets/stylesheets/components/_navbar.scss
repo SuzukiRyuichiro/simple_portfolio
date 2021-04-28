@@ -9,10 +9,25 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
-  color: #4000FF;
+  color: #758BFD;
   margin: 8px;
 }
 
 .navbar-link {
   color: #878787;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.plus-icon {
+  font-size: 1.5rem;
+}
+.dropdown-menu-right {
+  border-radius: 25px;
+  padding: 0;
+}
+.dropdown-menu-right {
+  padding: 0.8em;
 }

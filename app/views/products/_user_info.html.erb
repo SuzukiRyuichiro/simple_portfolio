@@ -1,0 +1,22 @@
+<div class="card-show card-trip col mb-5" >
+  <div class="w-100 card-insights">
+    <% if current_user.purchases.any? { |purchase| purchase.product == product }  %>
+      <h3 class="text-white mb-5 mt-3 border-bottom">Insights</h3>
+      <div class="d-flex justify-content-between card-show-margin">
+        <h5 class="number-user-info">Shares</h5>
+        <h5 class="number-user-info"><%= purchases.sum(:shares).round(4) %></h5>
+      </div>
+      <div class="d-flex justify-content-between card-show-margin">
+        <h5 class="number-user-info">Profits/Losses</h5>
+        <h5 class="number-user-info"><%= format_number(product.calc_margin(purchases))%></h5>
+      </div>
+      <div class="d-flex justify-content-between card-show-margin">
+        <h5 class="number-user-info">Your Average Cost</h5>
+        <h5 class="number-user-info"><%= format_number_to_price(current_user.average_purchased_price(product)) %></h5>
+      </div>
+    <% else %>
+      <h3 class="text-muted mb-5 mt-3">You do not have <%= product.name.split(' ').map { |word| word.capitalize }.join(' ') %> stock</h3>
+      <%= link_to "Record a purchase", new_purchase_path, data: { toggle: "modal", target: "#myModal" }%>
+    <% end %>
+  </div>
+</div>

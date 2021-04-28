@@ -1,19 +1,19 @@
-<div id="container">
-  <div data-controller="search">
-    <%= form_tag products_path, method: :get, class: 'form-inline' do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control w-75% form-color form-radius",
-        placeholder: "",
-        data: {
-          action: "keyup->search#fetchResults",
-          search_target: "input"
-        }
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary btn-border btn-radius btn-font-color" %>
-      <ul data-search-target="results">
-
-      </ul>
-    <% end %>
+<div data-controller="search" class="mr-4">
+  <%= form_tag products_path, method: :get, class: 'form-inline' do %>
+  <%= text_field_tag :query,
+  params[:query],
+  class: "form-control form-color form-radius",
+  placeholder: "",
+  data: {
+  action: "keyup->search#fetchResults",
+  search_target: "input"
+  }
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary btn-border btn-radius btn-font-color", data: { search_target: 'button' } %>
+  <% end %>
+  <div class="dropdown">
+    <div class="list-group dropdown-menu search-result" style="padding: 0; border: 0px;" data-search-target="results">
+      <!-- insert results here -->
+    </div>
   </div>
 </div>

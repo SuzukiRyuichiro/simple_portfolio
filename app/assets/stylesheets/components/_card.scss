@@ -160,7 +160,7 @@ position: relative;
 .news-card {
   border-radius: 25px;
   background-color: #141526;
-  height: 240px;
+  height: 10em;
 
   a {
     color: $blue;
@@ -175,13 +175,13 @@ position: relative;
     img {
       border-radius: 25px 0 0 25px;
       height: 100%;
-      width: 240px;
+      width: 10em;
       object-fit: cover;
     }
   }
 
   .news-card-body {
-    padding: 20px;
+    padding: 1em 1em 0.3em 1.5em;
   }
 }
 
@@ -248,7 +248,8 @@ position: relative;
 // dashboard small card ----------------------------------
 
 .card-dashboard {
-
+  width: 23em;
+  padding-right: 1em;
 }
 .chart-card {
   height: 10em;
@@ -259,17 +260,130 @@ position: relative;
 }
 
 // grid --------------
+  .sticky-top {
+    z-index: 999;
+  }
+  .stock-cards-padding {
+    border: none;
+  }
 
-.stock-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
+  .stock-cards-wrapper {
+    background-color: $boody-background;
+    // padding: 10px;
+    height: 95vh;
+    border: none;
+
+
+    .stock-cards-header{
+      height: 5%;
+    }
+
+    .stock-cards {
+      border: none;
+      max-height: 95%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 8px;
+      background-color: $boody-background;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+    .stock-cards::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .stock-card-chart {
+    canvas {
+      max-width: 250px;
+      padding: 0.8em;
+    }
+  }
+
+
+
+// show page right card -----------------------
+
+.card-show-margin {
+  margin: 2em 0;
+}
+// modal new purchase
+.form-purchase {
+  margin-left: 4em;
+}
+.width-fit-content {
+  width: fit-content;
+}
+
+.width-modal {
+  width: 50%;
+  margin-right: -12em;
+}
+.arrow-size {
+  font-size: 0.9em;
+}
+.card-insights {
+  height: 100%;
+}
+
+div[id^="chart-"] {
+  canvas {
+    height: 300px;
+  }
+}
+
+.number-user-info {
+  font-size: 1.7em;
+  color: $font-color;
+}
+
+//dashboard
+
+.width-margin {
+  width: 90%;
+  margin: 1em auto;
+  padding: 1rem;
+}
+
+.form-card {
+  width: 40%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20%;
+  .submit-button-wrap {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .stock-cards {
     grid-template-columns: 1fr;
+  }
+  .news-picture {
+    display: none;
+  }
+  .media-sm {
+    display: none;
+  }
+  .text-sm {
+    font-size: 1em;
+    margin: auto;
+  }
+  .title-sm {
+    font-size: 2em;
+    padding: 0;
+  }
+  .padding-sm {
+    padding: 0;
+  }
+  .height-sm {
+    height: 20em;
   }
 }
 
@@ -290,13 +404,15 @@ position: relative;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .stock-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .stock-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
+
+

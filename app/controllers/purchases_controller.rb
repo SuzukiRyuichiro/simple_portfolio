@@ -10,9 +10,10 @@ class PurchasesController < ApplicationController
     @purchase.user = current_user
     authorize @purchase
     if @purchase.save
-      redirect_to dashboard_path
+      BitFlyerOrderJob.perform_now(params, purchase_params) if params[:api_order] == 'bitflyer'
+      redirect_to product_path(@purchase.product)
     else
-      render :new
+      render 'fail'
     end
   end
 

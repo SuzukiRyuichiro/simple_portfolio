@@ -10,3 +10,17 @@
   font-size: 24px;
   padding: 0 4px;
 }
+
+.input-corner-on {
+  border-bottom-left-radius: 0px;
+}
+
+.button-corner-on {
+  border-bottom-right-radius: 0px;
+}
+
+.search-result {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  line-height: 1.0;
+}
