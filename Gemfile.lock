@@ -84,6 +84,9 @@ GEM
     concurrent-ruby (1.1.8)
     connection_pool (2.2.3)
     crass (1.0.6)
+    ddtrace (0.50.0)
+      ffi (~> 1.0)
+      msgpack
     devise (4.7.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -286,6 +289,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   chartkick
+  ddtrace
   devise
   dotenv-rails
   font-awesome-sass
